@@ -52,11 +52,11 @@ CHC高清电影,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch0000009099000
 安徽卫视,https://cntv.sbs/v6?auth=2307280808&id=037
 山东卫视,https://cntv.sbs/v6?auth=2307280808&id=028
 广东卫视,https://cntv.sbs/v6?auth=2307280808&id=032
-广东影视,http://60.208.16.27:1505/gudou.php?id=364&id=1458_4500
-广东4K,http://60.208.16.27:1505/gudou.php?id=364&id=GDZYHD4K_38000
-广东体育HD,http://60.208.16.27:1505/gudou.php?id=364&id=1413_4500
-广东少儿,http://60.208.16.27:1505/gudou.php?id=364&id=1457
-嘉佳卡通,http://60.208.16.27:1505/gudou.php?id=364&id=1459
+广东影视,https://pi.0472.org/tv/gdtv.php?id=1458_4500
+广东4K,https://pi.0472.org/tv/gdtv.php?id=GDZYHD4K_38000
+广东体育HD,https://pi.0472.org/tv/gdtv.php?id=1413_4500
+广东少儿,https://pi.0472.org/tv/gdtv.php?id=1457
+嘉佳卡通,https://pi.0472.org/tv/gdtv.php?id=1459
 广西卫视,https://cntv.sbs/v6?auth=2307280808&id=224
 江苏卫视,https://cntv.sbs/v6?auth=2307280808&id=033
 江西卫视,https://cntv.sbs/v6?auth=2307280808&id=034
