@@ -62,8 +62,8 @@ CHC高清电影,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch0000009099000
 江西卫视,https://cntv.sbs/v6?auth=2307280808&id=034
 河北卫视,https://cntv.sbs/v6?auth=2307280808&id=229
 河南卫视,https://cntv.sbs/v6?auth=2307280808&id=222
-梨园频道,http://60.208.16.27:1505/gudou.php?id=364&id=1937
-武术世界,http://60.208.16.27:1505/gudou.php?id=364&id=1938
+梨园频道,https://cntv.sbs/ipv6?auth=2307280808&id=ly
+武术世界,https://cntv.sbs/ipv6?auth=2307280808&id=wssj
 浙江卫视,https://cntv.sbs/v6?auth=2307280808&id=023
 海南卫视,https://cntv.sbs/v6?auth=2307280808&id=183
 海南少儿,http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000323/index.m3u8?fmmv6
