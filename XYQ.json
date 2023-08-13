@@ -1,10 +1,9 @@
 {
-    "wallpaper":"https://picsum.photos/1280/720/?blur=2",
+    "wallpaper": "https://picsum.photos/1280/720/?blur=2",
 
     "spider":"./jar/XYQ.jar;md5;9f7e10364a4d9ffbbdfef19f5c378848",
 
     //"spider":"./custom_spider转码在前0613.jar;md5;8ac18bef4fd5237e22de6d139fab6fa4",
-    
     "lives":[
 {"name":"全球","type":0,"url":"https://ghproxy.net/raw.githubusercontent.com/fanmingming/live/main/tv/m3u/global.m3u","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"},
 {"name":"4K8K","type":0,"url":"https://ghproxy.com/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/IPTV.m3u","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"},
@@ -37,7 +36,7 @@
 
         {"key":"T4荐片","name":"🍒┃豆瓣T4┃备用🍒","type":4,"api":"https://t4.secan.icu/vod?sites=all&ali_token={{ali_token}}&timeout=10","searchable":1,"quickSearch":1,"filterable":0},
 
-        //{"key":"drpy_js_直播转点播","name":"📺┃电视┃道长","type":3,"api":"./js/live2vod.js","searchable":0,"quickSearch":0,"ext":"./js/zb.js"},
+        //{"key": "drpy_js_直播转点播","name": "📺┃电视┃道长","type": 3,"api": "./js/live2vod.js","searchable": 0,"quickSearch": 0,"ext": "./js/zb.js"},
 
         {"key":"优酷","name":"👑优酷(官)","type":3,"api":"./lib/drpy2.min.js","ext":"./js/youku.js"},
         {"key":"腾讯","name":"🐧腾讯(官)","type":3,"api":"./lib/drpy2.min.js","ext":"./js/tengxun.js"},
@@ -66,6 +65,7 @@
 
         
         //json采集接口type：1，xml采集接口type：0
+        
         {"key":"csp_appysv2_看剧吧","name":"看剧吧(普通)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext":"http://app.ishen520.com/api.php/v1.vod"},
         {"key":"影图资源","name":"影图资源(官)","type":1,"api":"https://cj.vodimg.top/api.php/provide/vod/","searchable":1,"quickSearch":1},
         {"key":"忆梦","name":"忆梦(官)","type":1,"api":"http://anltv.cn/api.php/provide/vod/","searchable":1,"quickSearch":1},
@@ -75,7 +75,7 @@
     
 
     "parses": [
-        //{"name":"解析聚合","type":3,"url":"Demo"},
+         //{"name":"解析聚合","type":3,"url":"Demo"},
         //{"name":"Json并发","type":2,"url":"Parallel"},
         //{"name":"Json轮询","type":2,"url":"Sequence"},
         {"name":"-香-","type":0,"url":"https://jx.777jiexi.com/player/?url="},
