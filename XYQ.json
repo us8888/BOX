@@ -60,6 +60,7 @@
         {"key":"csp_XYQBiu_云盘分享","name":"📀云盘分享(搜索)","type":3,"api":"csp_XYQBiu","playerType":1,"searchable":1,"quickSearch":1,"filterable":1,"ext":"./XYQBiu/云盘分享.json"},
         {"key":"csp_XYQHiker_盘搜索","name":"📀盘搜索(搜索)","type":3,"api":"csp_XYQHiker","playerType":1,"searchable":1,"quickSearch":1,"filterable":1,"ext":"./XYQHiker/盘搜索.json"},
         {"key":"路飞转点播","name":"路飞_MV","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/lf_live.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/lf_live.txt","viewType": 2},
+        {"key":"路飞磁力转点播","name":"路飞磁力转点播","type":3,"api":"./坐等路飞.js","ext":"https://qu.ax/tTus.json"},
         {"key":"路飞ikanbot","name":"路飞_爱看","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/ikanbot.js","ext":""},
         {"key":"路飞搜索","name":"路飞_搜索","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/ss.js","ext":""},
         {"key":"路飞磁力","name":"路飞_🧲磁力搜","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/cili.js","ext":"18+"},
