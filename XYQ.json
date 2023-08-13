@@ -73,9 +73,9 @@
         {"key": "spider_Yj1211","name": "📡JustLive","type": 3,"api": "csp_Yj1211","playerType":1,"searchable": 1,"quickSearch": 1,"filterable": 1},
         {"key":"WoGG","name":"饭太硬玩偶哥哥┃4K","type":3,"style":{ "type":"rect", "ratio":1.33 },"api":"csp_WoGG","searchable":1,"quickSearch":1,"changeable":0,"ext":"9e0d15bfaa6945f4930d76c628439a0f+4k|fhd|auto$$$http://tvfan.xxooo.cf/",
   "jar":"https://qu.ax/UemB.jpg"},
-      {"key":"csp_zxzj","name":"在线┃直连","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.zxzj.pro/"},
-      {"key":"csp_Lgyy","name":"蓝光┃直连","type":3,"api":"csp_Lgyy","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.lgyy.vip"},
-      {"key":"csp_Ysgc","name":"工场┃直连","type":3,"api":"csp_Ysgc","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.ysgc.vip"},
+        {"key":"csp_zxzj","name":"在线┃直连","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.zxzj.pro/"},
+        {"key":"csp_Lgyy","name":"蓝光┃直连","type":3,"api":"csp_Lgyy","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.lgyy.vip"},
+        {"key":"csp_Ysgc","name":"工场┃直连","type":3,"api":"csp_Ysgc","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.ysgc.vip"},
         {"key":"MV_vod","name":"🎵明星┃饭MV","type":1,"api":"https://mv.wogg.link/mv/vod","searchable":1,"quickSearch":1,"filterable":1,"style":{ "type":"oval" }},
         
         //json采集接口type：1，xml采集接口type：0
