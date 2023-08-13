@@ -37,7 +37,7 @@
 
         {"key":"T4荐片","name":"🍒┃豆瓣T4┃备用🍒","type":4,"api":"https://t4.secan.icu/vod?sites=all&ali_token={{ali_token}}&timeout=10","searchable":1,"quickSearch":1,"filterable":0},
 
-        //{"key":"drpy_js_直播转点播","name": "📺┃电视┃道长","type":3,"api":"./js/live2vod.js","searchable": 0,"quickSearch":0,"ext":"./js/zb.js"},
+        //{"key":"drpy_js_直播转点播","name":"📺┃电视┃道长","type":3,"api":"./js/live2vod.js","searchable":0,"quickSearch":0,"ext":"./js/zb.js"},
 
         {"key":"优酷","name":"👑优酷(官)","type":3,"api":"./lib/drpy2.min.js","ext":"./js/youku.js"},
         {"key":"腾讯","name":"🐧腾讯(官)","type":3,"api":"./lib/drpy2.min.js","ext":"./js/tengxun.js"},
