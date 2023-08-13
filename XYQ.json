@@ -66,7 +66,8 @@
         {"key":"csp_Ddys","name":"🐞低端影视","type":3,"api":"csp_Ddys","searchable":1,"quickSearch":1,"filterable":1},
         {"key":"csp_Kunyu77","name":"🐞77影视","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
         {"key": "spider_Yj1211","name": "📡JustLive","type": 3,"api": "csp_Yj1211","playerType":1,"searchable": 1,"quickSearch": 1,"filterable": 1},
-        
+        {"key":"WoGG","name":"饭太硬玩偶哥哥┃4K","type":3,"style":{ "type":"rect", "ratio":1.33 },"api":"csp_WoGG","searchable":1,"quickSearch":1,"changeable":0,"ext":"9e0d15bfaa6945f4930d76c628439a0f+4k|fhd|auto$$$http://tvfan.xxooo.cf/",
+  "jar":"https://qu.ax/UemB.jpg"},
         //json采集接口type：1，xml采集接口type：0
         {"key":"csp_appysv2_看剧吧","name":"看剧吧(普通)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext":"http://app.ishen520.com/api.php/v1.vod"},
         {"key":"影图资源","name":"影图资源(官)","type":1,"api":"https://cj.vodimg.top/api.php/provide/vod/","searchable":1,"quickSearch":1},
