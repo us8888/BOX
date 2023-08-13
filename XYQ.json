@@ -65,7 +65,6 @@
         {"key":"csp_Czsapp","name":"🐞厂长资源","type":3,"api":"csp_Czsapp","playerType":2,"searchable":1,"quickSearch":1,"filterable":1,"ext":"https://www.czzy03.com"},
         {"key":"csp_Ddys","name":"🐞低端影视","type":3,"api":"csp_Ddys","searchable":1,"quickSearch":1,"filterable":1},
         {"key":"csp_Kunyu77","name":"🐞77影视","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
-        {"key":"csp_LiteApple","name": "🍎小苹果","type": 3,"api": "csp_LiteApple","playerType":1,"searchable": 1,"quickSearch": 1,"filterable": 1},
         {"key": "spider_Yj1211","name": "📡JustLive","type": 3,"api": "csp_Yj1211","playerType":1,"searchable": 1,"quickSearch": 1,"filterable": 1},
         
         //json采集接口type：1，xml采集接口type：0
