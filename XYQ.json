@@ -60,7 +60,6 @@
         {"key":"csp_XYQBiu_云盘分享","name":"📀云盘分享(搜索)","type":3,"api":"csp_XYQBiu","playerType":1,"searchable":1,"quickSearch":1,"filterable":1,"ext":"./XYQBiu/云盘分享.json"},
         {"key":"csp_XYQHiker_盘搜索","name":"📀盘搜索(搜索)","type":3,"api":"csp_XYQHiker","playerType":1,"searchable":1,"quickSearch":1,"filterable":1,"ext":"./XYQHiker/盘搜索.json"},
         {"key":"路飞转点播","name":"路飞_MV","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/lf_live.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/lf_live.txt","viewType": 2},
-        {"key":"路飞磁力转点播","name":"路飞磁力转点播","type":3,"api":"./坐等路飞.js","ext":"https://qu.ax/tTus.json"},
         {"key":"路飞ikanbot","name":"路飞_爱看","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/ikanbot.js","ext":""},
         {"key":"路飞搜索","name":"路飞_搜索","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/ss.js","ext":""},
         {"key":"路飞磁力","name":"路飞_🧲磁力搜","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/lystv/short/main/影视/tvb/cili.js","ext":"18+"},
@@ -75,6 +74,7 @@
         {"key":"WoGG","name":"饭太硬玩偶哥哥┃4K","type":3,"style":{ "type":"rect", "ratio":1.33 },"api":"csp_WoGG","searchable":1,"quickSearch":1,"changeable":0,"ext":"9e0d15bfaa6945f4930d76c628439a0f+4k|fhd|auto$$$http://tvfan.xxooo.cf/",
   "jar":"https://qu.ax/UemB.jpg"},
        {"key":"MV_vod","name":"🎵明星┃饭MV","type":1,"api":"https://mv.wogg.link/mv/vod","searchable":1,"quickSearch":1,"filterable":1,"style":{ "type":"oval" }},
+        
         //json采集接口type：1，xml采集接口type：0
         {"key":"csp_appysv2_看剧吧","name":"看剧吧(普通)","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext":"http://app.ishen520.com/api.php/v1.vod"},
         {"key":"影图资源","name":"影图资源(官)","type":1,"api":"https://cj.vodimg.top/api.php/provide/vod/","searchable":1,"quickSearch":1},
