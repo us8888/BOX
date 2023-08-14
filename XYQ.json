@@ -29,7 +29,7 @@
     ],
     "sites": [
         {"key":"csp_woggcli","name":"玩偶(cli)","type":4,"api":"http://home.jundie.top:9520/spider/csp_Wogg","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://d.pan.icdown.club/api_0814.json"},
-        {"key":"push_agent","name":"推送 | lf_push","type":3,"searchable":0,"changeable":1,"quickSearch":0,"filterable":0,"api":"./js/lf_pushagent_min.js"}
+        {"key":"push_agent","name":"推送 | lf_push","type":3,"searchable":0,"changeable":1,"quickSearch":0,"filterable":0,"api":"./js/lf_pushagent_min.js"},
          
         {"key":"360_spider","name":"🐞360影视","type":3,"api":"csp_SP360","filterable":1,"quickSearch":1,"searchable":1},
         {"key":"csp_Kuaikan","name":"💡快看影视","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"filterable":1},
