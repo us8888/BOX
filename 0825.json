@@ -66,11 +66,10 @@
 {"key":"非凡","name":"非凡","type":0,"api":"http://127.0.0.1:10079/?thread=0&proxy=socks5://192.168.5.227:4592&url=http://cj.ffzyapi.com/api.php/provide/vod/at/xml/","searchable":1,"changeable":1,"playUrl": "json:http://127.0.0.1:10079/parse/?thread=0&proxy=socks5://192.168.5.227:4592&url=","categories":["国产动漫","日韩动漫","国产剧","韩国剧","日本剧","电影片","连续剧","综艺片","动漫片","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","香港剧","欧美剧","记录片","台湾剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","欧美动漫","港台动漫","海外动漫"]},
 
 {"key":"csp_Bili","name":"哔哩","type":3,"api":"csp_Bili","searchable":1,"quickSearch":1,"style":{"type":"rect","ratio":1.755},"filterable":1,"changeable":0,"ext":{"type":"帕梅拉#太极拳#演唱会#舞蹈#音乐#白噪音#风景#记录片#美食#球星#相声小品#戏曲#小姐姐","cookie":"buvid3=8B57D3BA-607A-1E85-018A-E8C430023CED42659infoc; b_lsid=BEB8EE7F_18742FF8C2E; bsource=search_baidu; _uuid=DE810E367-B52C-AF6E-A612-EDF4C31567F358591infoc; b_nut=100; buvid_fp=711a632b5c876fa8bbcf668c1efba551; SESSDATA=7624af93%2C1696008331%2C862c8%2A42; bili_jct=141a474ef3ce8cf2fedf384e68f6625d; DedeUserID=3493271303096985; DedeUserID__ckMd5=212a836c164605b7; sid=5h4ruv6o; buvid4=978E9208-13DA-F87A-3DC0-0B8EDF46E80434329-123040301-dWliG5BMrUb70r3g583u7w%3D%3D"}},
-{"key":"本地","name":"本地","type":3,"api":"csp_Local","searchable":0,"changeable":0},
 {"key":"AList","name":"网盘","type":3,"api":"csp_AList","searchable":1,"changeable":0,"ext":"./json/alist.json"},
 {"key":"WebDAV","name":"云盘","type":3,"api":"csp_WebDAV","searchable":1,"changeable":0,"ext":"./json/webdav.json"},
 
-{"key":"push_agent","name":"推送","type":3,"api":"csp_Push","ext":"http://127.0.0.1:9978/file/tvfan/tokengo.txt"}
+{"key":"push_agent","name":"💘推送 | lf_push","type":3,"searchable":0,"changeable":1,"quickSearch":0,"filterable":0,"api":"./js/lf_pushagent_min.js"}
 ],
 "doh":[
 {"name":"Google","url":"https://dns.google/dns-query","ips":["8.8.4.4","8.8.8.8"]},
