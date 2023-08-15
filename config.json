@@ -264,7 +264,7 @@
       "api": "csp_Push",
       "searchable": 1,
       "changeable": 0
-    }],
+    },
   "doh": [
     {
       "name": "Google",
