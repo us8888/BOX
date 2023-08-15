@@ -206,6 +206,18 @@
       "changeable": 1
     },
     {
+  "key":"csp_WoGG",
+  "name":"❤🤡玩偶哥哥┃4K",
+  "type":3,
+  "style":{"type":"rect","ratio":0 },
+  "api":"csp_WoGG",
+  "searchable":1,
+  "quickSearch":1,
+  "filterable":1,
+  "ext":"9e0d15bfaa6945f4930d76c628439a0f",
+  "jar":"https://qu.ax/rski.js"
+    },
+    {
       "key": "玩偶",
       "name": "玩偶",
       "type": 3,
