@@ -264,14 +264,6 @@
   "ext":"./js/酷奇MV.js"
     },
     {
-"key":"drpy_js_MV263",
-"name":"MV | 263[js]",
-"type":3,
-"api":"./lib/drpy2.min.js",
-"changeable":0,
-"ext":"./js/MV263.json"
-    },
-    {
   "key":"drpy_js_苹果DJ",
   "name":"MV | 苹果DJ[js]",
   "type":3,
