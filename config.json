@@ -466,7 +466,9 @@
       "searchable": 1,
       "changeable": 0
     },
-  "doh":[
+  
+    
+    "doh":[
     {
       "name":"Google",
       "url":"https://dns.google/dns-query",
