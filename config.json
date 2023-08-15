@@ -466,11 +466,11 @@
       "searchable": 1,
       "changeable": 0
     },
-  "doh": [
+  "doh":[
     {
-      "name": "Google",
-      "url": "https://dns.google/dns-query",
-      "ips": [
+      "name":"Google",
+      "url":"https://dns.google/dns-query",
+      "ips":[
         "8.8.4.4",
         "8.8.8.8"
       ]
