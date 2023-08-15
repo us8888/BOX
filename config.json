@@ -272,6 +272,15 @@
 "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/苹果DJ.js"
     },
     {
+  "key":"drpy_js_清风DJ",
+  "name":"音频 | 清风DJ[js]",
+  "type":3,
+"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/清风DJ.js",
+  "style":{"type":"oval"},
+  "playerType":"2"
+    },
+    {
       "key": "玩偶",
       "name": "玩偶",
       "type": 3,
