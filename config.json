@@ -218,6 +218,17 @@
   "jar":"https://qu.ax/rski.js"
     },
     {
+  "key":"drpy_js_4KHDR",
+  "name":"4KHDR",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "ext":"./js/4khdr.js",
+  "playerType":"1", 
+  "searchable":0, 
+  "quickSearch":0, 
+  "changeable":0
+    },
+    {
       "key": "玩偶",
       "name": "玩偶",
       "type": 3,
