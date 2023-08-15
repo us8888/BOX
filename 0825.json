@@ -9,7 +9,7 @@
 {"key":"drpy_js_磁力熊搜索","name":"熊搜","type":3,"api":"./lib/drpy2.min.js","ext":"./js/cilixiong.js","searchable":0,"quickSearch":0,"changeable":1},
 {"key":"drpy_js_新片场","name":"片场","type":3,"api":"./lib/drpy2.min.js","ext":"./js/新片场.js","searchable":1,"quickSearch":1,"changeable":0},
 {"key":"csp_YGP","name":"新片","type":3,"api":"csp_YGP","searchable":1,"quickSearch":1,"changeable":0},
-{"key":"csp_WoGG","name":"哥哥","type":3,"api":"csp_WoGG","searchable":1,"quickSearch":1,"changeable":0,"ext":"http://127.0.0.1:9978/file/tvfan/tokengo.txt$$$https://tvfan.xxooo.cf/"},
+{"key":"csp_woggcli","name":"玩偶(cli)","type":4,"api":"http://home.jundie.top:9520/spider/csp_Wogg","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://d.pan.icdown.club/api_0814.json"},
 {"key":"drpy_js_ikanbot3","name":"爱姬","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":1,"ext":"./js/ikanbot3.js"},
 {"key":"drpy_js_荐片","name":"荐片","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":1,"ext":"./js/荐片.js"},
 
@@ -56,7 +56,6 @@
 {"key":"New6v","name":"新版6v*","type":3,"api":"csp_New6v","playerType":"1", "changeable":0},
 {"key":"SeedHub","name":"SeedHub*","type":3,"api":"csp_SeedHub","playerType":"1", "changeable":0},
 
-{"key":"csp_woggcli","name":"玩偶(cli)","type":4,"api":"http://home.jundie.top:9520/spider/csp_Wogg","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://d.pan.icdown.club/api_0814.json"}, 
 {"key":"獨播","name":"獨播","type":3,"api":"csp_XPathMacFilter","searchable":1,"changeable":1,"ext":"./json/duboku.json$$$socks5://192.168.5.227:4592"},
 {"key":"888解忧愁","name":"解忧","type":4,"api":"https://private--t410.repl.co/888?","searchable":1,"quickSearch":1,"filterable":1,"changeable":1},
 {"key":"廠長","name":"廠長","type":3,"api":"https://fongmi.cachefly.net/FongMi/CatVodOpen/main/open/czzy_open.js","searchable":1,"changeable":1},
