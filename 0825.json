@@ -9,10 +9,15 @@
 {"key":"drpy_js_磁力熊搜索","name":"熊搜","type":3,"api":"./lib/drpy2.min.js","ext":"./js/cilixiong.js","searchable":0,"quickSearch":0,"changeable":1},
 {"key":"drpy_js_新片场","name":"片场","type":3,"api":"./lib/drpy2.min.js","ext":"./js/新片场.js","searchable":1,"quickSearch":1,"changeable":0},
 {"key":"csp_YGP","name":"新片","type":3,"api":"csp_YGP","searchable":1,"quickSearch":1,"changeable":0},
-{"key":"csp_woggcli","name":"玩偶(cli)","type":4,"api":"http://home.jundie.top:9520/spider/csp_Wogg","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://d.pan.icdown.club/api_0814.json"},
+{"key":"csp_WoGG","name":"❤🤡玩偶哥哥┃4K","type":3,"style":{"type":"rect","ratio":0 },"api":"csp_WoGG","searchable":1,"quickSearch":1,"filterable":1,"ext":"9e0d15bfaa6945f4930d76c628439a0f","jar":"https://qu.ax/rski.js"},
 {"key":"drpy_js_ikanbot3","name":"爱姬","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":1,"ext":"./js/ikanbot3.js"},
 {"key":"drpy_js_荐片","name":"荐片","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":1,"ext":"./js/jianpian.js"},
-
+{"key":"drpy_js_腾云驾雾","name":"❤🐧|官源","type":3,"style":{"type":"rect","ratio":0 },"api":"https://qu.ax/Fozq.js","ext":"https://qu.ax/yWhg.js"}, 
+{"key":"drpy_js_百忙无果","name":"❤官源 | 🥭", "type":3,"style":{"type":"rect","ratio":0 },"api":"https://qu.ax/Fozq.js","ext":"https://qu.ax/uUHi.js"}, 
+{"key":"drpy_js_奇珍异兽","name":"❤官源 |🥝","type":3,"style":{"type":"rect","ratio":0 },"api":"https://qu.ax/Fozq.js","ext":"https://qu.ax/GkLR.js"}, 
+{"key":"drpy_yh","name":"❤官源 | ⛽","type":3,"style":{"type":"rect","ratio":0 },"api":"https://qu.ax/Fozq.js","ext":"https://qu.ax/Qvlv.js"}, 
+{"key":"drpy_js_菜狗","name":"❤官源 | 🐕","type":3,"style":{"type":"rect","ratio":0 },"api":"https://qu.ax/Fozq.js","ext":"https://qu.ax/cYvz.js"},
+  
 {"key":"drpy_js_4KHDR","name":"4KHDR*","type":3,"api":"./lib/drpy2.min.js","ext":"./js/4khdr.js","playerType":"1", "searchable":0, "quickSearch":0, "changeable":0},
 {"key":"drpy_js_极影网","name":"极影网*","type":3,"api":"./lib/drpy2.min.js","ext":"./js/jiyingw.js","playerType":"1", "searchable":1, "quickSearch":1, "changeable":0},
 {"key":"drpy_js_MP4US","name":"MP4电影*","type":3,"api":"./lib/drpy2.min.js","ext":"./js/mp4us.js","playerType":"1", "searchable":1, "quickSearch":1, "changeable":0},
@@ -24,7 +29,7 @@
 {"key":"櫻花","name":"櫻花","type":3,"api":"csp_Ying","searchable":1,"changeable":1},
 {"key":"異界","name":"異界","type":3,"api":"csp_Ysj","searchable":1,"changeable":1},
 {"key":"AppYsV2_迪迪","name":"迪迪","type":3,"api":"csp_AppYsV2","filterable":1,"quickSearch":1,"searchable":1,"ext":"https://api123.adys.app/xgapp.php/v3/"},
-
+{"key":"量子","name":"❤量子","type":0,"style":{"type":"rect","ratio":0 },"api":"https://cj.lziapi.com/api.php/provide/vod/at/xml/","searchable":1,"changeable":1,"categories":["国产动漫","日韩动漫","国产剧","韩国剧","日本剧","电影片","连续剧","综艺片","动漫片","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","台湾剧","香港剧","欧美剧","记录片","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","欧美动漫","港台动漫","海外动漫","体育","足球","篮球","网球","斯诺克"],"jar":"https://qu.ax/tkXa.js;md5;945ad30d5255359385ba59b8fb061bb7"},
 {"key":"Gitcafe", "name": "纸条", "type": 3, "api": "csp_Gitcafe", "searchable": 1, "quickSearch": 1, "filterable": 0, "ext":"http://127.0.0.1:9978/file/tvfan/tokengo.txt" },
 {"key":"七夜","name":"七夜","type":3,"api":"csp_Dovx","searchable":1,"changeable":0,"ext":"http://127.0.0.1:9978/file/tvfan/tokengo.txt"},
 {"key":"盤搜索","name":"盤搜","type":3,"api":"csp_PanSearch","searchable":1,"changeable":0,"ext":"http://127.0.0.1:9978/file/tvfan/tokengo.txt"},
