@@ -1,11 +1,11 @@
 {
-"spider": "https://ghproxy.com/https://github.com/us8888/ceshi/blob/main/jar/custom_spider.jar;md5;52a0e12f50e6acdcc575ff0ba1df4dd4",
+"spider":"https://ghproxy.com/https://github.com/us8888/ceshi/blob/main/jar/custom_spider.jar;md5;52a0e12f50e6acdcc575ff0ba1df4dd4",
 "lives":[
 {"name":"范明明•综合","type":0,"url":"https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/global.m3u","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"},
 {"name":"俊于•综合","type":0,"url":"http://home.jundie.top:81/Cat/tv/live.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}
 ],
   
-  "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
+  "wallpaper":"http://饭太硬.top/深色壁纸/api.php",
     
     {
       "key": "哔哩",
