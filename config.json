@@ -1,33 +1,12 @@
 {
-  "spider": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;52a0e12f50e6acdcc575ff0ba1df4dd4",
+"spider": "https://ghproxy.com/https://github.com/us8888/ceshi/blob/main/jar/custom_spider.jar;md5;52a0e12f50e6acdcc575ff0ba1df4dd4",
+"lives":[
+{"name":"范明明•综合","type":0,"url":"https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/global.m3u","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"},
+{"name":"俊于•综合","type":0,"url":"http://home.jundie.top:81/Cat/tv/live.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}
+],
+  
   "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
-  "sites": [
-    {
-      "key": "本地",
-      "name": "本地",
-      "type": 3,
-      "api": "csp_Local",
-      "searchable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "AList",
-      "name": "AList",
-      "type": 3,
-      "api": "csp_AList",
-      "searchable": 1,
-      "changeable": 0,
-      "ext": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/alist.json"
-    },
-    {
-      "key": "WebDAV",
-      "name": "WebDAV",
-      "type": 3,
-      "api": "csp_WebDAV",
-      "searchable": 1,
-      "changeable": 0,
-      "ext": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/webdav.json"
-    },
+    
     {
       "key": "哔哩",
       "name": "哔哩",
@@ -202,6 +181,221 @@
       "changeable": 1
     },
     {
+  "key":"drpy_js_豆瓣",
+  "name":"豆瓣",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "ext":"./js/drpy.js",
+  "searchable":1,
+  "quickSearch":0,
+  "changeable":1
+},
+{
+  "key":"drpy_js_磁力熊搜索",
+  "name":"熊搜",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "ext":"./js/cilixiong.js",
+  "searchable":0,
+  "quickSearch":0,
+  "changeable":1
+},
+{
+  "key":"drpy_js_新片场",
+  "name":"片场",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "ext":"./js/新片场.js",
+  "searchable":1,
+  "quickSearch":1,
+  "changeable":0
+},
+{
+  "key":"csp_YGP",
+  "name":"新片",
+  "type":3,
+  "api":"csp_YGP",
+  "searchable":1,
+  "quickSearch":1,
+  "changeable":0
+},
+{
+  "key":"csp_WoGG",
+  "name":"❤🤡玩偶哥哥┃4K",
+  "type":3,
+  "style":{"type":"rect","ratio":0 },
+  "api":"csp_WoGG",
+  "searchable":1,
+  "quickSearch":1,
+  "filterable":1,
+  "ext":"9e0d15bfaa6945f4930d76c628439a0f",
+  "jar":"https://qu.ax/rski.js"
+},
+{
+  "key":"drpy_js_4KHDR",
+  "name":"4KHDR*",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "ext":"./js/4khdr.js",
+  "playerType":"1", 
+  "searchable":0, 
+  "quickSearch":0, 
+  "changeable":0
+},
+{
+  "key":"drpy_js_极影网",
+  "name":"极影网*",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "ext":"./js/jiyingw.js",
+  "playerType":"1", 
+  "searchable":1, 
+  "quickSearch":1, 
+  "changeable":0
+},
+{
+  "key":"drpy_js_MP4US",
+  "name":"MP4电影*",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "ext":"./js/mp4us.js",
+  "playerType":"1", 
+  "searchable":1, 
+  "quickSearch":1, 
+  "changeable":0
+},
+{
+  "key":"drpy_js_电影港",
+  "name":"电影港*",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "ext":"./js/dygang.js",
+  "playerType":"1", 
+  "searchable":1, 
+  "quickSearch":1, 
+  "changeable":0
+},
+{
+  "key":"drpy_js_农民",
+  "name":"影视 | 农民[js]",
+  "type":3,
+  "style":{"type":"rect","ratio":0},
+"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
+},
+{
+  "key":"drpy_js_网飞.TV",
+  "name":"影视 | 网飞.TV[js]",
+  "style":{"type":"rect","ratio":0},
+  "type":3,
+"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/网飞.TV.js"
+},
+{
+  "key":"drpy_js_星空影视",
+  "name":"影视 | 星空影视[js]",
+  "type":3,
+  "style":{"type":"rect","ratio":0},
+"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/星空影视.js"
+},
+{
+  "key":"drpy_js_磁力熊[磁]",
+  "name":"磁力熊*",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "playerType":1,
+  "searchable":1,
+  "quickSearch":1,
+  "changeable":0,
+  "ext":"./js/磁力熊[磁].js"
+},
+{
+  "key":"csp_BLSGod",
+  "name":"80S影视*",
+  "type":3,
+  "api":"csp_BLSGod",
+  "playerType":1,
+  "searchable":1,
+  "quickSearch":1,
+  "filterable":1
+},
+{
+  "key":"csp_Xunlei8",
+  "name":"迅雷吧*",
+  "type":3,
+  "api":"csp_Xunlei8",
+  "playerType":1,
+  "searchable":1,
+  "quickSearch":1,
+  "filterable":1
+},
+{
+  "key":"KubaCL",
+  "name":"酷吧*",
+  "type":3,
+  "api":"csp_KubaCL",
+  "playerType":"1", 
+  "changeable":0
+},
+{
+  "key":"MeijuMi",
+  "name":"美剧迷*",
+  "type":3,
+  "api":"csp_MeijuMi",
+  "playerType":"1", 
+  "changeable":0
+},
+{
+  "key":"MeijuTT",
+  "name":"美剧天天*",
+  "type":3,
+  "api":"csp_MeijuTT",
+  "playerType":"1", 
+  "changeable":0
+},
+{
+  "key":"Mp4Mov",
+  "name":"Mp4Mov*",
+  "type":3,
+  "api":"csp_Mp4Mov",
+  "playerType":"1", 
+  "changeable":0
+},
+{
+  "key":"drpy_js_酷狗MV",
+  "name":"MV | 酷狗[js]",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "changeable":0,
+  "ext":"./js/酷狗MV.js"
+},
+{
+  "key":"drpy_js_酷奇MV",
+  "name":"MV | 酷奇[js]",
+  "type":3,
+  "api":"./lib/drpy2.min.js",
+  "changeable":0,
+  "ext":"./js/酷奇MV.js"
+},
+{
+  "key":"drpy_js_苹果DJ",
+  "name":"MV | 苹果DJ[js]",
+  "type":3,
+  "style":{"type":"rect","ratio":0},
+  "api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+  "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/苹果DJ.js"
+},
+{
+  "key":"drpy_js_清风DJ",
+  "name":"音频 | 清风DJ[js]",
+  "type":3,
+"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/清风DJ.js",
+  "style":{"type":"oval"},
+  "playerType":"2"
+},
+   {
       "key": "玩偶",
       "name": "玩偶",
       "type": 3,
