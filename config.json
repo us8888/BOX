@@ -240,6 +240,14 @@
   "changeable":0
     },
     {
+  "key":"drpy_js_农民",
+  "name":"影视 | 农民[js]",
+  "type":3,
+  "style":{"type":"rect","ratio":0},
+"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
+    },
+    {
       "key": "玩偶",
       "name": "玩偶",
       "type": 3,
