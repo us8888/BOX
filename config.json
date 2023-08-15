@@ -468,7 +468,8 @@
     },
   
     
-    "doh":[
+  "doh":
+    [
     {
       "name":"Google",
       "url":"https://dns.google/dns-query",
