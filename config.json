@@ -264,6 +264,14 @@
   "ext":"./js/酷奇MV.js"
     },
     {
+  "key":"drpy_js_苹果DJ",
+  "name":"MV | 苹果DJ[js]",
+  "type":3,
+  "style":{"type":"rect","ratio":0},
+"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/苹果DJ.js"
+    },
+    {
       "key": "玩偶",
       "name": "玩偶",
       "type": 3,
