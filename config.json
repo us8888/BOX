@@ -248,12 +248,12 @@
 "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
-  "key":"MeijuMi",
-  "name":"美剧迷",
+  "key":"drpy_js_酷狗MV",
+  "name":"MV | 酷狗[js]",
   "type":3,
-  "api":"csp_MeijuMi",
-  "playerType":"1", 
-  "changeable":0
+  "api":"./lib/drpy2.min.js",
+  "changeable":0,
+  "ext":"./js/酷狗MV.js"
     },
     {
       "key": "玩偶",
