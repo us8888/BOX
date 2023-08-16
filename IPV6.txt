@@ -188,7 +188,7 @@ IHOT,#genre#
 求索生活,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000002000003382/index.m3u8?channel-id=wasusyt&Contentid=6000000002000003382&livemode=1&stbId=3
 探索纪实,http://[2409:8087:7001:20:1000::95]:6610/000000001000/5359008697329269813/index.m3u8?channel-id=wasusyt&Contentid=5359008697329269813&livemode=1&stbId=3
 
-4K_6688.txt,#genre#
+4K_6688,#genre#
 CCTV-4K,https://live.goodiptv.club/api/cqyx.php?id=CCTV4K
 CCTV-16 4K,http://[2409:8087:1e03:21::2]:6060/cms001/ch00000090990000001258/index.m3u8
 欢笑剧场4K,https://live.goodiptv.club/api/cqyx.php?id=hxjc_4K
