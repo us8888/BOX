@@ -404,7 +404,7 @@
     },
    {
    "name":"磁力廣告",
-   "hosts": [
+   "hosts":[
     "magnet"
    ],
    "regex":[
