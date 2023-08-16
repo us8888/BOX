@@ -188,7 +188,7 @@ IHOT,#genre#
 求索生活,http://[2409:8087:7001:20:1000::95]:6610/000000001000/6000000002000003382/index.m3u8?channel-id=wasusyt&Contentid=6000000002000003382&livemode=1&stbId=3
 探索纪实,http://[2409:8087:7001:20:1000::95]:6610/000000001000/5359008697329269813/index.m3u8?channel-id=wasusyt&Contentid=5359008697329269813&livemode=1&stbId=3
 
-4K_6688,#genre#
+4K,#genre#
 CCTV-4K,https://live.goodiptv.club/api/cqyx.php?id=CCTV4K
 CCTV-16 4K,http://[2409:8087:1e03:21::2]:6060/cms001/ch00000090990000001258/index.m3u8
 欢笑剧场4K,https://live.goodiptv.club/api/cqyx.php?id=hxjc_4K
@@ -237,3 +237,22 @@ HBO 家庭,http://50.7.238.114:8278/fyi_twn/playlist.m3u8?tid=m99b80124e3b4&ct=1
 黑莓电影,http://111.40.196.32:443/PLTV/88888888/224/3221225610/1.m3u8
 黑莓电影,http://111.40.196.29:443/PLTV/88888888/224/3221225610/1.m3u8
 新片放映厅,http://hms184nc1972679575.live.aikan.miguvideo.com/wh7f454c46tw3655704731_-356850043/wd-virtuallive5100030975-150/01.m3u8?msisdn=guest&Channel_ID=0119_04102000-99000_400300000040002&client_ip=118.239.16.214&timestamp=20230621215717&ContentId=265218930&timezone=UTC&mtv_session=c19529e8de950b6df1f3f1e044fcd802&HlsSubType=1&HlsProfileId=1&nphaid=0&encrypt=b2040d05ff4c448b3178bbfb660332f7
+
+音乐_@6688,#genre#
+
+MUSIC TV,http://198.16.100.90:8278/MusicTV/playlist.m3u8?tid=MFEF2771586927715869&ct=19225&tsum=25aeb843227531bfab3d9fde062323b2
+PMC,https://hls.pmchd.live/hls/stream.m3u8
+M2,http://live.m2.tv/hls3/stream.m3u8
+SEXY KPOP,https://srv1.zcast.com.br/kpoptv/kpoptv/.m3u8
+VIBEE,http://de1se01.v2beat.live/chunks.m3u8
+MUSIC TOP,http://live-edge01.telecentro.net.ar/live/msctphd-720/playlist.m3u8
+MUSIC BOX,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/19282/index.m3u8
+SEXY KPOP,https://srv1.zcast.com.br/kpoptv/kpoptv/chunklist_w731411678.m3u8
+1HD MUSIC,http://91.247.68.229:8000/play/1HD/index.m3u8
+PROKOP MUSIC,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/18148/index.m3u8
+Z MUSIC,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/14138/index.m3u8
+C4#,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/15233/index.m3u8
+FRESH,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/18087/index.m3u8
+MTV LIVE,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/221/index.m3u8
+EU MUSIC,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/15277/index.m3u8
+MOOZ DANCE,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/7056/index.m3u8
