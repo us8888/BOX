@@ -329,16 +329,14 @@
       "changeable": 0,
       "ext": "影視天下第一$$$test2$$$test2"
     },
-    {
-      "key":"push_agent",
-      "name":"推送 | lf_push",
-      "type":3,
-      "searchable":0,
-      "changeable":0,
-      "quickSearch":0,
-      "filterable":0,
-      "api":"./lf_pushagent_min.js"
-    },
+  {
+      "key": "push_agent",
+      "name": "推送",
+      "type": 3,
+      "api": "csp_Push",
+      "searchable": 1,
+      "changeable": 0
+  }
   ],
   "doh": [
     {
