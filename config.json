@@ -258,6 +258,17 @@
 "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
+      "key":"探探",
+      "name":"🏵探探┃App",
+      "type":3,
+      "playerType":"1",
+      "api":"csp_YTVIP",
+      "searchable":1,
+      "quickSearch":1,
+      "changeable":1,
+      "ext":"vvvwvwvvwwvwvvvwvvwwvvvwwwwvvvvwvvvwwvvvwwwvvwvwvvwvvvvw.lyyytv.cn"
+    },
+    {
   "key":"drpy_js_酷狗MV",
   "name":"MV | 酷狗[js]",
   "type":3,
