@@ -329,17 +329,17 @@
       "changeable": 0,
       "ext": "影視天下第一$$$test2$$$test2"
     },
-    {
-      "key":"push_agent",
-      "name":"推送",
-      "type":4,
-      "api":"http://home.jundie.top:9520/spider/csp_Push",
-      "searchable":1,
-      "quickSearch":1,
-      "playerType":1,
-      "filterable":1,
-      "ext": "./lib/token.txt"
-    }
+   {
+       "key":"push_agent",
+       "name":"推送 | 📽",
+       "type":3,
+       "searchable":0,
+       "changeable":1,
+       "quickSearch":0,
+       "filterable":0,
+       "api":"./js/lf_pushagent_min.js",
+       "ext":"0bec59716cbd492796ea1d5b14f2ca67"
+    },
   ],
   "doh": [
     {
