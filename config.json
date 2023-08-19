@@ -330,15 +330,15 @@
       "ext": "影視天下第一$$$test2$$$test2"
     },
    {
-       "key":"push_agent",
-       "name":"推送 | 📽",
-       "type":3,
-       "searchable":0,
-       "changeable":1,
-       "quickSearch":0,
-       "filterable":0,
-       "api":"./lib/lf_pushagent1_5_min.js",
-       "ext":"0bec59716cbd492796ea1d5b14f2ca67"
+       "key": "push_agent",
+       "name": "推送 | 📽",
+       "type": 3,
+       "searchable": 0,
+       "changeable": 1,
+       "quickSearch": 0,
+       "filterable": 0,
+       "api": "./lib/lf_pushagent1_5_min.js",
+       "ext": "./alitoken.txt"
     },
   ],
   "doh": [
