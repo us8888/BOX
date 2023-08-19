@@ -214,7 +214,7 @@
   "searchable":1,
   "quickSearch":1,
   "filterable":1,
-  "ext":"9e0d15bfaa6945f4930d76c628439a0f",
+  "ext":"0bec59716cbd492796ea1d5b14f2ca67",
   "jar":"https://qu.ax/rski.js"
     },
     {
@@ -340,6 +340,14 @@
        "api":"./lib/lf_pushagent1_5_min.js",
        "ext":"0bec59716cbd492796ea1d5b14f2ca67"
     },
+    {
+      "key": "push_agent",
+      "name": "推送",
+      "type": 3,
+      "api": "csp_Push",
+      "searchable": 1,
+      "changeable": 0
+    }
   ],
   "doh": [
     {
