@@ -337,7 +337,7 @@
        "changeable": 1,
        "quickSearch": 0,
        "filterable": 0,
-       "api": "./js/lf_pushagent_min.js",
+       "api": "./lib/lf_pushagent_min.js",
        "ext": "0bec59716cbd492796ea1d5b14f2ca67"
     },
   ],
