@@ -258,15 +258,6 @@
 "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
-      "key":"drpy_js_zxzj_open",
-      "name":"在线之家┃猫",
-      "type":3,
-      "api":"./js/zxzj_open.js",
-      "searchable":1, 
-      "quickSearch":1, 
-      "changeable":1
-    },
-    {
   "key":"drpy_js_酷狗MV",
   "name":"MV | 酷狗[js]",
   "type":3,
