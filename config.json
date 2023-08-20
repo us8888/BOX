@@ -266,16 +266,8 @@
   "ext":"./js/酷狗MV.js"
     },
     {
-  "key":"drpy_js_酷奇MV",
-  "name":"MV | 酷奇[js]",
-  "type":3,
-  "api":"./lib/drpy2.min.js",
-  "changeable":0,
-  "ext":"./js/酷奇MV.js"
-    },
-    {
       "key":"drpy_js_kuqimv_open",
-      "name":"酷奇",
+      "name":"MV | 酷奇",
       "type":3,
       "api":"./js/kuqimv_open.js",
       "searchable":1, 
