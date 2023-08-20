@@ -258,16 +258,6 @@
 "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
-      "key":"Cokemv",
-      "name":"Cokemv",
-      "type":3,
-      "api":"csp_AppYsV2",
-      "searchable":1,
-      "quickSearch":1,
-      "filterable":1,
-      "ext":"https://cokemv.org/xgapp.php/v3/"
-    },
-    {
   "key":"drpy_js_酷狗MV",
   "name":"MV | 酷狗[js]",
   "type":3,
