@@ -274,6 +274,15 @@
   "ext":"./js/酷奇MV.js"
     },
     {
+      "key":"drpy_js_kuqimv_open",
+      "name":"酷奇",
+      "type":3,
+      "api":"./js/kuqimv_open.js",
+      "searchable":1, 
+      "quickSearch":1, 
+      "changeable":1
+    },
+    {
   "key":"drpy_js_苹果DJ",
   "name":"MV | 苹果DJ[js]",
   "type":3,
