@@ -190,8 +190,12 @@ IHOT,#genre#
 
 4K,#genre#
 CCTV-4K,https://live.goodiptv.club/api/cqyx.php?id=CCTV4K
+CCTV-4K,http://159.75.85.63:5681/sxg.php?id=ys4Kcq_2000
+CCTV-16 4K,http://159.75.85.63:5681/sxg.php?id=CCTV-16-4K_8000
 CCTV-16 4K,http://[2409:8087:1e03:21::2]:6060/cms001/ch00000090990000001258/index.m3u8
 欢笑剧场4K,https://live.goodiptv.club/api/cqyx.php?id=hxjc_4K
+4K高清电影,http://159.75.85.63:5681/sxg.php
+斗鱼4K,http://epg.112114.xyz/douyu/9249162
 纯享超清,http://[2409:8087:2001:20:2800:0:df6e:eb26]:80/ott.mobaibox.com/PLTV/3/224/3221228472/index.m3u8
 苏州4K,http://liveshowbak2.kan0512.com/ksz-norecord/csztv4k_4k.m3u8
 FTV UHD,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/4005/index.m3u8
