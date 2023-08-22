@@ -200,8 +200,10 @@ I Mode Tv,http://player2.juyun.tv/camera/80238159.m3u8
 NASA 4K,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/15239/index.m3u8
 
 港澳台,#genre#
+台视,http://162.19.247.76:22222/live/taishi/index.m3u8
 华视,https://ytm2.yuanhsing.cf/ctsprog.m3u8
 华视,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
+人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8
 番薯,http://61.216.67.119:1935/TWHG/E1/chunklist_w7058102.m3u8
 番薯,http://61.216.67.119:1935/TWHG/E1/chunklist_w70581102.m3u8
 ONE,http://198.16.100.90:8278/One/playlist.m3u8?tid=MC4C3559816135598161&ct=19249&tsum=dce7930990cd11c5385de1298a06c226
