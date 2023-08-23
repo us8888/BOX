@@ -258,17 +258,6 @@
 "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
-       "key": "奈飞狗",
-       "name": "🐶奈飞狗┃APP",
-       "type": 3,
-       "api": "csp_AppYs",
-       "searchable": 1,
-       "quickSearch": 1,
-       "filterable": 1,
-       "playerType": "2",
-       "ext": "https://netflixdog.club/api.php/app/"
-    },
-    {
   "key":"drpy_js_酷狗MV",
   "name":"MV | 酷狗[js]",
   "type":3,
