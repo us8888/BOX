@@ -227,17 +227,19 @@
   "ext":"0bec59716cbd492796ea1d5b14f2ca67",
   "jar":"https://qu.ax/rski.js"
     },
-    {
-      "key":"drpy_js_4KHDR",
-      "name":"4KHDR",
-      "type":3,
-      "api":"./lib/drpy2.min.js",
-      "ext":"./js/4khdr.js",
-      "playerType":"1", 
-      "searchable":1, 
-      "quickSearch":1, 
-      "changeable":1
-    },
+{
+    "key":"csp_XYQHikerAL_4KHDR",
+    "name":"4KHDR",
+    "type":3,
+    "api":"csp_XYQHikerAL",
+    "playerType":1,
+    "searchable":0,
+    "quickSearch":0,
+    "filterable":1,
+    "changeable":0,
+    "ext":"./XYQHiker/4KHDR.json",
+    "jar":"./jar/XYQ.jar;md5;f86699b3d256291716d8b31114f49a8e"
+},
     {
   "key":"drpy_js_电影港",
   "name":"电影港",
@@ -307,7 +309,6 @@
       "api": "csp_Wogg",
       "searchable": 1,
       "changeable": 0
-      "ext": "9e0d15bfaa6945f4930d76c628439a0f"
     },
     {
       "key": "七夜",
