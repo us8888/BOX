@@ -258,16 +258,6 @@
 "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
-      "key":"csp_XYQHiker_A8影视",
-      "name":"A8影视(XYQH)",
-      "type":3,
-      "api":"csp_XYQHiker",
-      "searchable":1,
-      "quickSearch":1,
-      "filterable":1,
-      "ext":"https://ghproxy.com/https://github.com/us8888/ceshi/blob/main/XYQHiker/A8%E5%BD%B1%E8%A7%86.json"
-    },
-    {
   "key":"drpy_js_酷狗MV",
   "name":"MV | 酷狗[js]",
   "type":3,
