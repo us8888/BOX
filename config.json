@@ -258,6 +258,20 @@
 "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
+"key":"追剧",
+"name":"追剧",
+"type":3,"
+"api":"csp_Zjdros",
+"searchable":1,
+"quickSearch":1,
+"filterable":1,
+"ext":"http://1k.953365.cn/zhuijuos.php/v6/"
+"jar":"https://jihulab.com/zhulr7765/tvbox/raw/main/jar/spider.jar"
+},
+
+
+
+    {
   "key":"drpy_js_酷狗MV",
   "name":"MV | 酷狗[js]",
   "type":3,
