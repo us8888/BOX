@@ -189,8 +189,10 @@ IHOT,#genre#
 探索纪实,http://[2409:8087:7001:20:1000::95]:6610/000000001000/5359008697329269813/index.m3u8?channel-id=wasusyt&Contentid=5359008697329269813&livemode=1&stbId=3
 
 4K,#genre#
+CCTV3-4K,http://[2409:8087:2001:20:2800:0:df6e:eb02]/ott.mobaibox.com/PLTV/4/224/3221227896/index.m3u8
 CCTV-4K,https://live.goodiptv.club/api/cqyx.php?id=CCTV4K
 CCTV-4K,http://159.75.85.63:5681/sxg.php?id=ys4Kcq_2000
+CCTV5-4K,http://[2409:8087:2001:20:2800:0:df6e:eb22]/ott.mobaibox.com/PLTV/4/224/3221228502/index.m3u8
 CCTV-16 4K,http://159.75.85.63:5681/sxg.php?id=CCTV-16-4K_8000
 CCTV-16 4K,http://[2409:8087:1e03:21::2]:6060/cms001/ch00000090990000001258/index.m3u8
 欢笑剧场4K,https://live.goodiptv.club/api/cqyx.php?id=hxjc_4K
@@ -198,6 +200,19 @@ CCTV-16 4K,http://[2409:8087:1e03:21::2]:6060/cms001/ch00000090990000001258/inde
 斗鱼4K,http://epg.112114.xyz/douyu/9249162
 纯享超清,http://[2409:8087:2001:20:2800:0:df6e:eb26]:80/ott.mobaibox.com/PLTV/3/224/3221228472/index.m3u8
 苏州4K,http://liveshowbak2.kan0512.com/ksz-norecord/csztv4k_4k.m3u8
+真4K, http://[2409:8087:2001:20:2800:0:df6e:eb14]/ott.mobaibox.com/PLTV/3/224/3221228141/index.m3u8?blog.ntnas.top
+4KUHD,http://[2409:8087:2001:20:2800:0:df6e:eb10]/ott.mobaibox.com/PLTV/3/224/3221227506/index.m3u8?blog.ntnas.top
+江苏8K,http://[2409:8087:2001:20:2800:0:df6e:eb04]/ott.mobaibox.com/PLTV/3/224/3221228132/index.m3u8
+4K影视,http://nas.jdshipin.com:8801/4kys.php
+绚影4K,http://222.212.90.192:18000/udp/239.93.42.33:5140
+华数4K影视,http://r.jdshipin.com/Lqdwf
+BESTV-4K,http://[2409:8087:5e01:34::30]:6610/ZTE_CMS/00000001000000060000000000000202/index.m3u8?IAS
+BESTV-4K,http://wojia.x24hr.com:10000/udp/239.45.0.33:5140
+BESTV电影,http://wojia.x24hr.com:10000/udp/239.45.3.107:5140
+BESTV纪实,http://wojia.x24hr.com:10000/udp/239.45.1.10:5140
+BESTV少儿,http://wojia.x24hr.com:10000/udp/239.45.1.1:5140
+BESTV少儿,http://wojia.x24hr.com:10000/udp/239.45.1.11:5140
+BESTV影视,http://wojia.x24hr.com:10000/udp/239.45.1.108:5140
 FTV UHD,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/4005/index.m3u8
 FTV UHD,https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
 I Mode Tv,http://player2.juyun.tv/camera/80238159.m3u8
@@ -205,8 +220,17 @@ NASA 4K,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/15239/index.m3u8
 
 港澳台,#genre#
 台视,http://162.19.247.76:22222/live/taishi/index.m3u8
+台视,rtmp://9sv2.mine.nu/sat/tv071.flv
+华视,rtmp://9sv2.mine.nu/sat/tv111.flv
 华视,https://ytm2.yuanhsing.cf/ctsprog.m3u8
 华视,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
+中视,rtmp://9sv2.mine.nu/sat/tv091.flv
+民视,rtmp://9sv2.mine.nu/sat/tv051.flv
+TVBS新聞,rtmp://9sv2.mine.nu/sat/tv551.flv
+TVBS歡樂,rtmp://9sv2.mine.nu/sat/tv421.flv
+緯來育樂,rtmp://9sv2.mine.nu/sat/tv701.flv
+緯來體育,rtmp://9sv2.mine.nu/sat/tv721.flv
+緯來日本,rtmp://9sv2.mine.nu/sat/tv771.flv
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8
 番薯,http://61.216.67.119:1935/TWHG/E1/chunklist_w7058102.m3u8
 番薯,http://61.216.67.119:1935/TWHG/E1/chunklist_w70581102.m3u8
