@@ -251,7 +251,7 @@
     "type":3,
     "api":"csp_XBPQ",
     "ext":{
-            "分类url":"http://www.mgjszp.com/ng_show/class/{class}/id/{cateId}/page/{catePg}/year/{year}.html",
+            "分类url":"https://www.mgjszp.com/ng_show/class/{class}/id/{cateId}/page/{catePg}/year/{year}.html",
             "分类":"电影$1#电视剧$2"
             }
         },
