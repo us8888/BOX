@@ -216,52 +216,42 @@
       "changeable": 1
     },
     {
-  "key":"csp_WoGG",
-  "name":"❤🤡玩偶哥哥┃4K",
-  "type":3,
-  "style":{"type":"rect","ratio":0 },
-  "api":"csp_WoGG",
-  "searchable":1,
-  "quickSearch":1,
-  "filterable":1,
-  "ext":"0bec59716cbd492796ea1d5b14f2ca67",
-  "jar":"https://qu.ax/rski.js"
+     "key":"csp_WoGG",
+     "name":"🤡玩偶哥哥┃4K",
+     "type":3,
+     "style":{"type":"rect","ratio":0 },
+     "api":"csp_WoGG",
+     "searchable":1,
+     "quickSearch":1,
+     "filterable":1,
+     "ext":"0bec59716cbd492796ea1d5b14f2ca67",
+     "jar":"https://qu.ax/rski.js"
     },
     {
-  "key":"drpy_js_农民",
-  "name":"影视 | 农民[js]",
-  "type":3,
-  "style":{"type":"rect","ratio":0},
-"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
-"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
+     "key":"drpy_js_农民",
+     "name":"影视 | 农民[js]",
+     "type":3,
+     "style":{"type":"rect","ratio":0},
+     "api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+     "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
-   "key":"追剧",
-   "name":"追剧",
-   "type":3,
-   "api":"csp_Zjdros",
-   "searchable":1,
-   "quickSearch":1,
-   "filterable":1,
-   "ext":"http://1k.953365.cn/zhuijuos.php/v6/","jar":"https://jihulab.com/zhulr7765/tvbox/-/raw/main/jar/spider.jar"
+     "key":"追剧",
+     "name":"追剧",
+     "type":3,
+     "api":"csp_Zjdros",
+     "searchable":1,
+     "quickSearch":1,
+     "filterable":1,
+     "ext":"http://1k.953365.cn/zhuijuos.php/v6/","jar":"https://jihulab.com/zhulr7765/tvbox/-/raw/main/jar/spider.jar"
     },
     {
-    "key":"南瓜",
-    "name":"南瓜🎃|影视",
-    "type":3,
-    "api":"csp_XBPQ",
-    "ext":{
-            "分类url":"https://www.mgjszp.com/ng_show/class/{class}/id/{cateId}/page/{catePg}/year/{year}.html",
-            "分类":"电影$1#电视剧$2"
-            }
-        },
-    {
-  "key":"drpy_js_酷狗MV",
-  "name":"MV | 酷狗[js]",
-  "type":3,
-  "api":"./lib/drpy2.min.js",
-  "changeable":0,
-  "ext":"./js/酷狗MV.js"
+     "key":"drpy_js_酷狗MV",
+     "name":"MV | 酷狗[js]",
+     "type":3,
+     "api":"./lib/drpy2.min.js",
+     "changeable":0,
+     "ext":"./js/酷狗MV.js"
     },
     {
       "key":"drpy_js_kuqimv_open",
@@ -273,12 +263,12 @@
       "changeable":1
     },
     {
-  "key":"drpy_js_苹果DJ",
-  "name":"MV | 苹果DJ[js]",
-  "type":3,
-  "style":{"type":"rect","ratio":0},
-"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
-"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/苹果DJ.js"
+     "key":"drpy_js_苹果DJ",
+     "name":"MV | 苹果DJ[js]",
+     "type":3,
+     "style":{"type":"rect","ratio":0},
+     "api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+     "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/苹果DJ.js"
     },
     {
       "key":"drpy_js_dj0898_open",
@@ -290,13 +280,13 @@
       "changeable":1
     },
     {
-  "key":"drpy_js_清风DJ",
-  "name":"音频 | 清风DJ[js]",
-  "type":3,
-"api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
-"ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/清风DJ.js",
-  "style":{"type":"oval"},
-  "playerType":"2"
+     "key":"drpy_js_清风DJ",
+     "name":"音频 | 清风DJ[js]",
+     "type":3,
+     "api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+     "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/清风DJ.js",
+     "style":{"type":"oval"},
+     "playerType":"2"
     },
     {
       "key": "玩偶",
