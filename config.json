@@ -216,15 +216,25 @@
       "changeable": 1
     },
     {
-       "key":"csp_WoGG",
-       "name":"玩偶哥哥┃4K",
-       "type":3,
-       "style":{"type":"rect","ratio":0 },
-       "api":"csp_WoGG",
-       "searchable":1,
-       "quickSearch":1,
-       "changeable":0,
-       "ext":"0bec59716cbd492796ea1d5b14f2ca67"
+     "key":"csp_WoGG",
+     "name":"🤡玩偶哥哥┃4K",
+     "type":3,
+     "style":{"type":"rect","ratio":0 },
+     "api":"csp_WoGG",
+     "searchable":1,
+     "quickSearch":1,
+     "filterable":1,
+     "ext":"0bec59716cbd492796ea1d5b14f2ca67",
+     "jar":"https://qu.ax/rski.js"
+    },
+    {
+      "key":"移动云盘",
+      "name":"移动云盘",
+      "type":1, 
+      "playerType":1,
+      "api":"http://xn--yetu07f.xn--yetu07f.icu:66/api.php/provide/vod/?ac=list",
+      "searchable":1,
+      "quickSearch":1
     },
     {
      "key":"drpy_js_农民",
