@@ -216,16 +216,15 @@
       "changeable": 1
     },
     {
-     "key":"csp_WoGG",
-     "name":"🤡玩偶哥哥┃4K",
-     "type":3,
-     "style":{"type":"rect","ratio":0 },
-     "api":"csp_WoGG",
-     "searchable":1,
-     "quickSearch":1,
-     "filterable":1,
-     "ext":"0bec59716cbd492796ea1d5b14f2ca67",
-     "jar":"./jar/fan.txt;md5;bf1f28d65240042a470d4f80035e529f",
+       "key":"csp_WoGG",
+       "name":"玩偶哥哥┃4K",
+       "type":3,
+       "style":{"type":"rect","ratio":0 },
+       "api":"csp_WoGG",
+       "searchable":1,
+       "quickSearch":1,
+       "changeable":0,
+       "ext":"0bec59716cbd492796ea1d5b14f2ca67"
     },
     {
      "key":"drpy_js_农民",
