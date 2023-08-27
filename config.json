@@ -224,7 +224,7 @@
      "searchable":1,
      "quickSearch":1,
      "filterable":1,
-     "ext":"9e0d15bfaa6945f4930d76c628439a0f",
+     "ext":"cd6f4c6641e4426db997ce82cb930269",
      "jar":"https://qu.ax/rski.js"
     },
     {
@@ -355,7 +355,7 @@
        "quickSearch":0,
        "filterable":0,
        "api":"./lib/lf_pushagent1_5_min.js",
-       "ext":"9e0d15bfaa6945f4930d76c628439a0f"
+       "ext":"cd6f4c6641e4426db997ce82cb930269"
     },
     {
       "key": "push_agent",
