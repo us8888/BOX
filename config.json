@@ -1,5 +1,5 @@
 {
-"spider":"./jar/custom_spider.jar;md5;9a8ad560e957f4016cf6553605039491",
+"spider":"./jar/custom_spider.jar;md5;a2204506315000174d11fe509f88259c",
 "lives":[
 {"name":"范明明•综合","type":0,"url":"https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/global.m3u","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"},
 {"name":"俊于•综合","type":0,"url":"http://home.jundie.top:81/Cat/tv/live.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}
@@ -190,6 +190,14 @@
         "港台动漫",
         "海外动漫"
       ]
+    },
+    {
+      "key":"暴風",
+      "name":"暴風",
+      "type":1,
+      "api":"https://bfzyapi.com/api.php/provide/vod/?ac=list",
+      "searchable":1,
+      "changeable":1
     },
     {
       "key": "櫻花",
