@@ -50,18 +50,6 @@
       }
     },
     {
-      "key": "bili_open",
-      "name": "哔哩(open)",
-      "type": 3,
-      "api": "https://raw.githubusercontent.com/FongMi/CatVodOpen/main/open/bili_open.js",
-      "searchable": 1,
-      "changeable": 0,
-      "ext": {
-        "categories": "沙雕动画#沙雕穿越#沙雕",
-        "cookie": "SESSDATA=7624af93%2C1696008331%2C862c8%2A42; bili_jct=141a474ef3ce8cf2fedf384e68f6625d; DedeUserID=3493271303096985; DedeUserID__ckMd5=212a836c164605b7"
-      }
-    },
-    {
       "key": "泥巴",
       "name": "泥巴",
       "type": 3,
@@ -302,10 +290,8 @@
       "api":"csp_Wogg",
       "searchable":1,
       "changeable":0,
-      "ext": {
-      "token":"b29776f976a64b74835351bd1fc761e6",
-      "filter":"./json/wogg.json"
-      }
+      "ext":"b29776f976a64b74835351bd1fc761e6",
+      "filter":"./json/wogg.json" 
     },
     {
       "key": "七夜",
