@@ -253,17 +253,6 @@
      "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
-      "key":"探探",
-      "name":"🏵影探┃App",
-      "type":3,
-      "playerType":"1",
-      "api":"csp_YTVIP",
-      "searchable":1,
-      "quickSearch":1,
-      "changeable":1,
-      "ext":"vip.lyyytv.cn"
-    },
-    {
      "key":"drpy_js_酷狗MV",
      "name":"MV | 酷狗[js]",
      "type":3,
@@ -307,12 +296,16 @@
      "playerType":"2"
     },
     {
-      "key": "玩偶",
-      "name": "玩偶",
-      "type": 3,
-      "api": "csp_Wogg",
-      "searchable": 1,
-      "changeable": 0
+      "key":"玩偶",
+      "name":"玩偶",
+      "type":3,
+      "api":"csp_Wogg",
+      "searchable":1,
+      "changeable":0,
+      "ext": {
+      "token":"b29776f976a64b74835351bd1fc761e6",
+      "filter":"./json/wogg.json"
+      }
     },
     {
       "key": "七夜",
