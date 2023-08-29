@@ -253,14 +253,15 @@
      "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
-      "key":"fantuan",
-      "name":"饭团┃直连",
+      "key":"探探",
+      "name":"🏵影探┃App",
       "type":3,
-      "api":"csp_Fantuan",
+      "playerType":"1",
+      "api":"csp_YTVIP",
       "searchable":1,
       "quickSearch":1,
       "changeable":1,
-      "ext":"https://www.fantuan3.com"
+      "ext":"vip.lyyytv.cn"
     },
     {
      "key":"drpy_js_酷狗MV",
