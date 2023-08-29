@@ -53,7 +53,7 @@
       "key":"bili_open",
       "name":"哔哩(open)",
       "type":3,
-      "api":"./js/bili_open.js",
+      "api":"https://ghproxy.com/https://github.com/us8888/ceshi/blob/main/js/bili_open.js",
       "searchable":1,
       "changeable":0,
       "ext":{
