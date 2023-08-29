@@ -290,8 +290,10 @@
       "api":"csp_Wogg",
       "searchable":1,
       "changeable":0,
-      "ext":"b29776f976a64b74835351bd1fc761e6",
-      "filter":"./json/wogg.json" 
+      "ext": {
+      "token":"b29776f976a64b74835351bd1fc761e6",
+      "filter":"./json/wogg.json"
+      }
     },
     {
       "key": "七夜",
