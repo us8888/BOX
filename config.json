@@ -224,6 +224,18 @@
       "changeable": 1
     },
     {
+       "key":"萌番",
+       "name":"萌番 | 动漫",
+       "type":1,
+       "searchable":1,
+       "quickSearch":1,
+       "playerType":1,       
+       "api":"https://www.mengfan.tv/api.php/provide/vod/",
+       "header":{
+       "user-agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+    },
+    {
       "key":"移动云盘",
       "name":"移动云盘",
       "type":1, 
