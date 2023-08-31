@@ -253,16 +253,16 @@
      "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
     },
     {
-      "key":"csp_appys_影探",
-      "name":"❤影探主接口|4K",
+      "key":"csp_AppYsV2如意",
+      "name":"🍝如意┃4k",
       "type":3,
       "api":"csp_AppYsV2",
       "searchable":1,
       "quickSearch":1,
-      "style":{"type":"rect","ratio":0.8},
       "filterable":1,
-      "ext":"http://yt22106.lfytyl.com/api.php/app/",
-      "jar":"https://qu.ax/QdLc.jpg;md5;fd6a2cf8f31c7112731c5f90dab94847"
+      "style":{"type":"rect","ratio":0.8 },
+      "ext":"http://cms.maoyingshi.cc/api.php/app/",
+      "jar":"https://qu.ax/zWdG.js"
     },
     {
      "key":"drpy_js_酷狗MV",
