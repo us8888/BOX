@@ -252,6 +252,19 @@
       "ext":"./js/看韩剧.js"
     },
     {
+      "key": "1080dyw",
+      "name": "1080dyw",
+      "type": 3,
+      "api": "./js/AppYsV2.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+     "host": "https://www.1080dyw.cc/api.php/v1.vod"
+    }
+    },
+    {
      "key":"drpy_js_酷狗MV",
      "name":"MV | 酷狗[js]",
      "type":3,
