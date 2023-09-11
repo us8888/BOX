@@ -273,7 +273,7 @@
      "ext":"./js/酷狗MV.js"
     },
     {
-      "key":"drpy_js_kuqimv_open",
+      "key":"kuqimv",
       "name":"MV | 酷奇",
       "type":3,
       "api":"./js/kuqimv_open.js",
