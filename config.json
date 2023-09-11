@@ -265,13 +265,14 @@
     }
     },
     {
-      "key":"酷奇MV",
+      "key":"drpy_js_酷奇MV",
       "name":"MV | 酷奇",
       "type":3,
-      "api":"./js/酷奇MV.js",
+      "api":"./lib/drpy2.min.js",
       "searchable":1, 
       "quickSearch":1, 
-      "changeable":1
+      "changeable":1,
+      "ext":"./js/酷奇MV.js"
     },
     {
       "key":"drpy_js_爱车MV",
