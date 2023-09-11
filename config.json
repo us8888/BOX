@@ -268,7 +268,7 @@
       "key":"kuqimv",
       "name":"MV | 酷奇",
       "type":3,
-      "api":"./js/kuqimv_open.js",
+      "api":"./js/酷奇MV.js",
       "searchable":1, 
       "quickSearch":1, 
       "changeable":1
