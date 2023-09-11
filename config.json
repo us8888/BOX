@@ -265,14 +265,6 @@
     }
     },
     {
-     "key":"酷狗MV",
-     "name":"MV | 酷狗[js]",
-     "type":3,
-     "api":"./lib/drpy2.min.js",
-     "changeable":0,
-     "ext":"./js/酷狗MV.js"
-    },
-    {
       "key":"kuqimv",
       "name":"MV | 酷奇",
       "type":3,
@@ -280,13 +272,6 @@
       "searchable":1, 
       "quickSearch":1, 
       "changeable":1
-    },
-    {
-      "key":"drpy_js_263",
-      "name":"MV┃MV263",
-      "type":3,
-      "api":"https://agit.ai/guot54/TVBOXZY/raw/branch/main/JS/lib/drpy.min.js",
-      "ext":"http://52bsj.vip:81/api/v3/file/get/155397/MV263.js?sign=ZGUTsiwGV5cpOqA2m27WBkbX_qDrmQoKfa4KKbGIORo%3D%3A0"
     },
     {
       "key":"drpy_js_爱车MV",
@@ -324,7 +309,7 @@
      "playerType":"2"
     },
     {
-      "key":"drpy_js_喜马拉雅",
+      "key":"喜马拉雅",
       "name":"听书 | 喜马拉雅[js]",
       "type":3,
       "api":"./lib/drpy2.min.js",
