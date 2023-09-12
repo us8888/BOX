@@ -211,6 +211,13 @@
     }
     },
     {
+      "key":"天天美剧网",
+      "name":"天天美剧网",
+      "type":3,
+      "api":"./js/AppYsV2.js",
+      "ext":"https://www.ttmja.com/api.php/app/"
+   },
+    {
       "key":"drpy_js_酷奇MV",
       "name":"MV | 酷奇",
       "type":3,
