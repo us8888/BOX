@@ -450,10 +450,10 @@
     {
       "name": "暴風",
       "hosts": [
-        "bfzy"
+        "bfzy","s5.bfzycdn"
       ],
       "regex": [
-        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
       ]
     },
     {
