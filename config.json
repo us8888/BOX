@@ -50,7 +50,7 @@
       "changeable": 1
     },
     {
-      "key": "愛看",
+      "key": "ikanbot_open",
       "name": "愛看",
       "type": 3,
       "api": "./js/ikanbot_open.js",
