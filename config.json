@@ -32,22 +32,14 @@
       "changeable": 0,
       "ext": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/webdav.json"
     },
-    {
-      "key": "哔哩",
-      "name": "哔哩",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      },
-      "ext": {
-        "json": "https://raw.githubusercontent.com/FongMi/CatVodOpen/main/open/bili_open.js",
-        "type": "电视剧#电影#舞蹈#音乐#帕梅拉#广场舞#演唱会",
-        "cookie":  "SESSDATA=4cfad634%2C1710051633%2Cd93b4%2A91;bili_jct=d7c8724437c384efff425c0664f059c9;DedeUserID=1994741908;DedeUserID__ckMd5=5ba69577efda1cd"
-      }
+    {"key":"bili_open",
+      "name":"哔哩",
+      "type":3,
+      "api":"https://raw.githubusercontent.com/FongMi/CatVodOpen/main/open/bili_open.js",
+      "searchable":1,
+      "changeable":0,
+      "ext":{"categories":"电视剧#电影#音乐#演唱会#舞蹈#帕梅拉",
+      "cookie":"SESSDATA=4cfad634%2C1710051633%2Cd93b4%2A91;bili_jct=d7c8724437c384efff425c0664f059c9;DedeUserID=1994741908;DedeUserID__ckMd5=5ba69577efda1cd"}
     },
     {
       "key": "泥巴",
