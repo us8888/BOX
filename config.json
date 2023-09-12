@@ -53,7 +53,7 @@
       "key": "愛看",
       "name": "愛看",
       "type": 3,
-      "api": "https://fongmi.cachefly.net/FongMi/CatVodOpen/main/open/ikanbot_open.js",
+      "api": "./js/ikanbot_open.js",
       "searchable": 1,
       "changeable": 1
     },
