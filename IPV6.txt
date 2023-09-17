@@ -273,10 +273,10 @@ HBO 家庭,http://50.7.238.114:8278/fyi_twn/playlist.m3u8?tid=m99b80124e3b4&ct=1
 MUSIC TV,http://198.16.100.90:8278/MusicTV/playlist.m3u8?tid=MFEF2771586927715869&ct=19225&tsum=25aeb843227531bfab3d9fde062323b2
 PMC,https://hls.pmchd.live/hls/stream.m3u8
 M2,http://live.m2.tv/hls3/stream.m3u8
-SEXY KPOP,https://srv1.zcast.com.br/kpoptv/kpoptv/.m3u8
 VIBEE,http://de1se01.v2beat.live/chunks.m3u8
 MUSIC TOP,http://live-edge01.telecentro.net.ar/live/msctphd-720/playlist.m3u8
 MUSIC BOX,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/19282/index.m3u8
+SEXY KPOP,https://srv1.zcast.com.br/kpoptv/kpoptv/.m3u8
 SEXY KPOP,https://srv1.zcast.com.br/kpoptv/kpoptv/chunklist_w731411678.m3u8
 1HD MUSIC,http://91.247.68.229:8000/play/1HD/index.m3u8
 PROKOP MUSIC,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/18148/index.m3u8
