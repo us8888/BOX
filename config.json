@@ -336,23 +336,6 @@
     }
     },
     {
-      "ext":"eyJhcGlLZXkiOiIxNWJjMjRjYS00ODBhLTQ1ODktOWFmYi02ZjJmMmNjYjk4MGYiLCJhcGkiOiJodHRwOi8vMjE4Ljc5LjExNi45OjkyNDUifQ==",
-      "filterable":1,
-      "quickSearch":1,
-      "name":"小雅",
-      "viewType":{
-      "style":{
-      "type":"rect"
-    }
-    },
-      "changeable": 0,
-      "jar":"http://218.79.116.9:9245/spring.jar",
-      "api":"csp_XiaoYa",
-      "type":3,
-      "key":"csp_XiaoYa",
-      "searchable":1
-    },
-    {
       "key": "七夜",
       "name": "七夜",
       "type": 3,
@@ -391,7 +374,7 @@
       "api": "csp_Zhaozy",
       "searchable": 1,
       "changeable": 0,
-      "ext": "影視天下第一$$$test2$$$test2"
+      "ext": "eyJhcGlLZXkiOiIxNWJjMjRjYS00ODBhLTQ1ODktOWFmYi02ZjJmMmNjYjk4MGYiLCJhcGkiOiJodHRwOi8vMjE4Ljc5LjExNi45OjkyNDUifQ=="
     },
         {
       "key": "本地",
@@ -428,7 +411,7 @@
        "quickSearch":0,
        "filterable":0,
        "api":"./lib/lf_pushagent1_5_min.js",
-       "ext":"b29776f976a64b74835351bd1fc761e6"
+       "ext":"f6fdd2fdfe5f4fa3806b45acb81f1c86"
     },
     {
       "key": "push_agent",
