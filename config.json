@@ -28,14 +28,31 @@
       "cookie":"SESSDATA=13efc517%2C1700577613%2Cfcea6%2A52;bili_jct=272ef2be34e676f7cf6339c17dcb7bb5;DedeUserID=284097455;DedeUserID__ckMd5=e652501280a8dfd1;"}
     },
     {
-      "key":"SNzy",
-      "name":"索尼资源",
-      "type":1,
-      "api":"https://suoniapi.com/api.php/provide/vod/?ac=list",
-      "searchable":1,
-      "changeable":1,
-      "quickSearch":1,
-      "filterable":1
+        "key":"suoni",
+        "name":"索尼",
+        "type":3,
+        "api":"./js/caiji.js",
+        "ext":{
+        "url":"https://suoniapi.com/api.php/provide/vod/from/snm3u8/",
+        "categories": [
+            "动作片",
+            "喜剧片",
+            "爱情片",
+            "科幻片",
+            "恐怖片",
+            "剧情片",
+            "战争片",
+            "国产剧",
+            "欧美剧",
+            "韩剧",
+            "日剧",
+            "港剧",
+            "台剧",
+            "海外剧",
+            "大陆综艺",
+            "国产动漫"
+          ]
+        }
     },
     {
       "key": "泥巴",
