@@ -239,6 +239,17 @@
       "jar":"https://ghproxy.com/raw.githubusercontent.com/zalman2022/MySpider/main/jar/OpenSpider.jar"
     },
     {
+      "key":"csp_Aid",
+      "name":"急救指南",
+      "type":3,
+      "api":"csp_FirstAid",
+      "searchable":1,
+      "quickSearch":1,
+      "changeable":0,
+      "style":{"type":"rect","ratio":3.8},
+      "jar":"https://qu.ax/dDSz.jpg;md5;510FA1663F7067BD4D40DE06097202BF"
+    },
+    {
       "key":"drpy_js_酷奇MV",
       "name":"MV | 酷奇",
       "type":3,
