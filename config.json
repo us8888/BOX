@@ -28,6 +28,16 @@
       "cookie":"SESSDATA=13efc517%2C1700577613%2Cfcea6%2A52;bili_jct=272ef2be34e676f7cf6339c17dcb7bb5;DedeUserID=284097455;DedeUserID__ckMd5=e652501280a8dfd1;"}
     },
     {
+      "key":"SNzy",
+      "name":"索尼资源",
+      "type":1,
+      "api":"https://suoniapi.com/api.php/provide/vod/?ac=list",
+      "searchable":1,
+      "changeable":1,
+      "quickSearch":1,
+      "filterable":1
+    },
+    {
       "key": "泥巴",
       "name": "泥巴",
       "type": 3,
