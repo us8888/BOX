@@ -80,7 +80,6 @@
       "api":"csp_Star",
       "searchable":1,
       "changeable":1,
-      "proxy":true
     },
     {
       "key": "獨播",
