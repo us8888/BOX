@@ -74,12 +74,13 @@
       "changeable": 1
     },
     {
-      "key": "星星",
-      "name": "星星",
-      "type": 3,
-      "api": "csp_Star",
-      "searchable": 1,
-      "changeable": 1
+      "key":"星星",
+      "name":"星星",
+      "type":3,
+      "api":"csp_Star",
+      "searchable":1,
+      "changeable":1,
+      "proxy":true
     },
     {
       "key": "獨播",
@@ -558,12 +559,15 @@
       ]
     },
     {
-      "name": "海外看",
-      "hosts": [
+      "name":"海外看",
+      "hosts":[
         "haiwaikan"
       ],
-      "regex": [
-        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:2.93[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      "regex":[
+        "8.1748",
+        "10.0099",
+        "10.3333",
+        "16.0599"
       ]
     },
     {
