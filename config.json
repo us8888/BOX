@@ -66,6 +66,15 @@
       ]
     },
     {
+      "key":"csp_CandyMuj_sstv",
+      "name":"速搜影院",
+      "type":3,
+      "api":"csp_CandyMuj_sstv",
+      "searchable":0,
+      "quickSearch":0,
+      "filterable":1
+    },
+    {
       "key": "泥巴",
       "name": "泥巴",
       "type": 3,
