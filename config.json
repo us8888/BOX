@@ -66,13 +66,14 @@
       ]
     },
     {
-      "key":"csp_CandyMuj_sstv",
-      "name":"速搜影院",
-      "type":3,
-      "api":"csp_CandyMuj_sstv",
-      "searchable":0,
-      "quickSearch":0,
-      "filterable":1
+        "key":"csp_CandyMuj_sstv",
+        "name":"速搜影院",
+        "type":3,
+        "api":"csp_CandyMuj_sstv",
+        "searchable":0,
+        "quickSearch":0,
+        "filterable":1,
+        "jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/CandyMuj/ResourceInterface/main/TVBox/candymuj.jar"
     },
     {
       "key": "泥巴",
