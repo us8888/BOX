@@ -559,6 +559,23 @@
   ],
   "rules": [
     {
+      "name": "proxy",
+      "hosts": [
+        "raw.githubusercontent.com",
+        "googlevideo.com",
+        "api.nivodz.com",
+        "static.nivod.tv",
+        "c.biggggg.com",
+        "c.olddddd.com",
+        "www.histar.tv",
+        "yc.cdn.media.ulivetv.net",
+        "vip.kuaikan-cdn3.com",
+        "aws.ulivetv.net",
+        "cdn.v82u1l.com",
+        "cdn.iz8qkg.com"
+      ]
+    },
+    {
       "name": "星星",
       "hosts": [
         "aws.ulivetv.net"
