@@ -28,54 +28,6 @@
       "cookie":"SESSDATA=13efc517%2C1700577613%2Cfcea6%2A52;bili_jct=272ef2be34e676f7cf6339c17dcb7bb5;DedeUserID=284097455;DedeUserID__ckMd5=e652501280a8dfd1;"}
     },
     {
-      "key":"SNzy",
-      "name":"索尼资源",
-      "type":1,
-      "api":"https://suoniapi.com/api.php/provide/vod/?ac=list",
-      "searchable":1,
-      "changeable":1,
-      "quickSearch":1,
-      "filterable":1,
-      "categories": [
-        "国产剧",
-        "韩国剧",
-        "日本剧",
-        "香港剧",
-        "欧美剧",
-        "台湾剧",
-        "海外剧",
-        "泰国剧",
-        "动作片",
-        "喜剧片",
-        "爱情片",
-        "科幻片",
-        "恐怖片",
-        "剧情片",
-        "战争片",
-        "记录片",
-        "动漫片",
-        "国产动漫",
-        "日韩动漫",
-        "大陆综艺",
-        "港台综艺",
-        "日韩综艺",
-        "欧美综艺",
-        "欧美动漫",
-        "港台动漫",
-        "海外动漫"
-      ]
-    },
-    {
-        "key":"csp_CandyMuj_sstv",
-        "name":"速搜影院",
-        "type":3,
-        "api":"csp_CandyMuj_sstv",
-        "searchable":0,
-        "quickSearch":0,
-        "filterable":1,
-        "jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/CandyMuj/ResourceInterface/main/TVBox/candymuj.jar"
-    },
-    {
       "key": "泥巴",
       "name": "泥巴",
       "type": 3,
@@ -115,16 +67,6 @@
        "type":3,
        "style":{"type":"rect","ratio":1.33 },
        "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/ikanbot2.js"
-    },
-    {
-    "key":"lf_js_ikanbot",
-    "name":"点播 | lf_ikanbot",
-    "type":3,
-    "searchable":1,
-    "changeable":1,
-    "quickSearch":1,
-    "filterable":1,
-    "api":"./js/lf_ikanbot5_1_min.js"
     },
     {
       "key": "快看",
@@ -277,6 +219,54 @@
        "header":{
        "user-agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
     }
+    },
+      {
+      "key":"SNzy",
+      "name":"索尼资源",
+      "type":1,
+      "api":"https://suoniapi.com/api.php/provide/vod/?ac=list",
+      "searchable":1,
+      "changeable":1,
+      "quickSearch":1,
+      "filterable":1,
+      "categories": [
+        "国产剧",
+        "韩国剧",
+        "日本剧",
+        "香港剧",
+        "欧美剧",
+        "台湾剧",
+        "海外剧",
+        "泰国剧",
+        "动作片",
+        "喜剧片",
+        "爱情片",
+        "科幻片",
+        "恐怖片",
+        "剧情片",
+        "战争片",
+        "记录片",
+        "动漫片",
+        "国产动漫",
+        "日韩动漫",
+        "大陆综艺",
+        "港台综艺",
+        "日韩综艺",
+        "欧美综艺",
+        "欧美动漫",
+        "港台动漫",
+        "海外动漫"
+      ]
+    },
+    {
+    "key":"lf_js_ikanbot",
+    "name":"点播 | lf_ikanbot",
+    "type":3,
+    "searchable":1,
+    "changeable":1,
+    "quickSearch":1,
+    "filterable":1,
+    "api":"./js/lf_ikanbot5_1_min.js"
     },
     {
      "key":"drpy_js_农民",
