@@ -1,5 +1,5 @@
 {
-"spider":"./jar/custom_spider.jar;md5;37fc87b676f1a75fd1a1db559126b888",
+"spider":"./jar/custom_spider.jar;md5;08e60753eb29394b75c088e1f06dfb17",
 "lives":[
 {"name":"范明明•综合","type":0,"url":"https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/global.m3u","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"},
 {"name":"俊于•综合","type":0,"url":"http://home.jundie.top:81/Cat/tv/live.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}
