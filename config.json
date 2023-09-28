@@ -18,6 +18,18 @@
       "timeout":30
     },
     {
+      "key":"玩偶",
+      "name":"玩偶",
+      "type":3,
+      "api":"csp_Wogg",
+      "searchable":1,
+      "changeable":0,
+      "ext":{
+      "token":"f6fdd2fdfe5f4fa3806b45acb81f1c86",
+      "filter":"./json/wogg.json"
+    }
+    },
+    {
       "key":"bili_open",
       "name":"哔哩",
       "type":3,
@@ -183,43 +195,7 @@
         "港台动漫",
         "海外动漫"
       ]
-    },
-    {
-      "key": "櫻花",
-      "name": "櫻花",
-      "type": 3,
-      "api": "csp_Ying",
-      "searchable": 1,
-      "changeable": 1
-    },
-    {
-      "key": "巴士",
-      "name": "巴士",
-      "type": 3,
-      "api": "csp_Dm84",
-      "searchable": 1,
-      "changeable": 1
-    },
-    {
-      "key": "異界",
-      "name": "異界",
-      "type": 3,
-      "api": "csp_Ysj",
-      "searchable": 1,
-      "changeable": 1
-    },
-    {
-       "key":"萌番",
-       "name":"萌番 | 动漫",
-       "type":1,
-       "searchable":1,
-       "quickSearch":1,
-       "playerType":1,       
-       "api":"https://www.mengfan.tv/api.php/provide/vod/",
-       "header":{
-       "user-agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
-    }
-    },
+      },
       {
       "key":"SNzy",
       "name":"索尼资源",
@@ -257,16 +233,6 @@
         "港台动漫",
         "海外动漫"
       ]
-    },
-    {
-    "key":"lf_js_ikanbot",
-    "name":"点播 | lf_ikanbot",
-    "type":3,
-    "searchable":1,
-    "changeable":1,
-    "quickSearch":1,
-    "filterable":1,
-    "api":"./js/lf_ikanbot5_1_min.js"
     },
     {
      "key":"drpy_js_农民",
@@ -403,18 +369,6 @@
       "changeable":0,
       "style":{"type":"rect","ratio":1},
       "ext":"./js/喜马拉雅.js"
-    },
-    {
-      "key":"玩偶",
-      "name":"玩偶",
-      "type":3,
-      "api":"csp_Wogg",
-      "searchable":1,
-      "changeable":0,
-      "ext":{
-      "token":"f6fdd2fdfe5f4fa3806b45acb81f1c86",
-      "filter":"./json/wogg.json"
-    }
     },
     {
       "key": "七夜",
