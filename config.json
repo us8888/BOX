@@ -303,7 +303,7 @@
       "searchable":1,
       "filterable":1,
       "changeable":1,
-      "jar":"https://qu.ax/TpCJ.txt"
+      "jar":"./jar/928.jar"
     },
     {
       "key":"csp_Aid",
