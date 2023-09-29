@@ -14,7 +14,7 @@
       "searchable":1,
       "quickSearch":1,
       "filterable":1,
-      "ext":{"danmu":true}
+      "ext":{"danmu":true},
       "jar":"./jar/928.jar"
     },
     {
