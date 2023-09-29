@@ -7,15 +7,15 @@
   "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
   "sites": [
     {
-      "key":"drpy_js_荐片",
+      "key":"荐片弹幕版",
       "name":"荐片",
       "type":3,
-      "api":"./lib/drpy2.min.js",
+      "api":"csp_Jianpian",
       "searchable":1,
       "quickSearch":1,
-      "changeable":1,
-      "ext":"./js/荐片.js", 
-      "timeout":30
+      "filterable":1,
+      "ext":{"danmu":true}
+      "jar":"./jar/928.jar"
     },
     {
       "key":"玩偶",
