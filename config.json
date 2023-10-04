@@ -30,10 +30,28 @@
     }
     },
     {
-      "key":"miku_open.js",
-      "name":"咪酷",
-      "type":3,
-      "api":"./js/miku_open.js"
+      "key": "布雷",
+      "name": "布雷",
+      "type": 3,
+      "api": "https://fongmi.cachefly.net/FongMi/CatVodOpen/main/open/bulei_open.js",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "伊人",
+      "name": "伊人",
+      "type": 3,
+      "api": "https://fongmi.cachefly.net/FongMi/CatVodOpen/main/open/yrzj_open.js",
+      "searchable": 1,
+      "changeable": 1
+    },
+        {
+      "key": "五五",
+      "name": "五五",
+      "type": 3,
+      "api": "https://fongmi.cachefly.net/FongMi/CatVodOpen/main/open/555dy_open.js",
+      "searchable": 1,
+      "changeable": 1
     },
     {
       "key":"kunyu77_open.js",
