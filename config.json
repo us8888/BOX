@@ -336,6 +336,24 @@
       "ext":"./js/爱车MV.js"
     },
     {
+      "key":"drpy_js_音悦网",
+      "name":"MV | 音悦网[js]",
+      "type":3,
+      "api":"./lib/drpy2.min.js",
+      "changeable":0,
+      "style":{"type":"rect","ratio":1},
+      "ext":"./js/音悦网.jsd"
+    },
+    {
+      "key":"drpy_js_MV263",
+      "name":"MV | 263[js]",
+      "type":3,"
+      api":"./lib/drpy2.min.js",
+      "changeable":0,
+      "style":{"type":"rect","ratio":1},
+      "ext":"./js/MV263.jsd"
+    },
+    {
      "key":"drpy_js_苹果DJ",
      "name":"MV | 苹果DJ[js]",
      "type":3,
