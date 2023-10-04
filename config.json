@@ -449,17 +449,6 @@
       "changeable": 0,
       "ext": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/webdav.json"
     },
-   {
-       "key":"push_agent",
-       "name":"推送 | 📽",
-       "type":3,
-       "searchable":0,
-       "changeable":1,
-       "quickSearch":0,
-       "filterable":0,
-       "api":"./lib/lf_pushagent1_5_min.js",
-       "ext":"f6fdd2fdfe5f4fa3806b45acb81f1c86"
-    },
     {
       "key": "push_agent",
       "name": "推送",
