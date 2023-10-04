@@ -30,6 +30,18 @@
     }
     },
     {
+      "key":"miku_open.js",
+      "name":"咪酷",
+      "type":3,
+      "api": "./js/miku_open.js"
+    },
+    {
+      "key":"kunyu77_open.js",
+      "name":"七七",
+      "type":3,
+      "api": "./js/kunyu77_open.js"
+    },
+    {
       "key":"bili_open",
       "name":"哔哩",
       "type":3,
