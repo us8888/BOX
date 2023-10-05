@@ -60,6 +60,13 @@
       "api":"./js/kunyu77_open.js"
     },
     {
+      "key":"drpy_js_moflix影视",
+      "name":"moflix[js]",
+      "type":3,
+      "api":"./lib/drpy2.min.js",
+      "ext":"./js/moflix.js"
+    },
+    {
       "key":"bili_open",
       "name":"哔哩",
       "type":3,
