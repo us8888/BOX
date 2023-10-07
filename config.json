@@ -421,7 +421,7 @@
       "type":3,
       "api":"py_bilibili",
       "style":{ "type":"rect", "ratio":1.33 },
-      "ext":"./js/py_bilibili.py"
+      "ext":"./py/py_bilibili.py"
     },
     {
       "key": "七夜",
