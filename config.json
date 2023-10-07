@@ -562,6 +562,10 @@
       ]
     },
     {
+      "name":"索尼",
+      "hosts":["suonizy"],
+      "regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7.680000,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"]},
+    {
       "name": "星星",
       "hosts": [
         "aws.ulivetv.net"
