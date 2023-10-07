@@ -416,7 +416,7 @@
       "ext":"./py/py_douyin.py"
     },
     {
-      "key":"py_bilibili.py",
+      "key":"py_bilibili",
       "name":"bilibili",
       "type":3,
       "api":"py_bilibili",
