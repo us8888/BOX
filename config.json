@@ -645,6 +645,15 @@
       ]
     },
     {
+      "name": "農民嗅探",
+      "hosts": [
+        "toutiaovod.com"
+      ],
+      "regex": [
+        "video/tos/cn"
+      ]
+    },
+    {
       "name": "抖音嗅探",
       "hosts": [
         "douyin.com"
