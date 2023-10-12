@@ -404,6 +404,13 @@
       "ext":"./js/JustLive.js"
     },
     {
+      "key":"drpy_js_短剧网",
+      "name":"短剧",
+      "type":3,
+      "api":"./lib/drpy2.min.js",
+      "ext":"./js/短剧网.js"
+    },
+    {
       "key":"drpy_js_酷奇MV",
       "name":"MV | 酷奇",
       "type":3,
