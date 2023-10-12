@@ -34,7 +34,7 @@
       "name":"玉米",
       "type":3,
       "playerType":"2",
-      "api":"./lib/drpy2.min.js",
+      "api":"./js/AppYsV2.js",
       "ext": "./js/玉米.js"
     },
     {
@@ -292,8 +292,8 @@
      "name":"影视 | 农民[js]",
      "type":3,
      "style":{"type":"rect","ratio":0},
-     "api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
-     "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
+     "api":"./lib/drpy2.min.js",
+     "ext":"./js/农民.js"
     },
     {
        "key":"星影1080cms",
