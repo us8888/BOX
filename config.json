@@ -34,7 +34,7 @@
       "name":"玉米",
       "type":3,
       "playerType":"2",
-      "api":"./js/AppYsV2.js",
+      "api":"./lib/drpy2.min.js",
       "ext": "./js/玉米.js"
     },
     {
@@ -293,7 +293,7 @@
      "type":3,
      "style":{"type":"rect","ratio":0},
      "api":"./lib/drpy2.min.js",
-     "ext":"./js/农民.js"
+     "ext":"./js/农民影视.js"
     },
     {
        "key":"星影1080cms",
