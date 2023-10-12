@@ -66,6 +66,13 @@
       "ext":"./js/EMO蓝光[V2].js"
     },
     {
+      "key": "drpy_js_在线之家",
+      "name": "在线之家",
+      "type": 3,
+      "api": "./lib/drpy2.min.js",
+      "ext":"./js/在线之家.js"
+    },
+    {
       "key": "伊人",
       "name": "伊人",
       "type": 3,
