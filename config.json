@@ -30,6 +30,13 @@
     }
     },
     {
+      "key":"drpy_js_影探[V2]",
+      "name":"影探",
+      "type":3,
+      "api":"./lib/drpy2.min.js",
+      "ext":"./js/影探[V2].js"
+    },
+    {
       "key":"js_v2-yj",
       "name":"玉米",
       "type":3,
@@ -251,7 +258,7 @@
       },
       {
       "key":"SNzy",
-      "name":"索尼资源",
+      "name":"索尼",
       "type":1,
       "api":"https://suoniapi.com/api.php/provide/vod/?ac=list",
       "searchable":1,
@@ -289,7 +296,7 @@
     },
     {
      "key":"drpy_js_农民",
-     "name":"影视 | 农民[js]",
+     "name":"农民",
      "type":3,
      "style":{"type":"rect","ratio":0},
      "api":"./lib/drpy2.min.js",
@@ -297,7 +304,7 @@
     },
     {
        "key":"星影1080cms",
-       "name":"星影1080 | APP",
+       "name":"星影",
        "type":1,
        "api":"https://www.xy1080.net/api.php/provide/vod",
        "searchable":1,
@@ -313,7 +320,7 @@
     },
     {
       "key":"drpy_js_看韩剧",
-      "name":"影视 | 看韩剧[js]",
+      "name":"看韩剧",
       "type":3,
       "api":"./lib/drpy2.min.js",
       "ext":"./js/看韩剧.jsd"
@@ -340,7 +347,7 @@
     },
     {
       "key":"maolv_open",
-      "name":"影视|毛驴",
+      "name":"毛驴",
       "type":3,
       "api":"csp_Maolv",
       "searchable":1,
