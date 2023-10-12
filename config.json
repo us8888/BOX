@@ -37,6 +37,13 @@
       "ext":"./js/影探[V2].js"
     },
     {
+      "key":"drpy_js_热剧猫[V2]",
+      "name":"热剧",
+      "type":3,
+      "api":"./lib/drpy2.min.js",
+      "ext":"./js/热剧猫[V2].js"
+    },
+    {
       "key":"js_v2-yj",
       "name":"玉米",
       "type":3,
