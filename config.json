@@ -30,6 +30,14 @@
     }
     },
     {
+      "key":"js_v2-yj",
+      "name":"玉米",
+      "type":3,
+      "playerType":"2",
+      "api":"./lib/drpy2.min.js",
+      "ext": "./js/玉米.js"
+    },
+    {
       "key": "布雷",
       "name": "布雷",
       "type": 3,
