@@ -79,6 +79,13 @@
       "ext":"./js/在线之家.js"
     },
     {
+      "key":"wobg",
+      "name":"玩偶表哥",
+      "type":3,
+      "api":"./js/wobg.js",
+      "ext":"阿里token"
+    },
+    {
       "key": "伊人",
       "name": "伊人",
       "type": 3,
