@@ -35,39 +35,10 @@
       "ext":"./js/影探[V2].js"
     },
     {
-      "key":"drpy_js_4K视界[V2]",
-      "name":"4K视界",
-      "type":3,
-      "api":"./lib/drpy2.min.js",
-      "ext":"./js/4K视界[V2].js"
-    },
-    {
       "key":"jiohub",
       "name":"JOJO",
       "type":3,
       "api":"./js/jiohub.js"
-    },
-    {
-      "key":"drpy_js_热剧猫[V2]",
-      "name":"热剧",
-      "type":3,
-      "api":"./lib/drpy2.min.js",
-      "ext":"./js/热剧猫[V2].js"
-    },
-    {
-      "key":"js_v2-yj",
-      "name":"玉米",
-      "type":3,
-      "playerType":"2",
-      "api":"./lib/drpy2.min.js",
-      "ext": "./js/玉米.js"
-    },
-    {
-      "key": "drpy_js_EMO蓝光[V2]",
-      "name": "EMO蓝光",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "ext":"./js/EMO蓝光[V2].js"
     },
     {
       "key": "drpy_js_在线之家",
@@ -75,13 +46,6 @@
       "type": 3,
       "api": "./lib/drpy2.min.js",
       "ext":"./js/在线之家.js"
-    },
-    {
-      "key":"wobg",
-      "name":"玩偶表哥",
-      "type":3,
-      "api":"./js/wobg.js",
-      "ext":"阿里token"
     },
     {
       "key": "伊人",
