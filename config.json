@@ -122,10 +122,10 @@
     {
        "key":"drpy_js_爱看机器人",
        "name":"爱看",
-       "api":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+       "api":"./lib/drpy2.min.js",
        "type":3,
        "style":{"type":"rect","ratio":1.33 },
-       "ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/ikanbot2.js"
+       "ext":"./js/ikanbot2.js"
     },
     {
       "key": "快看",
