@@ -13,7 +13,7 @@
       "api":"csp_Jianpian",
       "searchable":1,
       "changeable":1,
-      "ext":"https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/jianpian.json"
+      "ext":"./json/jianpian.json"
     },
     {
       "key":"玩偶",
