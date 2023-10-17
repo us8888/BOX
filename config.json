@@ -112,7 +112,7 @@
       "ext": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/duboku.json"
     },
     {
-      "key": "廠長",
+      "key": "czzy",
       "name": "廠長",
       "type": 3,
       "api": "./js/czzy_open.js",
