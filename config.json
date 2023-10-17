@@ -116,7 +116,7 @@
       "name":"厂长",
       "type":3,
       "api":"./lib/drpy2.min.js",
-      "ext":"./js/czzy_open.js"
+      "ext":"./js/厂长资源.js"
     },
     {
        "key":"drpy_js_爱看机器人",
