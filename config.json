@@ -115,7 +115,7 @@
       "key": "廠長",
       "name": "廠長",
       "type": 3,
-      "api": "https://fongmi.cachefly.net/FongMi/CatVodOpen/main/open/czzy_open.js",
+      "api": "./js/厂长资源.js",
       "searchable": 1,
       "changeable": 1
     },
