@@ -560,7 +560,7 @@
           "url": "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/Release/main/apk/release/mobile-java-armeabi_v7a.apk",
           "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png"
         },
-        {
+                {
           "name": "手機-java-v8",
           "url": "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/Release/main/apk/release/mobile-java-arm64_v8a.apk",
           "icon": "https://i.imgs.ovh/2023/10/17/r8lVK.png"
@@ -577,7 +577,7 @@
         }
       ]
     }
-    
+  ],
   "doh": [
     {
       "name": "Google",
