@@ -329,6 +329,16 @@
       "api":"./lib/drpy2.min.js",
       "ext":"./js/看韩剧.jsd"
     },
+    {"key": "彩虹",
+      "name": "彩虹",
+      "type": 3,
+      "api": "./js/AppYsV2.js",
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "http://ys.qtw.asia/lvdou_api.php/v1.vod"
+    },
     {
       "key": "1080dyw",
       "name": "1080dyw",
