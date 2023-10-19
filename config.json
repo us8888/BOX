@@ -53,6 +53,13 @@
       "ext":"./js/在线之家.js"
     },
     {
+      "key":"drpy_js_cokemv",
+      "name":"酷客",
+      "type":3,
+      "api":"./lib/drpy2.min.js",
+      "ext":"./js/cokemv.js"
+    },
+    {
       "key": "伊人",
       "name": "伊人",
       "type": 3,
