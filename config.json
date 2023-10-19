@@ -329,7 +329,8 @@
       "api":"./lib/drpy2.min.js",
       "ext":"./js/看韩剧.jsd"
     },
-    {"key": "彩虹",
+    {
+      "key": "彩虹",
       "name": "彩虹",
       "type": 3,
       "api": "./js/AppYsV2.js",
