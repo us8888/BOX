@@ -338,7 +338,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "ext": "http://ys.qtw.asia/lvdou_api.php/v1.vod"
+      "ext": {"host":"http://ys.qtw.asia/lvdou_api.php/v1.vod"}
     },
     {
       "key": "1080dyw",
