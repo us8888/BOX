@@ -53,13 +53,6 @@
       "ext":"./js/在线之家.js"
     },
     {
-      "key":"drpy_js_cokemv[V2]",
-      "name":"酷客",
-      "type":3,
-      "api":"./lib/drpy2.min.js",
-      "ext":"./js/cokemv[V2].js"
-    },
-    {
       "key": "伊人",
       "name": "伊人",
       "type": 3,
@@ -335,6 +328,13 @@
       "type":3,
       "api":"./lib/drpy2.min.js",
       "ext":"./js/看韩剧.jsd"
+    },
+    {
+      "key":"COKEMV[V2],
+      "name":"酷客",
+      "type":3,
+      "api":"./js/AppYsV2.js",
+      "ext": {"host":"https://cokemv.co/xgapp.php/v2.vod"}
     },
     {
       "key": "彩虹",
