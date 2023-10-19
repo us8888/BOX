@@ -394,6 +394,7 @@
       "filterable":1,
       "changeable":1,
       "jar":"./jar/928.jar"
+      "ext":{"danmu":true}
     },
     {
       "key":"csp_Aid",
