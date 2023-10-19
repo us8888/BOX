@@ -341,6 +341,14 @@
       "ext": {"host":"http://ys.qtw.asia/lvdou_api.php/v1.vod"}
     },
     {
+      "key": "爱迪影视",
+      "name": "爱迪",
+      "type": 3,
+      "playerType":"2",
+      "api": "./js/AppYsV2.js",
+      "ext": {"host":"https://api123.adys.app/xgapp.php/v3/"}
+    },
+    {
       "key": "1080dyw",
       "name": "1080dyw",
       "type": 3,
