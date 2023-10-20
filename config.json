@@ -418,7 +418,7 @@
     },
     {
       "key":"drpy_js_ss直播",
-      "name":"直播",
+      "name":"看韩剧",
       "type":3,
       "api":"./lib/drpy2.min.js",
       "ext":"./js/ss直播.js"
