@@ -417,13 +417,6 @@
       "ext":"./js/JustLive.js"
     },
     {
-      "key":"drpy_js_ss直播",
-      "name":"直播",
-      "type":3,
-      "api":"./lib/drpy2.min.js",
-      "ext":"./js/ss直播.js"
-    },
-    {
       "key":"drpy_js_短剧网",
       "name":"短剧",
       "type":3,
