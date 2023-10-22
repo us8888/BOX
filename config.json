@@ -23,7 +23,7 @@
       "searchable":1,
       "changeable":0,
       "ext":{
-      "token":"f6fdd2fdfe5f4fa3806b45acb81f1c86",
+      "token":"token",
       "filter":"./json/wogg.json"
     }
     },
