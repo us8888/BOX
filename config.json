@@ -75,13 +75,14 @@
       "ext": "FbjDcUxPqpfNr0QF4QvE6sExbc1AGIRPUzIPtbexyEhcScOf53TW0F+D7rX5HCm9c3SL03FsmGsmXS04XZMlbxEVW4/ZgwONbnobxj8KzfJ8GvG6ETdzBCbfFw0WuoidvgjRb4EpUL8NqDk4unKXRBhjcoD99QoAIMsLc24lek3u9uBO+6JFAf41Z7sYL00hBBNM3xJsYyXCuX4BrzNYpZRwmfepqhEHQ08b/50BTD4Smp257RWMVpiQ1Tu3ht+MPo7oQAceapuyQGcL2fslXXHVrrb+9pyjtI9Qzph9HFoNJPIj5EXV+qGRI0CjSm9Dbm5nQFlZ6G2jvORw+5LMziXmuxDZH4U7qpnfjh/8hAu18546qyGmiWVI2mfDrKkVmeLq1KFA0rA="
     },
     {
-      "key":"布蕾",
-      "name":"布蕾",
+      "key":"一起看 ",
+      "name":"一起",
       "type":3,
-      "jar":"http://cdn.qiaoji8.com/fix1021.jar;md5;b0ebd6d9d069f1cc325625ee47ac921d",
-      "api":"csp_Appto",
-      "playerType":2,
-      "ext":"HwNJ3fAqZRThWJHZ1o80xWhswisgPvR96QZFDlTrA+bAc9AlhXcKOC+YrvLxn57pIVcbqr8tJIL9qRD/JVNpfipy4D9vCN0ZJHsAUS4Xoad94UNEMmj5XBj/ohOZKnhYidx1O+cvtBC7j9r38wE3SZGamfgbwf2R7VXlK6F+x+5GfHmDOkLDHbR1bMpXe0jozL8my/sqaexbzByk+OJmECQlf4yrsWOfAq0A/GFt3hic2zKh1wPMJBUlblkGCuf/h8OKCkX5DIAVa9fsB95YZGgn278sBPJcfOEpnFm6G4dRt8sDNFp0xeEB5GNIOMaYYZ1FKPX/Zu5n3BWu3zIiLq7jV+eRIz5HLgEqrfNIXLH2Qja0RWJYoGsE0kV/ZXdRYj41TkgOrAO0cvuIivg3dGR0KoGlPDVNKvziC7tlFDsll/mdseq3tey6x6gWuJWHp2OuhZAemhAY+1qW7ijz3H1/b5BE4mxg3NxgiNNjyDgO1YHrEOCuPNVaAwZocZbvv1nyo4lHu6P/eHyIHws7VUnb2m1S26ZlJbDTceQNNcx8Qvyzx1rR9RGXw9dCmFimOlFIJINzBjH7TRanMgJNV4kL7YUhCUgQtH4qEqpaX1/RIMi3ceFIIJ/Ugw+5g2vMwy2/1pTa7j7q3tYsIfOuXxugXRloZj8ys68qxsl2PzjaYYZPO9X6eC+Yx0bl/18nNRVL7yu0i4gs6NPEHrrXg95vbOmsXpHNwdRURKW/UkLmYXdmwO/yZLEJfXIcYR96oW7HompIKuA8hGdzCDj9z8f3UGr6Un/48on9BKuZXsLt9nvYpfJM5MEKN81hgn+RyDSk7dGjU1FrBjg6nlreAb+NYGAYkffEOrUF33QitTJOWL4B61ME5xbIzDPuu+/YGB8Tbg4vlu4Jrl+zV24jar7DIFhtSUx3JKOk0YqfZSvyIm8Rvt9pK7r/FVA0holld7MIdAVVVTElUo30D17FNK7t9mAYS7D4aDzF9z8vM7XoAVaEpNPkKUmQYFjjkvMPjXFU9mRxxiopOadr3lAl/hdrAeHsNg5p+hptvvNcJ56OAS5AE3gEU+zQpguQQqUHsG3068x3Ne4V1r+H+v1520mcDecYgLtf5x5baaSfh0WsY4Zti9ri/dXKhViL/F7r+67rCE5BA6nqO1fGXjW+EYqgJn9EtC4OeugRjslOhhtUyCnF1Ic589DADD8RyKvHOXhPx3uW0JPGxDSBU8ntlyqcksdzExD8c6vQ9jP7PuLo6w2ppUkpZ5HXHTD68qgY0OPk/N+wltrk6sPQxYjJto1E2UYqM2vuGMcoPErMDvvdE/nZZunlATE5i/vJnJT183NEMs5LortjgKrulqi9Ecw=="
+      "jar":"./jar/fan.txt;md5;60a9856a6deb7dcff27f3056626bbb5a",
+      "api":"csp_YQKan",
+      "searchable":1,
+      "quickSearch":1,
+      "changeable":1
     },
     {
       "key":"追忆",
