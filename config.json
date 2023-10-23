@@ -96,7 +96,7 @@
       "key":"Mino",
       "name":"Mino",
       "type":3,
-      "jar":"http://cdn.qiaoji8.com/fix1021.jar;md5;b0ebd6d9d069f1cc325625ee47ac921d",
+      "jar":"./jar/fm.jar;md5;56bfb32cc28fea5b58418a960c35a028",
       "api":"csp_AppMao",
       "searchable":1,
       "quickSearch":1,
