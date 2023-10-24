@@ -484,13 +484,15 @@
      "playerType":"2"
     },
     {
-      "key":"喜马拉雅",
-      "name":"听书 | 喜马拉雅[js]",
+      "key":"有声小说js",
+      "name":"小说",
       "type":3,
-      "api":"./lib/drpy2.min.js",
-      "changeable":0,
+      "api":"https://www.agit.ai/fantaiying/fty/raw/branch/master/JS/drpy1.min.js",
+      "ext":"https://www.agit.ai/fantaiying/dr_py/raw/branch/main/js/有声小说吧.js",
       "style":{"type":"rect","ratio":1},
-      "ext":"./js/喜马拉雅.js"
+      "searchable":0,
+      "quickSearch":0,
+      "changeable":0
     },
     {
       "key":"py_douyin",
