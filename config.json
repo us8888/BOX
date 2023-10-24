@@ -165,7 +165,7 @@
        "api":"./lib/drpy2.min.js",
        "type":3,
        "style":{"type":"rect","ratio":1.33 },
-       "ext":"./js/ikanbot2.js"
+       "ext":"./js/ikanbot_open.js"
     },
     {
       "key": "快看",
@@ -410,13 +410,6 @@
       "type":3,
       "api":"./lib/drpy2.min.js",
       "ext":"./js/看韩剧.jsd"
-    },
-    {
-      "key":"drpy_js_moflix影视",
-      "name":"moflix",
-      "type":3,
-      "api":"./lib/drpy2.min.js",
-      "ext":"./js/moflix.js"
     },
     {
       "key":"drpy_js_aoao",
