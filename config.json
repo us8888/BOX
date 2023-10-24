@@ -160,7 +160,7 @@
         "api":"./js/czzy_open.js"
     },
     {
-       "key":"drpy_js_爱看机器人",
+       "key":"ikanbot",
        "name":"爱看",
        "api":"./lib/drpy2.min.js",
        "type":3,
