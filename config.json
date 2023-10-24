@@ -164,7 +164,6 @@
        "name":"爱看",
        "type":3,
        "api":"./js/ikanbot_open.js",
-       
     },
     {
       "key": "快看",
