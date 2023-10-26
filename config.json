@@ -23,7 +23,7 @@
       "searchable":1,
       "changeable":0,
       "ext":{
-      "token":"token",
+      "token":"http://127.0.0.1:9978/file/tvfan/token.txt",
       "filter":"./json/wogg.json"
     }
     },
