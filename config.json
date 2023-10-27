@@ -348,6 +348,13 @@
       "type":3,
       "api":"./js/AppYsV2.js",
       "ext":{"host":"http://api.jialiangos.com:81/api.php/app/"}
+    },
+    {
+      "key":"西门[V2]",
+      "name":"西门",
+      "type":3,
+      "api":"./js/AppYsV2.js",
+      "ext":{"host":"http://111.230.51.151:6969/api.php/app/"}
     },  
     {
       "key":"cokemv[V2]",
