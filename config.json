@@ -350,11 +350,11 @@
       "ext":{"host":"http://api.jialiangos.com:81/api.php/app/"}
     },
     {
-      "key":"美益达[V2]",
-      "name":"美益达",
+      "key":"路人甲[V2]",
+      "name":"路人甲",
       "type":3,
       "api":"./js/AppYsV2.js",
-      "ext":{"host":"https://www.myd666.tv/api.php/v1.vod/"}
+      "ext":{"host":"http://dytt996.com/api.php/app/"}
     },  
     {
       "key":"cokemv[V2]",
