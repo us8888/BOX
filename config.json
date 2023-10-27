@@ -350,11 +350,11 @@
       "ext":{"host":"http://api.jialiangos.com:81/api.php/app/"}
     },
     {
-      "key":"落攻阁影视[V2]",
-      "name":"落攻阁",
+      "key":"电影先生[V2]",
+      "name":"电影",
       "type":3,
       "api":"./js/AppYsV2.js",
-      "ext":{"host":"https://www.lggys.com/api.php/app/"}
+      "ext":{"host":"https://app.dianyi.ng/api.php/v1.vod"}
     },  
     {
       "key":"cokemv[V2]",
