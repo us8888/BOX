@@ -343,11 +343,11 @@
       "changeable":1
     },
     {
-      "key":"北极狐[V2]",
-      "name":"北极狐",
+      "key":"创艺影视[V2]",
+      "name":"创艺",
       "type":3,
       "api":"./js/AppYsV2.js",
-      "ext":{"host":"https://www.kuin.one/api.php/app/"}
+      "ext":{"host":"http://www.30dian.cn/api.php/v1.vod/"}
     },  
     {
       "key":"cokemv[V2]",
