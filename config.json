@@ -350,11 +350,11 @@
       "ext":{"host":"http://api.jialiangos.com:81/api.php/app/"}
     },
     {
-      "key":"UM电影[V2]",
-      "name":"UM",
+      "key":"曲奇影视[V2]",
+      "name":"曲奇",
       "type":3,
       "api":"./js/AppYsV2.js",
-      "ext":{"host":"https://www.umkan.cc/mogai_api.php/v1.vod/"}
+      "ext":{"host":"https://1234567.weixiaolove.cn/api.php/app/"}
     },  
     {
       "key":"cokemv[V2]",
