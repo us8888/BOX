@@ -350,11 +350,11 @@
       "ext":{"host":"http://api.jialiangos.com:81/api.php/app/"}
     },
     {
-      "key":"路人甲[V2]",
-      "name":"路人甲",
+      "key":"UM电影[V2]",
+      "name":"UM",
       "type":3,
       "api":"./js/AppYsV2.js",
-      "ext":{"host":"http://dytt996.com/api.php/app/"}
+      "ext":{"host":"https://www.umkan.cc/mogai_api.php/v1.vod/"}
     },  
     {
       "key":"cokemv[V2]",
