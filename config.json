@@ -354,7 +354,7 @@
       "name":"电影",
       "type":3,
       "api":"./js/AppYsV2.js",
-      "ext":{"host":"https://app.dianyi.ng/api.php/v1.vod"}
+      "ext":{"host":"https://app.dianyi.ng/api.php/v1.vod/"}
     },  
     {
       "key":"cokemv[V2]",
