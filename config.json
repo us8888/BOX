@@ -350,11 +350,11 @@
       "ext":{"host":"http://api.jialiangos.com:81/api.php/app/"}
     },
     {
-      "key":"曲奇影视[V2]",
-      "name":"曲奇",
+      "key":"落攻阁影视[V2]",
+      "name":"落攻阁",
       "type":3,
       "api":"./js/AppYsV2.js",
-      "ext":{"host":"https://1234567.weixiaolove.cn/api.php/app/"}
+      "ext":{"host":"https://www.lggys.com/api.php/app/"}
     },  
     {
       "key":"cokemv[V2]",
