@@ -350,11 +350,11 @@
       "ext":{"host":"http://api.jialiangos.com:81/api.php/app/"}
     },
     {
-      "key":"思古影视[V2]",
-      "name":"思古",
+      "key":"美益达[V2]",
+      "name":"美益达",
       "type":3,
       "api":"./js/AppYsV2.js",
-      "ext":{"host":"https://siguyy.cc/api.php/app/"}
+      "ext":{"host":"https://www.myd666.tv/api.php/v1.vod/"}
     },  
     {
       "key":"cokemv[V2]",
