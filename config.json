@@ -744,7 +744,7 @@
         "cdn.iz8qkg.com",
 	"youtube.com",
         "uhibo.com",
-        ".*boku.*",
+        "*.duboku.*",
         ".*nivod.*",
         ".*ulivetv.*" 
       ]
