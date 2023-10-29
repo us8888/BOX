@@ -222,6 +222,10 @@ NASA 4K,http://nficby0j.akciatv.ru/iptv/CL7ZN7XT6GBW9K/15239/index.m3u8
 凤凰资讯,http://180.142.220.22:8181/tsfile/live/1082_1.m3u8
 凤凰香港,http://180.142.220.22:8181/tsfile/live/1084_1.m3u8
 台视,http://198.16.100.90:8278/ttv_taiwan/playlist.m3u8?tid=mdea1ba75c9e516139101&ct=17874&tsum=95f1742d36f959fe6e241587a4f8e970
+台视,http://162.19.247.76:22222/live/taishi/index.m3u8
+中视,http://162.19.247.76:22222/live/zhongshi/index.m3u8
+华视,http://162.19.247.76:22222/live/huashi/index.m3u8
+民视,http://198.16.100.90:8278/ftvhd_taiwan/playlist.m3u8?tid=MC8C5908644059086440&ct=19249&tsum=c96d2cd48b11d40ca9e97fb3addb1384
 番薯,http://61.216.67.119:1935/TWHG/E1/chunklist_w7058102.m3u8
 番薯,http://61.216.67.119:1935/TWHG/E1/chunklist_w70581102.m3u8
 ONE,http://198.16.100.90:8278/One/playlist.m3u8?tid=MC4C3559816135598161&ct=19249&tsum=dce7930990cd11c5385de1298a06c226
