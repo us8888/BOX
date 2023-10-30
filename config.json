@@ -111,10 +111,10 @@
       "key":"追忆",
       "name":"追忆",
       "type":3,
-      "jar":"http://cdn.qiaoji8.com/fix1021.jar;md5;b0ebd6d9d069f1cc325625ee47ac921d",
-      "api":"csp_Appto",
+      "jar":"./jar/fan.txt;md5;5bb9b815e54c4103323386d637fada95",
+      "api":"csp_AppSK",
       "playerType":2,
-      "ext":"kVuIt2RRCkF2aaUQ/tRDng0xixNwS1YzLTR2ZWIRoeZuBR6foSvKpFzROP6SYD+xee2Pid+GdwE4YIdXdWdTZm6byVUDz6NsLe8bZgbM4Jh28u/cmuhteoyxaNXdZ8IDERVMLBvOVgJStN8HNapFs+whGI/ls/gGyIu/MwJ8eDo0sRFqx68+aYWOn3/vB4No7D59GKHmxMY0zMdk7l4vuJa1uKEPkN9aVb5yvrtK4otsS2YcrK8k3yQ5jcvEgXvx0IbMjieKzvEj8bMtkebPDqR0IgzqolJCgA+ZkhNnPKvYizqsNGxzvTRL/w2LyL1/E6xGVk+eiayVZImjLyqqMJ2HQ7jNFmcQ7bnsOOofrAFVzmLls1TRZuhBiZqX/GpljYXji1i4CgimE8dQdb/Bm1hBJZ+EPJwPFVELFlVYrx3+7tSg/n0yUB2dstDJIZAX0otUgX8joU3D9fPlpRX514tNEhPRa3ocoruEU81osVNiQ7/pEXP+Cxn40UNLudttKj1YSPESGtewQYnsbygGBFY8ddkOhhqHmcWC3IxgljigEgQO3bAvH2qLQs5rXLm3s2RtIqSipdG9OlGf4q35swc/wfiTLHDUJIO5zIFxfqQmRXbHiWqkz5yL2x6z0EKT04YMo+tnPrHxmrp9yeYDZSy39j5/D3Xt3gQTXoPyv9OiBEI/kxcUbPDIoaiw6iZTUiUCDuHRm31d/H7LOpQcAndUy2XbV8Sa+q/lO++HspjWgLwp5T/uxfvPLuctmkdYq6zdybwHNpNWy5KUOyra81dO0QfuHu6+2keXtQZzE8JiahHVFou+BxTa79MXg3EEUjPmmlVS6FFK12uSutZiJkPWxBuvBCmpBzn0Rq0IsDFkCvgQpqnxDi6NayNATUPu8J/HAiIs04d+xDjFwkBKvXeO5Hdvs4zmURqND/gtEYm47rlqjLQ5fFQqgL0qK3zPZzQSJ/Vya9gaTesDImNPqYwOrzx6RGRBHnqiXSxJB7+XHvZ5sZJ8uIcV7V+pQv3Dx"
+      "ext":"FbjPcVZY48PN/RIZ5UWFrphwLIZAH4tPWnVF46Ct0RcDCdqQ/iHaxETP6KexDCalbnKb235g2zI+TmNzCM49OFRCWdee3hnULz5M1CsK3w=="
     },
     {
       "key":"一念",
