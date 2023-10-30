@@ -189,7 +189,7 @@
         "key":"czzy",
         "name":"厂长",
         "type":3,
-        "api":"./js/czzy_open.js"
+        "api":"./js/厂长资源.js"
     },
     {
        "key":"ikanbot_open",
