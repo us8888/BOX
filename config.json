@@ -111,9 +111,11 @@
       "key":"追忆",
       "name":"追忆",
       "type":3,
-      "jar":"./jar/fan.txt;md5;5bb9b815e54c4103323386d637fada95",
+      "jar":"./jar/fan.txt;md5;5bb9b815e54c4103323386d637fada95",   
       "api":"csp_AppSK",
-      "playerType":2,
+      "searchable":1,
+      "quickSearch":1,
+      "changeable":1,
       "ext":"FbjPcVZY48PN/RIZ5UWFrphwLIZAH4tPWnVF46Ct0RcDCdqQ/iHaxETP6KexDCalbnKb235g2zI+TmNzCM49OFRCWdee3hnULz5M1CsK3w=="
     },
     {
