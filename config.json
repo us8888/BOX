@@ -434,6 +434,13 @@
       "jar":"https://qu.ax/dDSz.jpg;md5;510FA1663F7067BD4D40DE06097202BF"
     },
     {
+      "key":"drpy_js_野格",
+      "name":"野格[js]",
+      "type":3,
+      "api":"./lib/drpy2.min.js",
+      "ext":"./js/野格.js"
+    },
+    {
       "key":"drpy_js_南瓜影视",
       "name":"南瓜",
       "type":3,
