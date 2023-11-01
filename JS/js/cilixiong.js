@@ -1,5 +1,5 @@
 var rule = {
-	title:'磁力熊[磁]',
+	title:'cilixiong',
 	host:'https://www.cilixiong.com',
 	homeUrl:'/top250/index.html',
 	// url: '/fyclass/index_(fypage-1).html',
