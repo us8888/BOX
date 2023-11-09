@@ -31,7 +31,7 @@
         "key":"susoushipin",
         "name":"速搜",
         "type":3,
-        "api":"apptov5_open.js",
+        "api":"./js/apptov5_open.js",
         "ext":{
         "domains":["http://app.pan.lu/url.json","http://api.quuu.cc/url.json"],
         "aesKey":"QJYFfHtSajHQmSdKFwtfFYGTtimcME5z",
