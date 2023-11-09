@@ -28,6 +28,19 @@
     }
     },
     {
+        "key":"susoushipin",
+        "name":"速搜",
+        "type":3,
+        "api":"apptov5_open.js",
+        "ext":{
+        "domains":["http://app.pan.lu/url.json","http://api.quuu.cc/url.json"],
+        "aesKey":"QJYFfHtSajHQmSdKFwtfFYGTtimcME5z",
+        "aesIV":"epk3BccmbMR2xNYy",
+        "rasPublicKey":"-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApH+iXclaMGlRqBdGjDyn\nIfGivHwYsjFJvXosC2kVwEBlGpEQKVLNlQeVAGq42tQbs+0pA4yuD2pI779cBfNw\nPv6Pcmsj4sRd02WTSNGwR2dOInhdSTp57Q90D4mQaQ+9zL9789fwcfvflBcozzB1\nzks9w26B7aE8x6trOI4Iy8MJcoKYMj5PRdo5oPUA13/+L9tQRe/04ziAz9pvkqxG\niajRPzsZBAl9iSgCakax+SI2meTi1/BfN9/jGy2OVvL5Q3w1LMZWdBuO9MsDxI+K\nKQnvC+rDGEcq6njONn30kNYot/tClt27VMsHQqeAzAUB0ecXABXubrHp38DCP9Bs\nwwIDAQAB\n-----END PUBLIC KEY-----",
+        "ic":"7SqqIxm2Rvnw4Ck02rpxcvEVuhCe+kJLhaGym5XNpIdYZtVEdwkEMR77W/RpPXNqz8PbvqESriov8oFjxjpifYAL8db+TxXlScJqLiPM2RzdxEyPoAsv04B4QBOYnVL5"
+      }
+      },
+    {
       "key": "豆瓣",
       "name": "豆瓣",
       "type": 3,
