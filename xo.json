@@ -40,7 +40,7 @@
 {"key":"贱贱","name":"🐭贱贱┃p2p","type":3,"searchable":1,"quickSearch":1,"changeable":1,"playerType":"1","api":"https://fanty.run.goorm.site/ext/js/drpy2.min.js","ext":"https://fanty.run.goorm.site/ext/jp.js"},
 {"key":"4KHDR","name":"🧲世界磁力┃慎用","type":3,"searchable":1,"quickSearch":1,"changeable":0,"api":"https://fanty.run.goorm.site/ext/js/drpy2.min.js","ext":"https://fanty.run.goorm.site/ext/4khdr.js"},
 {"key":"新6V","name":"🧲新6V磁力┃慎用","type":3,"api":"csp_SixV","searchable":1,"quickSearch":1,"changeable":0,"ext": "http://www.xb6v.com/"},
-{"key":"py_bilibilimd.py","name":"哔哩","type":3,"api":"./py/py_bilibilimd.py","searchable":0,"quickSearch":0,"filterable":0,"changeable":0,"ext":{"json":"http://127.0.0.1:9978/file/tvfan/cookie.json"}},
+{"key":"py_bilibilimd.py","name":"哔哩","type":3,"api":"./py/py_bilibilimd.py","searchable":0,"quickSearch":0,"filterable":0,"changeable":0,"ext":{"json":"http://127.0.0.1:9978/file/tvfan/cookie.txt"}},
     
 {"key":"Aid","name":"🚑急救┃教学","type":3,"api":"csp_FirstAid","searchable":0,"quickSearch":0,"changeable":0,"style": { "type": "rect", "ratio":3.8}},
 {"key":"有声小说js","name":"🎧有声┃小说","type":3,"api":"https://fanty.run.goorm.site/ext/js/drpy2.min.js","ext":"https://fanty.run.goorm.site/ext/有声小说吧.js","style":{"type":"rect","ratio":1},"searchable": 0,"quickSearch": 0,"changeable":0},
