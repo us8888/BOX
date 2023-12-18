@@ -143,7 +143,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 	def searchContent(self, key, quick):
 		return self.searchContentPage(key, quick, '1')
 
-	def searchContentPage(self, key, page, quick):
+	def searchContentPage(self, key, quick, page):
 		videos = []
 		cookie = ''
 		if 'cookie' in self.extendDict:
