@@ -9,7 +9,7 @@
       "quickSearch":0,
       "filterable":1,
       "ext":{
-      "ure":"./py/live.json"
+      "url":"./py/live.json"
     }
     },
     {
