@@ -1,30 +1,13 @@
 {
   "sites": [
     {
-      "key": "本地",
-      "name": "本地",
-      "type": 3,
-      "api": "csp_Local",
-      "searchable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "AList",
-      "name": "AList",
-      "type": 3,
-      "api": "csp_AList",
-      "searchable": 1,
-      "changeable": 0,
-      "ext": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/alist.json"
-    },
-    {
-      "key": "WebDAV",
-      "name": "WebDAV",
-      "type": 3,
-      "api": "csp_WebDAV",
-      "searchable": 1,
-      "changeable": 0,
-      "ext": "https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/webdav.json"
+      "key":"alist",
+      "name":"阿里云盘",
+      "type":3,
+      "api":"./py/py_alist.py",
+      "searchable":1,
+      "changeable":0,
+      "ext":"https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/alist.json"
     },
     {
       "key": "py_kunyu77",
