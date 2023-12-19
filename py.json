@@ -7,7 +7,6 @@
       "api":"./py/py_alist.py",
       "searchable":1,
       "changeable":0,
-      "ext":"https://fongmi.cachefly.net/FongMi/CatVodSpider/main/json/alist.json"
     },
     {
       "key": "py_kunyu77",
