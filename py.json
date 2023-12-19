@@ -16,7 +16,7 @@
       "key":"py_alist",
       "name":"阿里云盘",
       "type":3,
-      "api":"py_alist.py",
+      "api":"./py/py_alist.py",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 1
