@@ -13,14 +13,13 @@
     }
     },
     {
-      "key": "py_huya",
-      "name": "🔥虎牙",
-      "type": 3,
-      "api": "py_huya",
+      "key":"py_alist",
+      "name":"阿里云盘",
+      "type":3,
+      "api":"py_alist.py",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 1,
-      "ext": "https://ghproxy.com/https://raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/plugin/py_huya.py"
+      "filterable": 1
     },
     {
       "key": "py_ikan",
