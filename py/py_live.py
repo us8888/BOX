@@ -36,9 +36,8 @@ class Spider(Spider):  # 元类 默认的元类 type
 	def homeContent(self, filter):
 		result = {}
 		try:
-			url = json.loads(self.extendDict)['url']
-			r = self.fetch(url, headers=self.header, timeout=5)
-			data = r.json()
+			url = self.extendDict['url']
+			data = self.fetch(url, headers=self.header, timeout=5).json()
 			result['class'] = data['classes']
 			if filter:
 				result['filters'] = data['filter']
