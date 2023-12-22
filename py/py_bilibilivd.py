@@ -91,6 +91,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		r = self.fetch(url, cookies=cookie, headers=self.header, timeout=5)
 		data = json.loads(self.cleanText(r.text))
 		try:
+			result['list'] = []
 			vodList = data['data']['item']
 			for vod in vodList:
 				aid = str(vod['id']).strip()
@@ -207,7 +208,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		elif cid.startswith('UP主&&&'):
 			cid = cid[6:]
 			params = {'mid': cid, 'ps': 30, 'pn': page}
-			# params = WBI().encWbi(params, imgKey, subKey)
+			params = self.encWbi(params, imgKey, subKey)
 			url = 'https://api.bilibili.com/x/space/wbi/arc/search?'
 			for key in params:
 				url += f'&{key}={quote(params[key])}'
@@ -384,6 +385,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			]
 		}
 		return result
+
 	def searchContent(self, key, quick):
 		return self.searchContentPage(key, quick, '1')
 
@@ -502,38 +504,95 @@ class Spider(Spider):  # 元类 默认的元类 type
 		return None
 
 	def proxyMpd(self, params):
-		content, _, mediaType = self.getDash(params)
+		content, durlinfos, mediaType = self.getDash(params)
 		if mediaType == 'mpd':
 			action = {'url': '', 'header': self.header, 'param': '', 'type': 'string'}
 			return [200, "application/dash+xml", action, content]
 		else:
-			action = {'url': content, 'header': self.header, 'param': '', 'type': 'stream'}
-			return [200, "video/MP2T", action, '']
+			url = content
+			durlinfo = durlinfos['durl'][0]['backup_url']
+			try:
+				r = self.fetch(url, headers=self.header, stream=True, timeout=1)
+				statusCode = r.status_code
+				try:
+					r.close()
+				except:
+					pass
+			except:
+				try:
+					r.close()
+				except:
+					pass
+				statusCode = 404
+				for url in durlinfo:
+					try:
+						r = self.fetch(url, headers=self.header, stream=True, timeout=1)
+						statusCode = r.status_code
+					except:
+						statusCode = 404
+					if statusCode == 200:
+						break
+					try:
+						r.close()
+					except:
+						pass
+			if statusCode != 200 and self.retry == 0:
+				self.retry += 1
+				self.proxyMedia(params, True)
+			header = self.header.copy()
+			if 'range' in params:
+				header['Range'] = params['range']
+			if '127.0.0.1:7777' in url:
+				action = {'url': url, 'header': header, 'param': '', 'type': 'redirect'}
+				return [302, "video/MP2T", action, url]
+			action = {'url': url, 'header': header, 'param': '', 'type': 'stream'}
+			return [206, "application/octet-stream", action, '']
 
 	def proxyMedia(self, params, forceRefresh=False):
 		_, dashinfos, _ = self.getDash(params)
 		if 'videoid' in params:
-			videoid = int(params['videoid'])
-			playurl = dashinfos['video'][videoid]['baseUrl']
+			videoid = params['videoid']
+			dashinfo = dashinfos['video'][videoid]
+			url = dashinfo['baseUrl']
 		elif 'audioid' in params:
-			audioid = int(params['audioid'])
-			playurl = dashinfos['audio'][audioid]['baseUrl']
+			audioid = params['audioid']
+			dashinfo = dashinfos['audio'][audioid]
+			url = dashinfo['baseUrl']
 		else:
 			return [404, "text/plain", {}, ""]
 		try:
-			r = self.fetch(playurl, headers=params['headers'], stream=True)
+			r = self.fetch(url, headers=self.header, stream=True, timeout=1)
 			statusCode = r.status_code
+			try:
+				r.close()
+			except:
+				pass
 		except:
+			try:
+				r.close()
+			except:
+				pass
 			statusCode = 404
-		try:
-			r.close()
-		except:
-			pass
+			for url in dashinfo['backupUrl']:
+				try:
+					r = self.fetch(url, headers=self.header, stream=True, timeout=1)
+					statusCode = r.status_code
+				except:
+					statusCode = 404
+				if statusCode == 200:
+					break
+				try:
+					r.close()
+				except:
+					pass
 		if statusCode != 200 and self.retry == 0:
 			self.retry += 1
-			self.proxyPlayurl(params, True)
-		action = {'url': playurl, 'header': self.header, 'param': '', 'type': 'stream'}
-		return [200, "video/MP2T", action, '']
+			self.proxyMedia(params, True)
+		header = self.header.copy()
+		if 'range' in params:
+			header['Range'] = params['range']
+		action = {'url': url, 'header': header, 'param': '', 'type': 'stream'}
+		return [206, "application/octet-stream", action, '']
 
 	def getDash(self, params, forceRefresh=False):
 		aid = params['aid']
@@ -559,7 +618,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		if data['code'] != 0:
 			return '', {}, ''
 		if not 'dash' in data['data']:
-			purl = data['result']['durl'][0]['url']
+			purl = data['data']['durl'][0]['url']
 			try:
 				expiresAt = int(self.regStr(reg='deadline=(\d+)', src=purl).group(1)) - 60
 			except:
@@ -570,8 +629,8 @@ class Spider(Spider):  # 元类 默认的元类 type
 				except:
 					self.fetch('http://127.0.0.1:9978/go')
 				purl = f'http://127.0.0.1:7777?url={quote(purl)}&thread={thread}'
-			self.setCache(key, {'content': purl, 'type': 'mp4', 'dashinfos': {}, 'expiresAt': expiresAt})
-			return purl, {}, 'mp4'
+			self.setCache(key, {'content': purl, 'type': 'mp4', 'dashinfos':  data['data'], 'expiresAt': expiresAt})
+			return purl,  data['data'], 'mp4'
 
 		dashinfos = data['data']['dash']
 		duration = dashinfos['duration']
@@ -703,9 +762,32 @@ class Spider(Spider):  # 元类 默认的元类 type
 
 	def delCache(self, key):
 		self.fetch(f'http://127.0.0.1:9978/cache?do=del&key={key}', timeout=5)
-		
+
+	def encWbi(self, params, imgKey, subKey):
+		from hashlib import md5
+		from functools import reduce
+		from urllib.parse import urlencode
+		mixinKeyEncTab = [46, 47, 18, 2, 53, 8, 23, 32, 15, 50, 10, 31, 58, 3, 45, 35, 27, 43, 5, 49, 33, 9, 42, 19, 29,
+						  28, 14, 39, 12, 38, 41, 13, 37, 48, 7, 16, 24, 55, 40, 61, 26, 17, 0, 1, 60, 51, 30, 4, 22,
+						  25, 54, 21, 56, 59, 6, 63, 57, 62, 11, 36, 20, 34, 44, 52]
+		orig = imgKey + subKey
+		mixinKey = reduce(lambda s, i: s + orig[i], mixinKeyEncTab, '')[:32]
+		params['wts'] = round(time.time())  # 添加 wts 字段
+		params = dict(sorted(params.items()))  # 按照 key 重排参数
+		# 过滤 value 中的 "!'()*" 字符
+		params = {
+			k: ''.join(filter(lambda chr: chr not in "!'()*", str(v)))
+			for k, v
+			in params.items()
+		}
+		query = urlencode(params)  # 序列化参数
+		params['w_rid'] = md5((query + mixinKey).encode()).hexdigest()  # 计算 w_rid
+		return params
+
+
 	retry = 0
 	header = {
 		"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36",
 		"Referer": "https://www.bilibili.com"
 	}
+

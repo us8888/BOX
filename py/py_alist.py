@@ -74,16 +74,20 @@ class Spider(Spider):  # 元类 默认的元类 type
         if not baseUrl:
             baseUrl = self.regStr(reg="(http.*://.*?/)", src=url)
         header['Referer'] = baseUrl
-        token = self.getCache('token')
+        token = self.getCache('alistToken')
         if token:
             token = token['token']
         else:
             data = self.postJson(baseUrl + 'api/auth/login', json=login, headers=header).json()
             if data['code'] == 200:
                 token = data['data']['token']
-                self.setCache('token', {'token': token, 'expiresAt': int(time.time()) + 86400})
+                self.setCache('alistToken', {'token': token, 'expiresAt': int(time.time()) + 86400})
         header['Authorization'] = token
         path = '/' + url.replace(baseUrl, "")
+        if path != '/':
+            aid = path.strip('/') + '/'
+        else:
+            aid = path
         for param in params:
             if param['path'].startswith(path) and 'pass' in param:
                 password = param['pass']
@@ -104,10 +108,6 @@ class Spider(Spider):  # 元类 默认的元类 type
                 img = vod['thumb']
             else:
                 img = baseUrl.strip('/') + vod['thumb']
-            if path != '/':
-                aid = path.strip('/') + '/'
-            else:
-                aid = path.strip('/')
             if vod['type'] == 1:
                 tag = "folder"
                 remark = "文件夹"
@@ -152,7 +152,7 @@ class Spider(Spider):  # 元类 默认的元类 type
                 "vod_remarks": path
             })
         if subtList != []:
-            self.setCache(f"subtList_{cid[:cid.rfind('/')]}", {'subtList': subtList, 'expiresAt': int(time.time()) + 86400})
+            self.setCache(f"subtList_{baseUrl+aid.strip('/')}", {'subtList': subtList, 'expiresAt': int(time.time()) + 86400})
         result['list'] = videos
         result['page'] = 1
         result['pagecount'] = 1
@@ -205,10 +205,6 @@ class Spider(Spider):  # 元类 默认的元类 type
     def playerContent(self, flag, pid, vipFlags):
         result = {}
         purl = self.getDownloadUrl(pid)
-        if '&&&' in pid:
-            append = pid[pid.index('&&&'):]
-        else:
-            append = ''
         url = pid[:pid.rfind('/')]
         data = self.getCache(f'subtList_{url}')
         subs = []
@@ -281,14 +277,14 @@ class Spider(Spider):  # 元类 默认的元类 type
         if not baseUrl:
             baseUrl = self.regStr(reg="(http.*://.*?/)", src=url)
         header['Referer'] = baseUrl
-        token = self.getCache('token')
+        token = self.getCache('alistToken')
         if token:
             token = token['token']
         else:
             data = self.postJson(baseUrl + 'api/auth/login', json=login, headers=header).json()
             if data['code'] == 200:
                 token = data['data']['token']
-                self.setCache('token', {'token': token, 'expiresAt': int(time.time()) + 86400})
+                self.setCache('alistToken', {'token': token, 'expiresAt': int(time.time()) + 86400})
         header['Authorization'] = token
         path = '/' + url.replace(baseUrl, "")
         for param in params:
@@ -330,5 +326,3 @@ class Spider(Spider):  # 元类 默认的元类 type
         self.fetch(f'http://127.0.0.1:9978/cache?do=del&key={key}', timeout=5)
 
     header = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36"}
-
-    ext = 'http://lmhome.leuse.top:8189/TV/alist.json'

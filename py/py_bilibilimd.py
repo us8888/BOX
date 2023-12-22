@@ -81,7 +81,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		cookie, _, _ = self.getCookie('{}')
 		url = 'https://api.bilibili.com/pgc/season/index/result?order=2&sort=0&pagesize=20&type=1&st={}&season_type={}&page={}'.format(cid, cid, page)
 		for key in ext:
-			url = url + '&{}={}' .format(key, quote(ext[key]))
+			url += f'&{key}={quote(ext[key])}'
 		r = self.fetch(url, headers=self.header, cookies=cookie, timeout=5)
 		data = json.loads(self.cleanText(r.text))
 		vodList = data['data']['list']
@@ -225,49 +225,101 @@ class Spider(Spider):  # 元类 默认的元类 type
 
 	def localProxy(self, params):
 		if params['type'] == "mpd":
-			print('localProxympd', params)
 			return self.proxyMpd(params)
 		if params['type'] == "media":
-			print('localProxymedia', params)
 			return self.proxyMedia(params)
 		return None
 
 	def proxyMpd(self, params):
-		content, _, mediaType = self.getDash(params)
+		content, durlinfos, mediaType = self.getDash(params)
 		if mediaType == 'mpd':
 			action = {'url': '', 'header': self.header, 'param': '', 'type': 'string'}
-			print('proxyMpd', action)
 			return [200, "application/dash+xml", action, content]
 		else:
-			action = {'url': content, 'header': self.header, 'param': '', 'type': 'stream'}
-			print('proxyMpd', action)
-			return [200, "video/MP2T", action, '']
+			url = content
+			durlinfo = durlinfos['durl'][0]['backup_url']
+			try:
+				r = self.fetch(url, headers=self.header, stream=True, timeout=1)
+				statusCode = r.status_code
+				try:
+					r.close()
+				except:
+					pass
+			except:
+				try:
+					r.close()
+				except:
+					pass
+				statusCode = 404
+				for url in durlinfo:
+					try:
+						r = self.fetch(url, headers=self.header, stream=True, timeout=1)
+						statusCode = r.status_code
+					except:
+						statusCode = 404
+					if statusCode == 200:
+						break
+					try:
+						r.close()
+					except:
+						pass
+			if statusCode != 200 and self.retry == 0:
+				self.retry += 1
+				self.proxyMedia(params, True)
+			header = self.header.copy()
+			if 'range' in params:
+				header['Range'] = params['range']
+			if '127.0.0.1:7777' in url:
+				action = {'url': url, 'header': header, 'param': '', 'type': 'redirect'}
+				return [302, "video/MP2T", action, url]
+			action = {'url': content, 'header': header, 'param': '', 'type': 'stream'}
+			return [206, "application/octet-stream", action, '']
 
 	def proxyMedia(self, params, forceRefresh=False):
 		_, dashinfos, _ = self.getDash(params)
 		if 'videoid' in params:
 			videoid = int(params['videoid'])
-			playurl = dashinfos['video'][videoid]['baseUrl']
+			dashinfo = dashinfos['video'][videoid]
+			url = dashinfo['baseUrl']
 		elif 'audioid' in params:
 			audioid = int(params['audioid'])
-			playurl = dashinfos['audio'][audioid]['baseUrl']
+			dashinfo = dashinfos['audio'][audioid]
+			url = dashinfo['baseUrl']
 		else:
 			return [404, "text/plain", {}, ""]
-#		try:
-#			r = self.fetch(playurl, headers=params['headers'], stream=True)
-#			statusCode = r.status_code
-#		except:
-#			statusCode = 404
-#		try:
-#			r.close()
-#		except:
-#			pass
-#		if statusCode != 200 and self.retry == 0:
-#			self.retry += 1
-#			self.proxyPlayurl(params, True)
-		action = {'url': playurl, 'header': self.header, 'param': '', 'type': 'stream'}
-		print('proxyMedia', action)
-		return [200, "video/MP2T", action, '']
+		try:
+			r = self.fetch(url, headers=params['headers'], stream=True)
+			statusCode = r.status_code
+			try:
+				r.close()
+			except:
+				pass
+		except:
+			try:
+				r.close()
+			except:
+				pass
+			statusCode = 404
+			for url in dashinfo['backupUrl']:
+				try:
+					r = self.fetch(url, headers=self.header, stream=True, timeout=1)
+					statusCode = r.status_code
+				except:
+					statusCode = 404
+				if statusCode == 200:
+					break
+				try:
+					r.close()
+				except:
+					pass
+		if statusCode != 200 and self.retry == 0:
+			self.retry += 1
+			self.proxyMedia(params, True)
+		header = self.header.copy()
+		if 'range' in params:
+			header['Range'] = params['range']
+		action = {'url': url, 'header': header, 'param': '', 'type': 'stream'}
+		return [206, "application/octet-stream", action, '']
 
 	def getDash(self, params, forceRefresh=False):
 		aid = params['aid']
@@ -279,14 +331,15 @@ class Spider(Spider):  # 元类 默认的元类 type
 			thread = 0
 		header = self.header.copy()
 		cookieDict = json.loads(unquote(params['cookies']))
-		key = 'bilimdmpdCache_{}_{}'.format(aid, cid)
-		if not forceRefresh:
+		key = f'bilimdmpdCache_{aid}_{cid}'
+		if forceRefresh:
+			self.delCache(key)
+		else:
 			data = self.getCache(key)
-			print('getDash', data)
 			if data:
 				return data['content'], data['dashinfos'], data['type']
 
-		cookies = cookieDict
+		cookies = cookieDict.copy()
 		r = self.fetch(url, cookies=cookies, headers=header, timeout=5)
 		data = json.loads(self.cleanText(r.text))
 		if data['code'] != 0:
@@ -303,8 +356,8 @@ class Spider(Spider):  # 元类 默认的元类 type
 				except:
 					self.fetch('http://127.0.0.1:9978/go')
 				purl = f'http://127.0.0.1:7777?url={quote(purl)}&thread={thread}'
-			self.setCache(key, {'content': purl, 'type': 'mp4', 'dashinfos': {}, 'expiresAt': expiresAt})
-			return purl, {}, 'mp4'
+			self.setCache(key, {'content': purl, 'type': 'mp4', 'dashinfos': data['result'], 'expiresAt': expiresAt})
+			return purl, data['result'], 'mp4'
 
 		dashinfos = data['result']['dash']
 		duration = dashinfos['duration']
