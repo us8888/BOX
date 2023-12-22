@@ -12,6 +12,7 @@
         "thread":"5"
       }
     },
+    {
       "key":"py_cntv.py",
       "name":"直播",
       "type":3,
