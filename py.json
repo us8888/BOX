@@ -1,4 +1,5 @@
-    {
+"sites":[
+   {
       "key": "py_ali.py",
       "name": "豆瓣",
       "type": 3,
@@ -10,7 +11,7 @@
       "ext": {
         "token": "http://127.0.0.1:9978/file/tvfan/token.txt",
         "thread": "2"
-      }
+    }
     },
     {
       "key": "py_bilivd.py",
@@ -28,3 +29,4 @@
         "type": "分类关键字1#分类关键字2"
       }
     },
+  ]
