@@ -1,29 +1,29 @@
     {
       "key": "py_ali.py",
-      "name": "豆瓣首页+厂长搜索+三个阿里系搜索+推送",
+      "name": "豆瓣",
       "type": 3,
-      "api": "py文件地址，支持http或./ 方式",
+      "api": "./py/py_ali.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "changeable": 1,
       "ext": {
-        "token": "自己的Token，支持http或32位token",
-        "thread": "线程数，为0使用转存原画，大于0使用旧api多线程"
+        "token": "http://127.0.0.1:9978/file/tvfan/token.txt",
+        "thread": "2"
       }
     },
     {
       "key": "py_bilivd.py",
       "name": "B站视频",
       "type": 3,
-      "api": "py文件地址，支持http或./ 方式",
+      "api": "./py/py_bilibilivd.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "changeable": 1,
       "ext": {
-        "json": "包含分类、筛选、cookie的json文件",
-        "cookie": "直接从浏览器提取的cookie", 
+        "json": "",
+        "cookie": "", 
         "categories": "分类关键字1#分类关键字2", 
         "type": "分类关键字1#分类关键字2"
       }
