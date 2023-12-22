@@ -145,13 +145,13 @@ class Spider(Spider):  # 元类 默认的元类 type
 		if didList[1] == 'bilibili':
 			url = f'https://api.live.bilibili.com/room/v1/Room/playUrl?cid={didList[2]}&qn=20000&platform=h5'
 			data = self.fetch(url, headers=header).json()
-			platformList = ['B站直播']
+			platformList = ['B站']
 			playurlList = [data['data']['quality_description'][0]['desc'] + '$' + data['data']['durl'][0]['url']]
 		elif didList[1] == 'douyu':
 			params = quote(json.dumps({"rid": didList[2]}))
 			url = f'https://api-lmteam.koyeb.app/live/douyu?params={params}'
-			platformList = ['斗鱼直播']
-			playurlList = [f'斗鱼直播${url}']
+			platformList = ['斗鱼']
+			playurlList = [f'直播${url}']
 		elif didList[1] == 'huya':
 			import html
 			header['Content-Type'] = 'application/x-www-form-urlencoded'
@@ -165,7 +165,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			playurlList = []
 			i = 1
 			for pL in data['data'][0]['gameStreamInfoList']:
-				platformList.append('线路{}'.format(str(i)))
+				platformList.append('虎牙{}'.format(str(i)))
 				baseurl = pL['sHlsUrl'] + '/' + pL['sStreamName'] + '.' + pL['sHlsUrlSuffix']
 				srcAntiCode = html.unescape(pL['sHlsAntiCode'])
 				c = srcAntiCode.split('&')
@@ -282,7 +282,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			if SequenceMatcher(None, title, key).ratio() < 0.6 and key not in title:
 				continue
 			items.append({
-				'vod_id': '{}###douyin###{}'.format(title, video['anchorInfo']['rid']),
+				'vod_id': '{}###douyu###{}'.format(title, video['anchorInfo']['rid']),
 				'vod_name': title,
 				'vod_pic': video['anchorInfo']['roomSrc'],
 				"vod_remarks": '斗鱼直播'
@@ -313,11 +313,12 @@ class Spider(Spider):  # 元类 默认的元类 type
 	def playerContent(self, flag, pid, vipFlags):
 		result = {}
 		header = self.header.copy()
+		# header['Referer'] = "https://www.bilibili.com"
 		result["parse"] = 0
 		result["playUrl"] = ''
 		result["url"] = pid
 		result["header"] = header
-		return result, 14400
+		return result
 
 	def localProxy(self, param):
 		return [200, "video/MP2T", {}, ""]
