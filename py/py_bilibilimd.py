@@ -330,7 +330,8 @@ class Spider(Spider):  # 元类 默认的元类 type
 		else:
 			thread = 0
 		header = self.header.copy()
-		cookieDict = json.loads(unquote(params['cookies']))
+		self.setCache('debug', params['cookies'])
+		cookieDict = json.loads(params['cookies'])
 		key = f'bilimdmpdCache_{aid}_{cid}'
 		if forceRefresh:
 			self.delCache(key)
