@@ -1,5 +1,5 @@
 {
-"spider":"./JAR/fan.txt;md5;89d697916e9b66cf6b9bfd81981f274d",
+"spider":"./JAR/fan.txt;md5;8ba7ff79221a3b1dd152646f48cd279c",
 "wallpaper":"http://饭太硬.top/深色壁纸/api.php",
 
 "sites":[
@@ -36,7 +36,7 @@
 {"key":"Auete","name":"🏝奥特┃直连","type": 3,"api":"csp_Auete","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://haozhansou.com/"}, 
 {"key":"csp_SP33","name":"📺三三┃解析","type":3,"api":"csp_SP33","searchable":1,"quickSearch":1,"filterable":1,"changeable":0},
 
-{"key":"贱贱","name":"🐭贱贱┃p2p","type":3,"searchable":1,"quickSearch":1,"changeable":1,"playerType":"1","api":"https://fanty.run.goorm.site/ext/js/drpy2.min.js","ext":"https://fanty.run.goorm.site/ext/jp.js"},
+{"key":"贱贱","name":"🐭贱贱┃p2p","type":3,"searchable":1,"quickSearch":1,"changeable":1,"playerType":"1","api":"./JS/lib/drpy2.min.js","ext":"https://fanty.run.goorm.site/ext/jp.js"},
 {"key":"drpy_js_荐片","name":"荐片[js]","type":3,"api":"./JS/lib/drpy2.min.js","searchable":1,"quickSearch":1,"changeable":1,"ext":"./JS/js/荐片.js","timeout":30},
 {"key":"drpy_js_磁力熊搜索","name":"磁力熊搜索[js]","type":3,"api":"./JS/lib/drpy2.min.js","ext":"./JS/js/cilixiong.js","searchable":0,"quickSearch":0,"changeable":1},
 {"key":"新6V","name":"🧲新6V磁力┃慎用","type":3,"api":"csp_SixV","searchable":1,"quickSearch":1,"changeable":0,"ext": "http://www.xb6v.com/"},
