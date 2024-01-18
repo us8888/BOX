@@ -1,5 +1,5 @@
 {
-"spider":"./fan.jar;md5;58adbd51a4bbed437f442e4e9a4c85c2",
+"spider":"./JAR/fan.txt;md5;eea132982ffc884d7a39295f06a5141c",
 "wallpaper":"http://饭太硬.top/深色壁纸/api.php",
 "sites":[
 {"key":"py_ali","name":"首页","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_ali.py","searchable":1,"quickSearch":1,"filterable":1, "ext": {"token": "http://127.0.0.1:9978/file/tvfan/token.txt", "thread": "10"}},
