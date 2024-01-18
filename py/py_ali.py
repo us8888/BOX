@@ -241,8 +241,12 @@ class Spider(Spider):
                 r = self.fetch('https://www.alipansou.com' + '/cv/' + tid, allow_redirects=False, headers=header, timeout=5)
                 tid = self.regStr(r.text.replace('www.alipan.com', 'www.aliyundrive.com'), 'https://www.aliyundrive.com/s/[^"]+', 0).replace('\\', '')
             elif tag == 'cz':
+                header = {
+                    'Referer': 'https://www.czzy88.com/',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+                }
                 url = 'https://www.czzy88.com/' + tid + '.html'
-                r = self.getContent({'pf': 'cz', 'url': url})
+                r = self.getContent({'pf': 'cz', 'url': url}, header)
                 html = self.html(r.content.decode())
                 name = self.xpText(html, "//div[contains(@class,'moviedteail_tt')]/h1/text()")
                 pic = self.xpText(html, "//div[contains(@class,'dyimg')]/img/@src")
@@ -300,7 +304,7 @@ class Spider(Spider):
                 fileId = 'root'
             shareToken = self.getshareToken(shareId, '')
             itemsDict = self.listFiles({}, shareId, fileId, shareToken)
-            if not itemsDict:
+            if len(itemsDict) == 0:
                 return {'list': [], 'msg': '无可播放资源'}
             itemsDict = sorted(itemsDict.items(), key=lambda x: x[0])
             videoList = []
@@ -313,18 +317,20 @@ class Spider(Spider):
                 'list': [vodList]
             }
         else:
+            url = tid.replace('#', '***')
             vodList = {
                 'vod_id': tid,
                 'vod_name': tid,
                 'vod_content': tid,
                 'vod_play_from': '直链$$$嗅探$$$解析',
-                'vod_play_url': '推送${}$$$推送${}$$$推送${}'.format(tid, tid, tid)
+                'vod_play_url': '推送${}$$$推送${}$$$推送${}'.format(url, url, url)
             }
             result = {'list': [vodList]}
         return result
 
     def playerContent(self, flag, pid, vipFlags):
         result = {}
+        pid = pid.replace('***', '#')
         result["url"] = pid
         if flag == '原画':
             name = pid.split('---')[0]
@@ -354,6 +360,10 @@ class Spider(Spider):
             result["jx"] = 1
         elif flag == '厂长':
             result["parse"] = 0
+            header = {
+                'Referer': 'https://www.czzy88.com/',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+            }
             url = pid.split('---')[0]
             name = pid.split('---')[1]
             pos = pid.split('---')[2]
@@ -361,28 +371,40 @@ class Spider(Spider):
             if params:
                 danmuUrl = f'https://api-lmteam.koyeb.app/danmu?params={quote(json.dumps(params))}'
                 result['danmaku'] = danmuUrl
-            r = self.getContent({'pf': 'cz', 'url': url})
-            b64 = self.regStr(reg='\"([^\"]+)\";var [\d\w]+=function dncry.*md5.enc.Utf8.parse\(\"([\d\w]+)\".*md5.enc.Utf8.parse\(([\d]+)\)', src=r.text, group=1)
-            key = self.regStr(reg='\"([^\"]+)\";var [\d\w]+=function dncry.*md5.enc.Utf8.parse\(\"([\d\w]+)\".*md5.enc.Utf8.parse\(([\d]+)\)', src=r.text, group=2).encode()
-            iv = self.regStr(reg='\"([^\"]+)\";var [\d\w]+=function dncry.*md5.enc.Utf8.parse\(\"([\d\w]+)\".*md5.enc.Utf8.parse\(([\d]+)\)', src=r.text, group=3).encode()
-            enc = b64decode(b64)
-            cipher = AES.new(key, AES.MODE_CBC, iv)
-            data = cipher.decrypt(enc)
-            content = data[:-data[-1]].decode()
-            playUrl = self.regStr(reg='video: *\{url: *\"([^\"]+)\"', src=content)
-            subUrl = self.regStr(reg='subtitle: *\{url: *\"([^\"]+)\"', src=content)
-            if len(subUrl) > 0:
-                result['subs'] = [{'url': subUrl, 'name': 'czspp'}]
-            if len(playUrl) == 0:
-                url = self.regStr(reg='<iframe.*?src=\"(.*?)\".*?</iframe>', src=r.text)
-                r = self.getContent({'pf': 'cz', 'url': url})
-                b64 = self.regStr(reg='var rand = \"(.*?)\".*var player = \"(.*?)\"', src=r.text.replace('\n', ''), group=2)
-                iv = self.regStr(reg='var rand = \"(.*?)\".*var player = \"(.*?)\"', src=r.text.replace('\n', ''), group=1).encode()
+            r = self.getContent({'pf': 'cz', 'url': url}, header)
+            try:
+                b64 = self.regStr(reg='\"([^\"]+)\";var [\d\w]+=function dncry.*md5.enc.Utf8.parse\(\"([\d\w]+)\".*md5.enc.Utf8.parse\(([\d]+)\)', src=r.text, group=1)
+                key = self.regStr(reg='\"([^\"]+)\";var [\d\w]+=function dncry.*md5.enc.Utf8.parse\(\"([\d\w]+)\".*md5.enc.Utf8.parse\(([\d]+)\)', src=r.text, group=2).encode()
+                iv = self.regStr(reg='\"([^\"]+)\";var [\d\w]+=function dncry.*md5.enc.Utf8.parse\(\"([\d\w]+)\".*md5.enc.Utf8.parse\(([\d]+)\)', src=r.text, group=3).encode()
                 enc = b64decode(b64)
-                cipher = AES.new('VFBTzdujpR9FWBhe'.encode(), AES.MODE_CBC, iv)
+                cipher = AES.new(key, AES.MODE_CBC, iv)
                 data = cipher.decrypt(enc)
                 content = data[:-data[-1]].decode()
-                playUrl = json.loads(content)['url']
+                playUrl = self.regStr(reg='video: *\{url: *\"([^\"]+)\"', src=content)
+                subUrl = self.regStr(reg='subtitle: *\{url: *\"([^\"]+)\"', src=content)
+                if len(subUrl) > 0:
+                    result['subs'] = [{'url': subUrl, 'name': 'czspp'}]
+            except:
+                url = self.regStr(reg='<iframe.*?src=\"(.*?)\".*?</iframe>', src=r.text)
+                header.update({'sec-ch-ua-platform': '"Windows"', 'Sec-Fetch-Dest': "iframe", 'Sec-Fetch-Mode': "navigate", 'Sec-Fetch-Site': "cross-site", "Upgrade-Insecure-Requests": "1", "sec-ch-ua-mobile": "?0", "sec-ch-ua": '"Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"', "Cookies": 'DNT=1'})
+                r = self.getContent({'pf': 'cz', 'url': url}, header)
+                try:
+                    b64 = self.regStr(reg='var rand = \"(.*?)\".*var player = \"(.*?)\"', src=r.text.replace('\n', ''), group=2)
+                    iv = self.regStr(reg='var rand = \"(.*?)\".*var player = \"(.*?)\"', src=r.text.replace('\n', ''), group=1).encode()
+                    enc = b64decode(b64)
+                    cipher = AES.new('VFBTzdujpR9FWBhe'.encode(), AES.MODE_CBC, iv)
+                    data = cipher.decrypt(enc)
+                    content = data[:-data[-1]].decode()
+                    playUrl = json.loads(content)['url']
+                except:
+                    playUrl = ''
+                    content = self.regStr(r.text.replace('\n', ''), '\"data\":\"(.*?)\"')[::-1]
+                    for i in range(0, len(content), 2):
+                        combinedChars = content[i] + content[i + 1]
+                        decimalValue = int(combinedChars, 16)
+                        playUrl += chr(decimalValue)
+                    pos = int((len(playUrl) - 7) / 2)
+                    playUrl = playUrl[:pos] + playUrl[pos + 7:]
             result["url"] = playUrl
         else:
             result = {}
@@ -1074,7 +1096,7 @@ class Spider(Spider):
         return tokenDict
 
     def getDanmaku(self, name, pos):
-        danmuUrl = ''
+        info = []
         pos = int(pos)
         pos = pos - 1
         if pos < 0:
@@ -1090,43 +1112,105 @@ class Spider(Spider):
             for vod in vodList:
                 diffList.append(SequenceMatcher(None, vod['titleTxt'], name).ratio())
             diffList.sort(reverse=True)
-            for diff in diffList:
-                infos = vodList[diffList.index(diff)]
-                if 'seriesPlaylinks' in infos:
-                    if type(infos['seriesPlaylinks'][-1]) == str:
-                        info = sorted(infos['seriesPlaylinks'][:-1], key=lambda x: x['c'])
-                        info.append({'url': infos['seriesPlaylinks'][-1]})
+            for i in range(0, len(diffList)):
+                infos = vodList[i]
+                enId = infos['en_id']
+                catId = infos['cat_id']
+                videoType = infos['cat_name']
+                if videoType in ["电影", "电视剧"]:
+                    if 'seriesPlaylinks' in infos and len(infos['seriesPlaylinks']) != 0:
+                        if type(infos['seriesPlaylinks'][-1]) == str:
+                            info = infos['seriesPlaylinks'][:-1]
+                            info.append({'url': infos['seriesPlaylinks'][-1]})
+                        else:
+                            info = infos['seriesPlaylinks']
                     else:
-                        info = sorted(infos['seriesPlaylinks'], key=lambda x: x['c'])
-                else:
-                    key = list(infos['playlinks'].keys())[0]
-                    if type(infos['playlinks'][key]) == dict:
-                        info = sorted(infos['playlinks'][key], key=lambda x: x['updateline'])
+                        site = list(infos['playlinks'].keys())[0]
+                        if type(infos['playlinks'][site]) == str:
+                            info = [{'url': infos['playlinks'][site]}]
+                        else:
+                            info = infos['playlinks'][site]
+                elif videoType == '动漫':
+                    site = list(infos['playlinks'].keys())[0]
+                    s = quote(f'[{{\"cat_id\": \"{catId}\", \"ent_id\": \"{enId}\", \"site\": \"{site}\"}}]')
+                    r = self.fetch(f'https://api.so.360kan.com/episodesv2?v_ap=1&s={s}', headers=header, timeout=15)
+                    data = r.json()['data'][0]['seriesHTML']
+                    if 'seriesPlaylinks' in data and len(data['seriesPlaylinks']) != 0:
+                        if type(data['seriesPlaylinks'][-1]) == str:
+                            info = data['seriesPlaylinks'][:-1]
+                            info.append({'url': data['seriesPlaylinks'][-1]})
+                        else:
+                            info = data['seriesPlaylinks']
                     else:
-                        pos = 0
-                        info = [{'url': infos['playlinks'][key]}]
+                        if type(data['playlinks'][site]) == str:
+                            info = [{'url': data['playlinks'][site]}]
+                        else:
+                            info = data['playlinks'][site]
+                    retry = 0
+                    while enId != data['en_id'] and retry < 10:
+                        retry += 1
+                        site = list(infos['playlinks'].keys())[0]
+                        s = quote(f'[{{\"cat_id\": \"{catId}\", \"ent_id\": \"{enId}\", \"site\": \"{site}\"}}]')
+                        r = self.fetch(f'https://api.so.360kan.com/episodesv2?v_ap=1&s={s}', headers=header, timeout=15)
+                        data = r.json()['data'][0]['seriesHTML']
+                        enId = data['en_id']
+                        if 'seriesPlaylinks' in data and len(data['seriesPlaylinks']) != 0:
+                            if type(data['seriesPlaylinks'][-1]) == str:
+                                info.append(data['seriesPlaylinks'][:-1])
+                                info.append({'url': data['seriesPlaylinks'][-1]})
+                            else:
+                                info.append(data['seriesPlaylinks'])
+                        else:
+                            site = list(data['playlinks'].keys())[0]
+                            if type(data['playlinks'][site]) == str:
+                                info.append([{'url': data['playlinks'][site]}])
+                            else:
+                                info.append(data['playlinks'][site])
+                elif videoType == '综艺':
+                    site = list(infos['playlinks'].keys())[0]
+                    enTid = infos['id']
+                    year = infos['year']
+                    offset = int(infos['playlinks_total'][site]) - 1 - pos
+                    if offset >= 5:
+                        r = self.fetch(f'https://api.so.360kan.com/episodeszongyi?site={site}&y={year}&entid={enTid}&offset={offset}&count=8', headers=header, timeout=15)
+                        data = r.json()['data']['list']
+                        if data:
+                            pos = 0
+                            info = [{'url': data[0]['url']}]
+                    else:
+                        if 'seriesPlaylinks' in infos and len(infos['seriesPlaylinks']) != 0:
+                            if type(infos['seriesPlaylinks'][-1]) == str:
+                                info = infos['seriesPlaylinks'][:-1]
+                                info.append({'url': infos['seriesPlaylinks'][-1]})
+                            else:
+                                info = infos['seriesPlaylinks']
+                        else:
+                            if type(infos['playlinks'][site]) == str:
+                                info = [{'url': infos['playlinks'][site]}]
+                            else:
+                                info = infos['playlinks'][site]
                 try:
-                    danmuUrl = info[pos]['url']
+                    url = info[pos]['url']
                     break
                 except:
                     pass
-            if 'qq.com' in danmuUrl:
-                params = {'platform': 'qq', 'url': danmuUrl}
-            elif 'mgtv.com' in danmuUrl:
-                params = {'platform': 'mgtv', 'url': danmuUrl}
-            elif 'iqiyi.com' in danmuUrl:
-                params = {'platform': 'iqiyi', 'url': danmuUrl}
-            elif 'youku.com' in danmuUrl:
-                params = {'platform': 'youku', 'url': danmuUrl}
-            elif 'bilibili.com' in danmuUrl:
-                params = {'platform': 'bilibili', 'url': danmuUrl}
+            if 'qq.com' in url:
+                params = {'platform': 'qq', 'url': url}
+            elif 'mgtv.com' in url:
+                params = {'platform': 'mgtv', 'url': url}
+            elif 'iqiyi.com' in url:
+                params = {'platform': 'iqiyi', 'url': url}
+            elif 'youku.com' in url:
+                params = {'platform': 'youku', 'url': url}
+            elif 'bilibili.com' in url:
+                params = {'platform': 'bilibili', 'url': url}
             else:
-                params = {}
+                return None
             return params
         except:
             pass
 
-    def getContent(self, params):
+    def getContent(self, params, header={}):
         pf = params['pf']
         try:
             if pf == 'cz':
@@ -1141,7 +1225,7 @@ class Spider(Spider):
                     r = self.fetch(params['url'], headers=header, verify=False, cookies=cookie, timeout=5)
                     if 'huadong' in r.text or 'renji' in r.text or 'btwaf' in r.text:
                         self.delCache('czCookie')
-                        return self.getContent(params)
+                        return self.getContent(params, header)
                     return r
 
                 from requests import session

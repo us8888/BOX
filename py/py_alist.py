@@ -96,8 +96,8 @@ class Spider(Spider):  # 元类 默认的元类 type
             "path": path,
             'password': password
         }
-        data = self.postJson(baseUrl + 'api/fs/list', json=param, headers=header).json()
-        vodList = data['data']['content']
+        r = self.postJson(baseUrl + 'api/fs/list', json=param, headers=header)
+        vodList = json.loads(self.cleanText(r.text))['data']['content']
         videos = []
         subtList = []
         playList = []
@@ -120,7 +120,6 @@ class Spider(Spider):  # 元类 默认的元类 type
                     cid = baseUrl + aid + vod['name']
                     playList.append(vod['name'])
                 elif splitext(vod['name'])[1] in ['.ass', '.ssa', '.srt']:
-                    cid = baseUrl + aid + vod['name']
                     subtList.append(vod['name'])
                     continue
                 else:
@@ -211,7 +210,7 @@ class Spider(Spider):  # 元类 默认的元类 type
         if data:
             subList = data['subtList']
             for sub in subList:
-                subformat = os.path.splitext(sub)[1]
+                subformat = splitext(sub)[1]
                 if subformat == '.srt':
                     sformat = 'application/x-subrip'
                 elif subformat == '.ass':
@@ -221,7 +220,7 @@ class Spider(Spider):  # 元类 默认的元类 type
                 else:
                     sformat = 'text/plain'
                 surl = url + '/' + sub
-                subs.append(f'http://127.0.0.1:UndCover/proxy?do=py&type=sub&url={surl}&sformat={sformat}')
+                subs.append({'url': f'http://127.0.0.1:UndCover/proxy?do=py&type=sub&url={surl}&sformat={sformat}', 'name': sub, 'format': sformat})
         result["parse"] = 0
         result["playUrl"] = ''
         result["url"] = purl
@@ -262,6 +261,7 @@ class Spider(Spider):  # 元类 默认的元类 type
     def getDownloadUrl(self, url):
         params = []
         password = ''
+        login = {}
         if '&&&' in url:
             urlList = url.split('&&&')
             url = urlList[0]
@@ -295,8 +295,8 @@ class Spider(Spider):  # 元类 默认的元类 type
             "path": path,
             'password': password
         }
-        data = self.postJson(baseUrl + 'api/fs/get', json=param, headers=header).json()
-        url = data['data']['raw_url']
+        r = self.postJson(baseUrl + 'api/fs/get', json=param, headers=header)
+        url = json.loads(self.cleanText(r.text))['data']['raw_url']
         if not url.startswith('http'):
             url = baseUrl + url.strip('/')
         return url
@@ -326,3 +326,9 @@ class Spider(Spider):  # 元类 默认的元类 type
         self.fetch(f'http://127.0.0.1:9978/cache?do=del&key={key}', timeout=5)
 
     header = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36"}
+
+if __name__ == "__main__":
+    # res = Spider().categoryContent('http://lmhome.leuse.top:8889/LmHome/sdb1/Medias/电视剧/半泽直树(2013)&&&login{"username": "le", "password": "LeMing041390"}', 1, False, {})
+    # res = Spider().detailContent(['http://lmhome.leuse.top:8889/LmHome/sdb1/Medias/电视剧/半泽直树(2013)/半泽直树S01E01.mkv&&&login{"username": "le", "password": "LeMing041390"}'])
+    res = Spider().playerContent('', 'http://lmhome.leuse.top:8889/LmHome/sdb1/Medias/电视剧/半泽直树(2013)/半泽直树S01E01.mkv&&&login{"username": "le", "password": "LeMing041390"}', '')
+    print(res)

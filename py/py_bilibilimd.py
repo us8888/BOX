@@ -43,29 +43,28 @@ class Spider(Spider):  # 元类 默认的元类 type
 		result['class'] = classes
 		if filter:
 			result['filters'] = self.config['filter']
-			current_year = datetime.now().year
+			currentYear = datetime.now().year
 			for resultfilter in result['filters']:
 				for rf in result['filters'][resultfilter]:
-					yearList = []
 					if rf['key'] == 'year':
 						for rfv in rf['value']:
 							if rfv['n'].isdigit():
-								if int(rfv['n']) < current_year:
+								if int(rfv['n']) < currentYear:
 									pos = rf['value'].index(rfv)
-									for year in range(current_year, int(rfv['n']), -1):
-										yearList.append({'v': '[{},{})'.format(year, year+1), 'n': str(year)})
-									rf['value'].insert(pos, yearList)
+									for year in range(currentYear, int(rfv['n']), -1):
+										rf['value'].insert(pos, {'v': f'[{str(year)},{str(year+1)})', 'n': str(year)})
+										pos += 1
 									break
 								else:
 									break
 					elif rf['key'] == 'release_date':
 						for rfv in rf['value']:
 							if rfv['n'].isdigit():
-								if int(rfv['n']) < current_year:
+								if int(rfv['n']) < currentYear:
 									pos = rf['value'].index(rfv)
-									for year in range(current_year, int(rfv['n']), -1):
-										yearList.append({'v': '[{}-01-01 00:00:00,{}-01-01 00:00:00)'.format(year, year + 1), 'n': str(year)})
-									rf['value'].insert(pos, yearList)
+									for year in range(currentYear, int(rfv['n']), -1):
+										rf['value'].insert(pos, {'v': f'[{str(year)}-01-01 00:00:00,{str(year+1)}-01-01 00:00:00)', 'n': str(year)})
+										pos += 1
 									break
 								else:
 									break
