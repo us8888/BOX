@@ -200,7 +200,7 @@ CCTV-17,http://fengqiang.press:8188/rtp/239.49.1.7:6000
 北京联通组播,#genre#
 
 北京卫视,http://home4.kmo.ink:8888/rtp/239.3.1.241:8000
-北京影视,http://home4.kmo.ink:8888/rtp/239.3.1.158:8000
+BTV影视,http://home4.kmo.ink:8888/rtp/239.3.1.158:8000
 北京文艺,http://home4.kmo.ink:8888/rtp/239.3.1.242:8000
 北京财经,http://home4.kmo.ink:8888/rtp/239.3.1.116:8000
 北京生活,http://home4.kmo.ink:8888/rtp/239.3.1.117:8000
