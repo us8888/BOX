@@ -25,6 +25,7 @@ CCTV-13,http://fengqiang.press:8188/rtp/239.49.9.43:6000
 CCTV-14,http://fengqiang.press:8188/rtp/239.49.8.56:9826
 CCTV-14,http://fengqiang.press:8188/rtp/239.49.8.136:6000
 CCTV-15,http://fengqiang.press:8188/rtp/239.49.0.15:8112
+CCTV-16,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226921/index.m3u8
 CCTV-17,http://fengqiang.press:8188/rtp/239.49.8.132:6000
 CETV1,http://fengqiang.press:8188/rtp/239.49.8.189:6000
 
@@ -68,6 +69,7 @@ CCTV-13,http://fengqiang.press:8188/rtp/239.49.0.13:8096
 CCTV-14,http://fengqiang.press:8188/rtp/239.49.1.14:6000
 CCTV-14,http://fengqiang.press:8188/rtp/239.49.0.14:8104
 CCTV-15,http://fengqiang.press:8188/rtp/239.49.1.15:6000
+CCTV-16,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226100/index.m3u8
 CCTV-17,http://fengqiang.press:8188/rtp/239.49.1.7:6000
 
 第一剧场,http://fengqiang.press:8188/rtp/239.49.1.226:6000
