@@ -200,7 +200,7 @@ CCTV-17,http://fengqiang.press:8188/rtp/239.49.1.7:6000
 北京联通组播,#genre#
 
 北京卫视,http://home4.kmo.ink:8888/rtp/239.3.1.241:8000
-BTV影视,http://home4.kmo.ink:8888/rtp/239.3.1.158:8000
+北京影视,http://home4.kmo.ink:8888/rtp/239.3.1.158:8000
 北京文艺,http://home4.kmo.ink:8888/rtp/239.3.1.242:8000
 北京财经,http://home4.kmo.ink:8888/rtp/239.3.1.116:8000
 北京生活,http://home4.kmo.ink:8888/rtp/239.3.1.117:8000
@@ -281,7 +281,7 @@ CCTV13,http://www.furymax.top:85/rtp/239.254.96.161:9040
 CCTV14,http://www.furymax.top:85/rtp/239.69.1.107:10280
 CCTV15,http://www.furymax.top:85/rtp/239.69.1.155:10566
 CCTV16,http://www.furymax.top:85/rtp/239.69.1.247:11124
-CCTV16-4K,http://www.furymax.top:85/rtp/239.69.1.249:11136
+CCTV16,http://www.furymax.top:85/rtp/239.69.1.249:11136
 CCTV17,http://www.furymax.top:85/rtp/239.69.1.152:10548
 CHC高清电影,http://www.furymax.top:85/rtp/239.69.1.241:11088
 CHC动作电影,http://www.furymax.top:85/rtp/239.69.1.242:11094
