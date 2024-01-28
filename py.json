@@ -1,5 +1,5 @@
 {
-"spider":"./JAR/fan.txt;md5;5543dae038ce2248e7759e9cbca295b9",
+"spider":"./JAR/fan.txt;md5;6695b4fe705a1eedcae352abe5412640",
 "wallpaper":"http://饭太硬.top/深色壁纸/api.php",
 "sites":[
 {"key":"py_ali","name":"首页","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_ali.py","searchable":1,"quickSearch":1,"filterable":1, "ext": {"token": "http://127.0.0.1:9978/file/tvfan/token.txt", "thread": "10"}},
@@ -8,7 +8,9 @@
 {"key":"csp_Nmys","name":"农民","type":3,"api":"csp_Nmys","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://agit.ai/fantaiying/fty/raw/branch/master/ext/nmys.json"}, 
 {"key":"py_bilibilivd","name":"B站视频","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_bilibilivd.py","searchable":1,"quickSearch":1,"filterable":1, "ext": {"json": "http://127.0.0.1:9978/file/tvfan/bili.json"}},
 {"key":"py_bilibilimd","name":"B站番剧","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_bilibilimd.py","searchable":1,"quickSearch":1,"filterable":1, "ext": {"json": "http://127.0.0.1:9978/file/tvfan/bili.json"}},
-{"key":"py_firstaid","name":"急救指南","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_firstaid.py","searchable":0,"quickSearch":0,"filterable":0}
+{"key":"py_firstaid","name":"急救指南","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_firstaid.py","searchable":0,"quickSearch":0,"filterable":0},
+{"key":"push_agent","name":"推送","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"ext":"http://127.0.0.1:9978/file/tvfan/token.txt+4k|auto|fhd"},
+
 ],
 "parses":[
 {"name":"聚合","type":3,"url":"Demo"},
