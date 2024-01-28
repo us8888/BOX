@@ -2,7 +2,8 @@
 "spider":"./JAR/fan.txt;md5;6695b4fe705a1eedcae352abe5412640",
 "wallpaper":"http://饭太硬.top/深色壁纸/api.php",
 "sites":[
-{"key":"py_ali","name":"首页","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_ali.py","searchable":1,"quickSearch":1,"filterable":1, "ext": {"token": "http://127.0.0.1:9978/file/tvfan/token.txt", "thread": "10"}},
+{"key":"py_ali","name":"首页","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_ali.py","searchable":1,"quickSearch":1,"filterable":1, "ext":"http://127.0.0.1:9978/file/tvfan/token.txt"},
+{"key":"玩偶哥哥","name":"玩偶","type":3,"api":"csp_WoGG","searchable":1,"quickSearch":1,"changeable":0,"ext":"http://127.0.0.1:9978/file/tvfan/token.txt+4k|auto|fhd$$$https://www.wogg.xyz/$$$弹"},
 {"key":"南瓜","name":"南瓜","type":3,"api":"csp_NanGua","playerType":2,"searchable":1,"quickSearch":1,"changeable":1},
 {"key":"DiDuan","name":"低端","type":3,"api":"csp_Ddrk","playerType":"2","searchable":1,"quickSearch":1,"changeable":1},
 {"key":"csp_Nmys","name":"农民","type":3,"api":"csp_Nmys","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://agit.ai/fantaiying/fty/raw/branch/master/ext/nmys.json"}, 
