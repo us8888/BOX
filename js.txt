@@ -147,7 +147,7 @@ CCTV-17,http://fengqiang.press:8188/rtp/239.49.1.7:6000
 江苏综艺,http://fengqiang.press:8188/rtp/239.49.1.18:6000
 江苏综艺,http://fengqiang.press:8188/rtp/239.49.0.18:8136
 江苏综艺,http://fengqiang.press:8188/rtp/239.49.9.36:6000
-江苏卡通,http://fengqiang.press:8188/rtp/239.49.9.39:6000
+优漫卡通,http://fengqiang.press:8188/rtp/239.49.9.39:6000
 江苏体育,http://fengqiang.press:8188/rtp/239.49.9.37:6000
 百视通,http://fengqiang.press:8188/rtp/239.49.1.74:6000
 百视通,http://fengqiang.press:8188/rtp/239.49.1.183:6000
