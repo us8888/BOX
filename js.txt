@@ -141,14 +141,10 @@ CCTV-17,http://fengqiang.press:8188/rtp/239.49.1.7:6000
 4K花园,http://fengqiang.press:8188/rtp/239.49.8.205:6000
 4K花园,http://fengqiang.press:8188/rtp/239.49.8.207:6000
 4K花园,http://fengqiang.press:8188/rtp/239.49.8.208:6000
-江苏影视,http://fengqiang.press:8188/rtp/239.49.1.20:6000
-江苏影视,http://fengqiang.press:8188/rtp/239.49.0.20:8152
 江苏影视,http://fengqiang.press:8188/rtp/239.49.9.38:6000
-江苏综艺,http://fengqiang.press:8188/rtp/239.49.1.18:6000
-江苏综艺,http://fengqiang.press:8188/rtp/239.49.0.18:8136
 江苏综艺,http://fengqiang.press:8188/rtp/239.49.9.36:6000
-优漫卡通,http://fengqiang.press:8188/rtp/239.49.9.39:6000
 江苏体育,http://fengqiang.press:8188/rtp/239.49.9.37:6000
+优漫卡通,http://fengqiang.press:8188/rtp/239.49.9.39:6000
 百视通,http://fengqiang.press:8188/rtp/239.49.1.74:6000
 百视通,http://fengqiang.press:8188/rtp/239.49.1.183:6000
 欢笑剧场,http://fengqiang.press:8188/rtp/239.49.8.231:6000
