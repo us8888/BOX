@@ -169,7 +169,6 @@ CCTV-17,http://fengqiang.press:8188/rtp/239.49.1.7:6000
 全纪实,http://fengqiang.press:8188/rtp/239.49.8.179:6000
 生活时尚,http://fengqiang.press:8188/rtp/239.49.8.175:6000
 时尚女人,http://fengqiang.press:8188/rtp/239.49.0.208:9530
-书画频道,http://fengqiang.press:8188/rtp/239.49.1.227:6000
 水韵江苏,http://fengqiang.press:8188/rtp/239.49.8.155:6000
 水韵江苏,http://fengqiang.press:8188/rtp/239.49.8.157:6000
 
