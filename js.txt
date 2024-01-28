@@ -227,12 +227,12 @@ CCTV-17,http://home4.kmo.ink:8888/rtp/239.3.1.151:8144
 CCTV-4K,http://home4.kmo.ink:8888/rtp/239.3.1.245:2000
 爱上4K,http://home4.kmo.ink:8888/rtp/239.3.1.236:2000
 4K超清,http://home4.kmo.ink:8888/rtp/239.3.1.249:8001
-淘电影,http://home4.kmo.ink:8888/rtp/239.3.1.250:8001
 金鹰纪实,http://home4.kmo.ink:8888/rtp/239.3.1.58:8156
-淘剧场,http://home4.kmo.ink:8888/rtp/239.3.1.95:8001
-淘娱乐,http://home4.kmo.ink:8888/rtp/239.3.1.100:8001
-淘精彩,http://home4.kmo.ink:8888/rtp/239.3.1.178:8001
-淘Baby,http://home4.kmo.ink:8888/rtp/239.3.1.238:8001
+北京淘电影,http://home4.kmo.ink:8888/rtp/239.3.1.250:8001
+北京淘剧场,http://home4.kmo.ink:8888/rtp/239.3.1.95:8001
+北京淘娱乐,http://home4.kmo.ink:8888/rtp/239.3.1.100:8001
+北京淘精彩,http://home4.kmo.ink:8888/rtp/239.3.1.178:8001
+北京淘BABY,http://home4.kmo.ink:8888/rtp/239.3.1.238:8001
 萌宠TV,http://home4.kmo.ink:8888/rtp/239.3.1.102:8001
 湖南卫视,http://home4.kmo.ink:8888/rtp/239.3.1.132:8012
 东方卫视,http://home4.kmo.ink:8888/rtp/239.3.1.136:8032
