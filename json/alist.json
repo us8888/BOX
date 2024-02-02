@@ -37,5 +37,19 @@
       "name": "梓澪",
       "server": "https://zi0.cc"
     }
+    {
+      "name": "9T",
+      "server": "https://drive.9t.ee",
+      "params": [
+    {
+      "path": "/OneDrive",
+      "pass": "dooglu"
+    },
+    {
+      "path": "/115Cloud",
+      "pass": "dooglu"
+      }
+            ]
+          }
   ]
 }
