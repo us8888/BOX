@@ -10,7 +10,7 @@
 {"key":"py_bilibilivd","name":"B站视频","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_bilibilivd.py","searchable":1,"quickSearch":1,"filterable":1, "ext": {"json": "http://127.0.0.1:9978/file/tvfan/bili.json"}},
 {"key":"py_bilibilimd","name":"B站番剧","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_bilibilimd.py","searchable":1,"quickSearch":1,"filterable":1, "ext": {"json": "http://127.0.0.1:9978/file/tvfan/bili.json"}},
 {"key":"Yinyuetai","name":"音悦台","type": 3,"jar":"./JAR/0229.jar","api":"csp_Yinyuetai","searchable":1,"changeable":0},
-{"key":"xyyy","name":"小姨音乐","type": 4,"api":"https://catbox.n13.club/wy.php"},
+{"key":"xyyy","name":"小姨音乐","type": 4,"api":"https://catbox.n13.club/wy.php","style":{"type":"oval" }},
 {"key":"py_firstaid","name":"急救指南","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_firstaid.py","searchable":0,"quickSearch":0,"filterable":0},
 {"key":"push_agent","name":"推送","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"ext":"http://127.0.0.1:9978/file/tvfan/token.txt+4k|auto|fhd"}
 
