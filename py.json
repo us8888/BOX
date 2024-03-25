@@ -5,6 +5,10 @@
 {"key":"py_ali","name":"首页","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_ali.py","searchable":1,"quickSearch":1,"filterable":1, "ext":"http://127.0.0.1:9978/file/tvfan/token.txt"},
 {"key":"南瓜","name":"南瓜","type":3,"api":"csp_NanGua","playerType":2,"searchable":1,"quickSearch":1,"changeable":1},
 {"key":"快看","name":"快看","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"changeable":0,"filterable":1},
+{"key":"drpy_js_奇珍异兽","name":"奇珍异兽","type":3,"api":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/奇珍异兽.js"},
+{"key":"drpy_js_优酷","name":"酷酷的腾","type":3,"api":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/优酷.js"},
+{"key":"drpy_js_腾云驾雾","name":"腾云驾雾","type":3,"api":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/腾云驾雾.js"},
+{"key":"drpy_js_百忙无果","name":"百忙无果","type":3,"api":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/百忙无果.js"}, 
 {"key":"贱贱","name":"荐片","type":3,"searchable":1,"quickSearch":1,"changeable":1,"playerType":"1","api":"https://agit.ai/fantaiying/fty/raw/branch/master/ext/drpy2.min.js","ext":"https://agit.ai/fantaiying/fty/raw/branch/master/ext/jp.js"},
 {"key":"py_bilibilivd","name":"B站视频","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_bilibilivd.py","searchable":1,"quickSearch":1,"filterable":1, "ext": {"json": "http://127.0.0.1:9978/file/tvfan/bili.json"}},
 {"key":"py_bilibilimd","name":"B站番剧","type":3,"api":"https://api-lmteam.koyeb.app/files/py/py_bilibilimd.py","searchable":1,"quickSearch":1,"filterable":1, "ext": {"json": "http://127.0.0.1:9978/file/tvfan/bili.json"}},
@@ -17,6 +21,10 @@
 ],
 "parses":[
 {"name":"聚合","type":3,"url":"Demo"},
+{"name":"王","type":1,"url":"http://json.84jia.com/home/api?type=ys&uid=11154896&key=cefgiksvwyCGINV047&url="},
+{"name":"二","type":1,"url":"http://119.91.123.253:2345/Api/yun.php?url="},
+{"name":"小","type":1,"url":"http://122.228.84.103:7777/api/?key=qhBtN1ciPmdvPV83tX&url="},
+{"name":"帅","type":1,"url":"http://pan.qiaoji8.com/tvbox/neibu.php?url="},
 {"name":"神秘的哥哥们","type":1,"url":"http://api.888484.xyz/神秘哥哥/super.php?v=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","tucheng","sohu","搜狐","letv","乐视","mgtv","芒果","tnmb","seven","yzm","aliyun","RJuMao","bilibili","1905","xinvip","XAL","qiqi","XALS","YuMi-vip"]}},
 {"name":"免费分享","type":0,"url":"https://jx.xmflv.com/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","imgo","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}}
 ],
