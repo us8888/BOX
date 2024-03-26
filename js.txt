@@ -24,7 +24,7 @@ CCTV-12,http://webmail.axxe.top:4022/udp/239.3.1.64:8124
 CCTV-13,http://webmail.axxe.top:4022/udp/239.3.1.124:8128
 CCTV-14,http://webmail.axxe.top:4022/udp/239.3.1.65:8132
 CCTV-15,http://webmail.axxe.top:4022/udp/239.3.1.153:8136
-CCTV16,http://office365.myddns.me:8686/udp/225.1.2.237:5002
+CCTV16,http://webmail.axxe.top:4022/udp/239.3.1.184:8001
 CCTV-17,http://webmail.axxe.top:4022/udp/239.3.1.151:8144
 CCTV-4K,http://webmail.axxe.top:4022/udp/239.3.1.245:2000
 爱上4K,http://webmail.axxe.top:4022/udp/239.3.1.236:2000
