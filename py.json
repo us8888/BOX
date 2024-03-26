@@ -22,7 +22,6 @@
 ],
 "parses":[
 {"name":"聚合","type":3,"url":"Demo"},
-{"name":"解析","type":3,"url":"Web"},
 {"name":"王","type":1,"url":"http://json.84jia.com/home/api?type=ys&uid=11154896&key=cefgiksvwyCGINV047&url="},
 {"name":"二","type":1,"url":"http://119.91.123.253:2345/Api/yun.php?url="},
 {"name":"小","type":1,"url":"http://122.228.84.103:7777/api/?key=qhBtN1ciPmdvPV83tX&url="},
