@@ -1,6 +1,7 @@
 {
-"spider":"https://cc-im-kefu-cos.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/d4fe44c5-107c-4511-af02-aa08fb10dff7/2024-03-23/2024-03-23_21:59:58/1711202398438/50630339/wex.txt;md5;341563606ecde012b8fa7d79687d4c14",
+"spider":"https://cc-im-kefu-cos.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/d4fe44c5-107c-4511-af02-aa08fb10dff7/2024-03-26/2024-03-26_15:19:15/1711437555116/69560144/wex.txt;md5;1a93958bfdeb969dbdfd3478e7f8b61e",
 "wallpaper":"https://放牛.王二小放牛娃.xyz/img.php",
+
 "sites":[
 {"key":"Douban","name":"🐮【王二小放牛娃温馨提醒:网络套路深，谨防割韭菜】🐮","type":3,"api":"csp_Douban","searchable":0,"quickSearch":0,"filterable":0},
 {"key":"Wexconfig","name":"🐮配置┃中心🐮","type":3,"api":"csp_Wexconfig","searchable":0,"changeable":0,"style":{"type":"rect","ratio":1.43}},
@@ -39,8 +40,7 @@
 {"key":"Wexxsmp3","name":"🎤随身┃相声┃MP3","type":3,"api":"csp_Wexxsmp3","searchable":1,"changeable":0},
 {"key":"Wexpsmp3","name":"🎤随身┃评书┃MP3","type":3,"api":"csp_Wexpsmp3","searchable":1,"changeable":0},
 {"key":"看球","name":"🌐88┃看球┃体育","type":3,"api":"csp_Kanqiu","searchable":1,"changeable":0,"style":{"type":"list"}},
-{"key":"企鹅体育xp","name":"🐧大鹅┃看球┃体育","type":3,"api":"csp_XPath","style":{"type":"list"},
-"searchable":0,"quickSearch":0,"changeable":0,"ext":"https://gitcode.net/wexfnw/wex/-/raw/master/qie.json"},
+{"key":"企鹅体育xp","name":"🐧大鹅┃看球┃体育","type":3,"api":"csp_XPath","style":{"type":"list"},"searchable":0,"quickSearch":0,"changeable":0,"ext":"https://gitcode.net/wexfnw/wex/-/raw/master/qie.json"},
 {"key":"drpy_js_奇珍异兽","name":"🦄奇珍┃异兽┃直采","type":3,"api":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/奇珍异兽.js"},
 {"key":"drpy_js_优酷","name":"🌱酷酷┃的腾┃直采","type":3,"api":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/优酷.js"},
 {"key":"drpy_js_腾云驾雾","name":"☁️腾云┃驾雾┃直采","type":3,"api":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/腾云驾雾.js"},
@@ -52,7 +52,6 @@
 {"key":"易搜","name":"🎠易搜┃阿里┃搜","type":3,"api":"csp_YiSo","searchable":1,"changeable":0},
 {"key":"雲搜","name":"🎠雲搜┃阿里┃搜","type":3,"api":"csp_UpYun","searchable":1,"changeable":0},
 {"key":"盤搜","name":"🎠盤搜┃阿里┃搜","type":3,"api":"csp_PanSou","searchable":1,"changeable":0},
-{"key":"紙條搜","name":"🎠紙條搜┃阿里┃搜","type":3,"api":"csp_XiaoZhiTiao","searchable":1,"changeable":0},
 {"key":"盤搜索","name":"🎠盤搜索┃阿里┃搜","type":3,"api":"csp_PanSearch","searchable":1,"changeable":0},
 {"key":"找資源","name":"🎠找資源┃阿里┃搜","type":3,"api":"csp_Zhaozy","searchable":1,"changeable":0,"ext":"影視天下第一$$$test2$$$test2"},
 {"key":"Wexyingso","name":"🎠影子┃阿里┃搜","type":3,"api":"csp_Wexyingso","searchable":1,"changeable":0},
