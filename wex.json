@@ -48,6 +48,7 @@
 {"key":"櫻花","name":"🤡櫻花┃动漫","type":3,"api":"csp_WexYing","searchable":1,"changeable":1},
 {"key":"巴士","name":"🤡巴士┃动漫","type":3,"api":"csp_WexDm84","searchable":1,"changeable":1},
 {"key":"異界","name":"🤡異界┃动漫","type":3,"api":"csp_WexYsj","searchable":1,"changeable":1},
+{"key":"Wexduanjuso","name":"😍短剧┃搜索┃爽","type":3,"api":"csp_Wexduanjuso","searchable":1,"changeable":0},
 {"key":"七夜","name":"🎠七夜┃阿里┃搜","type":3,"api":"csp_Dovx","searchable":1,"changeable":0},
 {"key":"易搜","name":"🎠易搜┃阿里┃搜","type":3,"api":"csp_YiSo","searchable":1,"changeable":0},
 {"key":"雲搜","name":"🎠雲搜┃阿里┃搜","type":3,"api":"csp_UpYun","searchable":1,"changeable":0},
