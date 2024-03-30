@@ -1,5 +1,6 @@
-﻿{
-	"spider":"./pg.jar",
+"spider":"./JAR/pg.jar;6b53f9e6df0a84f74e3976c95d3f1e41",
+"wallpaper":"http://饭太硬.top/深色壁纸/api.php",
+
 	"sites":[
 		{"key": "豆瓣","name": "豆瓣","type": 3,"api": "csp_Douban","searchable": 0,"changeable": 1,"indexs":1,"ext": "./lib/douban.json"},
 		{"key": "快看","name": "快看","type": 3,"api": "csp_Kuaikan","searchable": 1,"quickSearch": 1,"changeable": 0},
@@ -294,7 +295,7 @@
 		},
 
 		
-		{"key":"drpy_js_愛盤搜","name":"爱盘搜[js]|夸","type":3,"api":"./lib/drpy2.min.js","ext":"./js/aipanso.js", "quickSearch":1, "changeable":1, "timeout":60,"style": {"type": "list","ratio": 1.1}},
+		{"key":"drpy_js_愛盤搜","name":"爱盘搜[js]|夸","type":3,"api":"./lib/drpy2.min.js","ext":"./JS/aipanso.js", "quickSearch":1, "changeable":1, "timeout":60,"style": {"type": "list","ratio": 1.1}},
 		{"key":"混合盘","name":"混合盘|网盘","type":3,"api":"csp_HunHePan","timeout":60, "ext":"./lib/tokenm.json","style": {"type": "list","ratio": 1.1}},
 		{"key":"88Pan","name":"88网盘|网盘","type":3,"api":"csp_EightEight","timeout":60, "ext":"./lib/tokenm.json$$$https://662688.xyz","style": {"type": "list","ratio": 1.1}},
 		{"key":"PanSearch","name":"PanSearch|网盘","type":3,"api":"csp_PanSearch","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json"},
