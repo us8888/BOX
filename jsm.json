@@ -33,8 +33,7 @@
 			"api": "csp_NanGua",
 			"searchable": 1,
 			"changeable": 1,
-			"ext": "null$$$1",
-		        "danmu":true 
+			"ext":{"danmu":true}
 		},
 		{
 			"key": "新6V",
