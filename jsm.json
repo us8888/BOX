@@ -1,5 +1,5 @@
 ﻿{
-	"spider":"./JAR/pg.jar;md5;6b53f9e6df0a84f74e3976c95d3f1e41",
+	"spider":"./JAR/pg.jar;md5;2c12c620fa0678ce6035786f4c18a220",
         "wallpaper":"https://深色壁纸.xxooo.cf/",
 
 	"sites":[
@@ -10,7 +10,6 @@
 		{"key":"Bt0","name":"不太灵|磁力","type":3,"api":"csp_Bt0","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"null$$$null$$$1"},
 		{"key":"Wogg","name":"玩偶哥哥|网盘","type":3,"api":"csp_Wogg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://wogg.xyz/$$$null$$$1$$$./lib/wogg.json"},
 		{"key":"Wobg","name":"玩偶表哥|网盘","type":3,"api":"csp_Wobg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://wobge.run.goorm.io$$$null$$$1$$$./lib/wogg.json"},
-		{"key":"影视车","name":"影视车|网盘","type":3,"api":"csp_Wogg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.weixine.link/$$$null$$$1$$$./lib/wogg.json"},
 		{"key":"团长资源","name":"团长资源|网盘","type":3,"api":"csp_TZFile", "quickSearch":1, "changeable":1, "filterable":1, "timeout":60,"ext":"./lib/tokenm.json$$$null$$$1"},
 		{"key":"Moli","name":"HDmoli|网盘","type":3,"api":"csp_Moli","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.hdmoli.pro$$$null$$$1$$$./lib/moli.json"},
 		{"key":"Hdhive","name":"影巢|网盘","type":3,"api":"csp_Hdhive","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$null$$$1"},
@@ -109,6 +108,15 @@
 			"changeable":1, 
 			"timeout":60
 		},
+		{
+			"key":"BLSGod",
+			"name":"BLSGod|磁",
+			"type":3,
+			"api":"csp_BLSGod",
+			"changeable":1, 
+			"timeout":60
+		},
+		
 		{
 			"key":"bili",
 			"name":"B站 | Bili[jar]",
