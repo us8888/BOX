@@ -23,7 +23,7 @@
 {"key":"Ppxzy","name":"皮皮虾|网盘","type":3,"api":"csp_Ppxzy", "quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://ppxzy.net$$$null$$$1"},
 {"key":"校长影视","name":"校长影视|网盘","type":3,"api":"csp_XiaoZhang","quickSearch":1,"changeable":1, "filterable":1, "timeout":60,"ext":"./lib/tokenm.json$$$https://xzyshd.com$$$null$$$1"},
 {"key":"Bdys_spider","name":"哔滴┃磁力","api":"csp_Bdys01","type":3,"filterable":1,"searchable":0,"quickSearch":1,"searchable":1,"ext":"https://www.yjys.me/$$$null$$$1"},
-{"key":"NanGua","name":"南瓜|弹幕","type":3,"api":"csp_NanGua","searchable":1,"changeable":1,"ext":{"danmu":true}},
+{"key":"NanGua","name":"南瓜|弹幕","type":3,"api":"csp_NanGua","searchable":1,"changeable":1,"danmu":true},
 {"key":"新6V","name":"新6V|网盘","type":3,"api":"csp_Xb6v","searchable":1,"changeable":1,"timeout":60,"ext":"./lib/tokenm.json$$$https://www.66ss.org$$$null$$$1"},
 {"key":"天天","name":"天天┃App","type":3,"api":"csp_TTian","playerType":1,"ext":"http://op.ysdqjs.cn$$$null$$$1"},
 {"key":"追剧","name":"追剧┃App","type":3,"api":"csp_TTian","playerType":1,"ext":"http://app.kzjtv.com$$$null$$$1"},
