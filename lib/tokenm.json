@@ -45,14 +45,16 @@
 "pikpak_proxy":"socks5://127.0.0.1:10074",
 "pikpak_proxy_onlyapi":false,
 "pikpak_danmu":true,
-"wgcf_key":"mCOHkrcZy2yOsgDpii1TzeTUAzPMmRvyKnSWlwG2V3Y=",
-"wgcf_key2":"mIldHyCXoz0+tkTpbaJYxMu2XXe+yiWF7PVx5HuFgW4=",
+"wgcf_key":"MDx0SyYkQRpshraiKYdP6SjeWqVYjG83LHrjjxFrKFw=",
+"wgcf_key2":"mEO42XlrAWoK6PO4CLgpNPmOElmmEvRB5KuCEOlrxGE=",
 "wgcf_ipport":"162.159.192.106:2408",
 "wgcf_xray_url":"./xray.gz",
 "wgcf_json_url":"./wgcf.json",
-"wgcf_vless_id":"864a3ea3-f153-4beb-84fd-a9069bfa413e",
-"wgcf_vless_optname":"www.pcmag.com",
-"wgcf_vless_worker":"liangzi.xyf.dns-dynamic.net",
+"wgcf_vless_id":"de44b044-8f90-4e18-b742-16591667ff96",
+"wgcf_vless_optname":"118.193.35.29:443",
+"wgcf_vless_worker":"edgetunnel-free.pages.dev",
 "wgcf_vless_path":"/?ed=2048",
-"wgcf_vless_protocol":"vless"
+"wgcf_vless_protocol":"vless",
+"wgcf_vless_tls": true
+  
 }
