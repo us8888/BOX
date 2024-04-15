@@ -25,7 +25,6 @@
 {"key":"SeedHub","name":"SeedHub|磁","type":3,"api":"csp_SeedHub","changeable":1,"timeout":60},
 {"key":"BLSGod","name":"BLSGod|磁","type":3,"api":"csp_BLSGod","changeable":1,"timeout":60},	
 {"key":"new种子","name":"种子短剧","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext":"http://122.228.84.103:6822/api.php/app/"},
-{"key":"T4-duanju5","name":"短剧屋","type":4,"api":"https://catbox.n13.club/duanju5.php","searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"ext":true},	
 {"key":"bili","name":"B站 | Bili[jar]","type":3,"api":"csp_Bili","searchable":1,"quickSearch":0,"changeable":0,"ext":{"type":"演唱会#电影#电视剧#帕梅拉#广场舞#纪录片#综艺#鬼畜#音乐#舞蹈#影视#知识#美食#风光#田园#户外#8K#","cookie":""}},
 {"key":"JustLive","name":"JustLive","type":3,"api":"csp_JustLive","searchable":1,"changeable":0},
 {"key":"直播转点播","name":"🐼️┃电视┃直播","type":3,"searchable":0,"api":"./lib/live2vod.js","ext":"./lib/feimaolive.json"},
