@@ -34,7 +34,22 @@
 {"key":"SeedHub","name":"SeedHub|磁","type":3,"api":"csp_SeedHub","changeable":1,"timeout":60},
 {"key":"BLSGod","name":"BLSGod|磁","type":3,"api":"csp_BLSGod","changeable":1,"timeout":60},	
 {"key":"BtSearch","name":"BT搜索 |磁","type":3,"api":"csp_BtSearch","searchable":1,"changeable":1,"timeout":60,"ext":"./lib/tokenm.json$$$null$$$null$$$1"},
-{"key":"new种子","name":"种子短剧","type":3,"api":"csp_AppYsV2","searchable":1,"quickSearch":1,"filterable":1,"ext":"http://122.228.84.103:6822/api.php/app/"},
+{
+        "key":"短剧",
+        "name":"短剧",
+        "type":3,
+        "api":"csp_XBPQ",
+        "jar":"./lib/XBPQ.jar",
+        "ext":{
+        "搜索链接":"http://www.duanjutv.cc/vodsearch/{wd}----------{pg}---.html",
+        "线路标题":"<h3*>&&</h3>",
+        "线路数组":"\"more text-muted pull-right\">&&</ul>",
+        "播放数组":"\"more text-muted pull-right\">&&</ul>",
+        "播放链接":"http+://www.duanjutv.cc+href='&&'",
+        "分类":"抖音短剧$20#快手短剧$21#视频号短剧$22#热播短剧$23",
+        "分类链接":"http://www.duanjutv.cc/vodtype/{cateId}-{catePg}.html;;m"
+      }
+    },
 {"key":"bili","name":"B站 | Bili[jar]","type":3,"api":"csp_Bili","searchable":1,"quickSearch":0,"changeable":0,"ext":{"type":"演唱会#电影#电视剧#帕梅拉#广场舞#纪录片#综艺#鬼畜#音乐#舞蹈#影视#知识#美食#风光#田园#户外#8K#","cookie":""}},
 {"key":"JustLive","name":"JustLive","type":3,"api":"csp_JustLive","searchable":1,"changeable":0},
 {"key":"直播转点播","name":"🐼️┃电视┃直播","type":3,"searchable":0,"api":"./lib/live2vod.js","ext":"./lib/feimaolive.json"},
