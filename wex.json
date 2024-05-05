@@ -1,12 +1,13 @@
 
 {
-"spider":"https://cc-im-kefu-cos.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/d4fe44c5-107c-4511-af02-aa08fb10dff7/2024-05-02/2024-05-02_21:16:59/1714655819821/34419643/wex.txt;md5;aac13a80b3a454e727cf23acea466136",
+"spider":"https://cc-im-kefu-cos.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/d4fe44c5-107c-4511-af02-aa08fb10dff7/2024-05-05/2024-05-05_20:36:48/1714912608541/68262102/wex.txt;md5;1cb1c363b301e6b8b6c44f3e036e640e",
 "wallpaper":"https://放牛.王二小放牛娃.xyz/img.php",
 "sites":[
 {"key":"Douban","name":"🐮【王二小放牛娃温馨提醒:网络套路深，谨防割韭菜】🐮","type":3,"api":"csp_Douban","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitcode.net/wexfnw/wex/-/raw/master/douban.json"},
 {"key":"应用商店","name":"🆗【影视应用商店】🆗","type":3,"api":"csp_Market","searchable":0,"changeable":0,"ext":"https://fm.t4tv.hz.cz/json/market.json"},
 {"key":"Doubana","name":"⬇️【阿里夸克先扫码】⬇️","type":3,"api":"csp_Douban","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitcode.net/wexfnw/wex/-/raw/master/douban.json"},
 {"key":"Wexconfig","name":"🐮配置┃中心🐮","type":3,"api":"csp_Wexconfig","searchable":0,"changeable":0,"style":{"type":"rect","ratio":1.43}},
+{"key":"自定义","name":"🥇DIY┃播放┃全能","type":3,"api":"csp_Wexdiy","searchable":1,"changeable":0,"style":{"type":"list"}},
 {"key":"玩偶","name":"🥷玩偶┃网盘┃综合","type":3,"api":"csp_Wogg","searchable":1,"changeable":1},
 {"key":"土豆","name":"🥔土豆┃网盘┃综合","type":3,"api":"csp_Wextudou","searchable":1,"changeable":1},
 {"key":"Wexyingchao","name":"🦜鸟巢┃网盘┃综合","type":3,"api":"csp_Wexyingchao","searchable":1,"changeable":1},
@@ -18,6 +19,7 @@
 {"key":"Wexxpgtv","name":"🍎红富士┃TV┃App","type":3,"api":"csp_Wexxpgtv","searchable":1,"changeable":1},
 {"key":"Wexkukantv","name":"😁看呗┃TV┃App","type":3,"api":"csp_Wexkukantv","searchable":1,"changeable":1},
 {"key":"mingriyingshi","name":"☀️明日┃影视┃App","type":3,"api":"csp_WexMingriys","searchable":1,"changeable":1},
+{"key":"Fujutv","name":"🍩腐剧┃TV┃App","type":3,"api":"csp_WexFujutv","searchable":1,"changeable":1},
 {"key":"Wexhanxiaoquan","name":"🇰🇷韩圈┃TV┃App","type":3,"api":"csp_Wexhanxiaoquan","searchable":1,"changeable":1},
 {"key":"Wexhanjutv","name":"🇰🇷韩剧┃TV┃App","type":3,"api":"csp_Wexhanjutv","searchable":1,"changeable":1},
 {"key":"Fangniu4k","name":"👎放牛┃TV┃App","type":3,"api":"csp_WexFangniu4k","searchable":1,"changeable":1},
@@ -45,6 +47,9 @@
 {"key":"Twobt","name":"🛩️Twobt┃电影┃P2P","type":3,"api":"csp_WexTwobt","searchable":1,"changeable":0},
 {"key":"Wexliyuan","name":"🎎戏曲┃看呗┃秒播","type":3,"api":"csp_Wexliyuan","searchable":1,"changeable":0,"style":{"type":"rect","ratio":2}},
 {"key":"Wextangdou","name":"💃跳舞┃玩呗┃教学","type":3,"api":"csp_Wextangdou","searchable":1,"changeable":0,"style":{"type":"rect","ratio":2}},
+{"key":"Wexbaobaobashi","name":"👼宝宝┃儿歌┃秒播","type":3,"api":"csp_Wexbaobaobashi","searchable":1,"changeable":0,"style":{"type":"rect","ratio":2}},
+{"key":"Wexbeiwa","name":"👼贝贝┃儿歌┃秒播","type":3,"api":"csp_Wexbeiwa","searchable":1,"changeable":0,"style":{"type":"rect","ratio":2}},
+{"key":"Wextuxiaobei","name":"👼兔兔┃儿歌┃秒播","type":3,"api":"csp_Wextuxiaobei","searchable":1,"changeable":0,"style":{"type":"rect","ratio":2}},
 {"key":"Pandalivetv","name":"😍韩国┃美女┃直播","type":3,"api":"csp_WexPandalivetv","searchable":0,"changeable":0},
 {"key":"Yinyuetai","name":"🎸音悦台┃音乐┃MV","type":3,"api":"csp_WexYinyuetai","searchable":1,"changeable":0},
 {"key":"Iktv","name":"🎤KTV┃音乐┃MV","type":3,"api":"csp_WexIktv","searchable":1,"changeable":0},
