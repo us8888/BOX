@@ -1,4 +1,9 @@
-    "dns": {
+{
+  "log": {
+    "level": "debug",
+    "timestamp": true
+  },
+  "dns": {
     "servers": [
       {
         "tag": "remote",
@@ -111,207 +116,36 @@
       "set_system_proxy": false
     }
   ],
- {
-  "log": {
-    "level": "debug",
-    "timestamp": true
-  },
- "outbounds": [
-        {
-            "tag": "select",
-            "type": "selector",
-            "default": "urltest",
-            "outbounds": [
-                "urltest",
-                "优选域名",
-                "优选官方线路",
-                "🇭🇰 HK",
-                "🇺🇸 US",
-                "🇭🇰 HK 2",
-                "🇭🇰 HK 3"
-            ]
-        },
-        {
-            "server": "icook.tw",
-            "server_port": 2053,
-            "tag": "优选域名",
-            "tls": {
-                "enabled": true,
-                "server_name": "vless.spotify.dynv6.net",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                }
-            },
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "vless.spotify.dynv6.net"
-                    ]
-                },
-                "path": "/proxyIP=proxyip.multacom.fxxk.dedyn.io",
-                "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d6466711-31d0-40aa-8b7d-5e34f5b505f7",
-            "packet_encoding": "xudp"
-        },
-        {
-            "server": "cloudflare.cfgo.cc",
-            "server_port": 443,
-            "tag": "优选官方线路",
-            "tls": {
-                "enabled": true,
-                "server_name": "vless.spotify.dynv6.net",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                }
-            },
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "vless.spotify.dynv6.net"
-                    ]
-                },
-                "path": "/proxyIP=proxyip.multacom.fxxk.dedyn.io",
-                "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d6466711-31d0-40aa-8b7d-5e34f5b505f7",
-            "packet_encoding": "xudp"
-        },
-        {
-            "server": "47.242.7.162",
-            "server_port": 2053,
-            "tag": "🇭🇰 HK",
-            "tls": {
-                "enabled": true,
-                "server_name": "vless.spotify.dynv6.net",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                }
-            },
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "vless.spotify.dynv6.net"
-                    ]
-                },
-                "path": "/proxyIP=proxyip.fxxk.dedyn.io",
-                "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d6466711-31d0-40aa-8b7d-5e34f5b505f7",
-            "packet_encoding": "xudp"
-        },
-        {
-            "server": "47.76.33.40",
-            "server_port": 2096,
-            "tag": "🇺🇸 US",
-            "tls": {
-                "enabled": true,
-                "server_name": "vless.spotify.dynv6.net",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                }
-            },
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "vless.spotify.dynv6.net"
-                    ]
-                },
-                "path": "/proxyIP=proxyip.vultr.fxxk.dedyn.io",
-                "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d6466711-31d0-40aa-8b7d-5e34f5b505f7",
-            "packet_encoding": "xudp"
-        },
-        {
-            "server": "8.210.119.11",
-            "server_port": 2083,
-            "tag": "🇭🇰 HK 2",
-            "tls": {
-                "enabled": true,
-                "server_name": "vless.spotify.dynv6.net",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                }
-            },
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "vless.spotify.dynv6.net"
-                    ]
-                },
-                "path": "/proxyIP=proxyip.fxxk.dedyn.io",
-                "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d6466711-31d0-40aa-8b7d-5e34f5b505f7",
-            "packet_encoding": "xudp"
-        },
-        {
-            "server": "8.217.221.165",
-            "server_port": 2083,
-            "tag": "🇭🇰 HK 3",
-            "tls": {
-                "enabled": true,
-                "server_name": "vless.spotify.dynv6.net",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                }
-            },
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "vless.spotify.dynv6.net"
-                    ]
-                },
-                "path": "/proxyIP=proxyip.fxxk.dedyn.io",
-                "type": "ws"
-            },
-            "type": "vless",
-            "uuid": "d6466711-31d0-40aa-8b7d-5e34f5b505f7",
-            "packet_encoding": "xudp"
-        },
-        {
-            "tag": "urltest",
-            "type": "urltest",
-            "outbounds": [
-                "优选域名",
-                "优选官方线路",
-                "🇭🇰 HK",
-                "🇺🇸 US",
-                "🇭🇰 HK 2",
-                "🇭🇰 HK 3"
-            ]
-        },
-        {
-            "tag": "direct",
-            "type": "direct"
-        },
-        {
-            "tag": "block",
-            "type": "block"
-        },
-        {
-            "tag": "dns-out",
-            "type": "dns"
-        }
-    ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "urltest"
+      ],
+      "default": "urltest"
+    },
+    {
+      "type": "urltest",
+      "tag": "urltest",
+      "interval": "30m",
+      "idle_timeout": "60m",
+      "interrupt_exist_connections": false,
+      "outbounds": null
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
   "route": {
     "rules": [
       {
