@@ -20,14 +20,14 @@
       
     "params": [
     {
-      "path": "/OneDrive",
-      "pass": "dooglu"
+      "path":"/OneDrive",
+      "pass":"dooglu"
     },
     {
-      "path": "/115Cloud",
-      "pass": "dooglu"
-      },
-            ]
+      "path":"/115Cloud",
+      "pass":"dooglu"
+      }
+      ]
     }
   ]
 }
