@@ -1,10 +1,14 @@
 ﻿#coding=utf-8
 #!/usr/bin/python
+import re
 import sys
 import json
 import time
 from datetime import datetime
 from urllib.parse import quote, unquote
+
+import requests
+
 sys.path.append('..')
 from base.spider import Spider
 
@@ -46,7 +50,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		_, _, _ = self.getCookie(cookie)
 		bblogin = self.getCache('bblogin')
 		if bblogin:
-			result['class'] = [{"type_name": "动态", "type_id": "动态"}, {"type_name": "收藏夹", "type_id": "收藏夹"}, {"type_name": "历史记录", "type_id": "历史记录"}]
+			result['class'] = []
 		else:
 			result['class'] = []
 		if 'json' in self.extendDict:
@@ -64,8 +68,8 @@ class Spider(Spider):  # 元类 默认的元类 type
 				cateList = self.extendDict['type'].split('#')
 			for cate in cateList:
 				result['class'].append({'type_name': cate, 'type_id': cate})
-		if not 'class' in result:
-			result['class'] = {"type_name": "沙雕动漫", "type_id": "沙雕动漫"}
+		if not 'class' in result or result['class'] == []:
+			result['class'] = [{"type_name": "沙雕动漫", "type_id": "沙雕动漫"}]
 		return result
 
 	def homeVideoContent(self):
@@ -87,8 +91,8 @@ class Spider(Spider):  # 元类 默认的元类 type
 		except:
 			pass
 		cookie, imgKey, subKey = self.getCookie(cookie)
-		url = 'https://api.bilibili.com/x/web-interface/index/top/feed/rcmd?&y_num=1&fresh_type=3&feed_version=SEO_VIDEO&fresh_idx_1h=1&fetch_row=1&fresh_idx=1&brush=0&homepage_ver=1&ps=20'
-		r = self.fetch(url, cookies=cookie, headers=self.header, timeout=5)
+		url = 'https://api.bilibili.com/x/web-interface/index/top/feed/rcmd?y_num=1&fresh_type=3&feed_version=SEO_VIDEO&fresh_idx_1h=1&fetch_row=1&fresh_idx=1&brush=0&homepage_ver=1&ps=20'
+		r = requests.get(url, cookies=cookie, headers=self.header, timeout=5)
 		data = json.loads(self.cleanText(r.text))
 		try:
 			result['list'] = []
@@ -219,8 +223,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			else:
 				pagecount = page
 			if page == 1:
-				bizId = self.regStr(reg='play/(.*?)\?', src=data['data']['episodic_button']['uri'])
-				videos = [{"vod_id": f'UP主&&&{bizId}', "vod_name": '播放列表'}]
+				videos = [{"vod_id": f'UP主&&&{tid}', "vod_name": '播放列表'}]
 			vodList = data['data']['list']['vlist']
 			for vod in vodList:
 				vid = str(vod['aid']).strip()
@@ -349,6 +352,12 @@ class Spider(Spider):  # 元类 默认的元类 type
 		url = f"https://api.bilibili.com/x/web-interface/view?aid={aid}"
 		r = self.fetch(url, headers=self.header, timeout=10)
 		data = json.loads(self.cleanText(r.text))
+		if "staff" in data['data']:
+			director = ''
+			for staff in data['data']['staff']:
+				director += '[a=cr:{{"id":"UP主&&&{}","name":"{}"}}/]{}[/a],'.format(staff['mid'], staff['name'], staff['name'])
+		else:
+			director = '[a=cr:{{"id":"UP主&&&{}","name":"{}"}}/]{}[/a]'.format(data['data']['owner']['mid'], data['data']['owner']['name'], data['data']['owner']['name'])
 		vod = {
 			"vod_id": aid,
 			"vod_name": self.removeHtmlTags(data['data']['title']),
@@ -356,7 +365,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			"type_name": data['data']['tname'],
 			"vod_year": datetime.fromtimestamp(data['data']['pubdate']).strftime('%Y-%m-%d %H:%M:%S'),
 			"vod_content": data['data']['desc'].replace('\xa0', ' ').replace('\n\n', '\n').strip(),
-			"vod_director": '[a=cr:{{"id":"UP主&&&{}","name":"{}"}}/]{}[/a]'.format(data['data']['owner']['mid'], data['data']['owner']['name'], data['data']['owner']['name'])
+			"vod_director": director
 		}
 		videoList = data['data']['pages']
 		playUrl = ''
@@ -395,7 +404,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			result = {
 				'list': videos
 			}
-			return result, 14400
+			return result
 		cookie = ''
 		if 'cookie' in self.extendDict:
 			cookie = self.extendDict['cookie']
@@ -423,9 +432,12 @@ class Spider(Spider):  # 元类 默认的元类 type
 			aid = str(vod['aid']).strip()
 			title = self.removeHtmlTags(self.cleanText(vod['title']))
 			img = 'https:' + vod['pic'].strip()
-			remarkinfo = vod['duration'].split(':')
-			minutes = int(remarkinfo[0])
-			seconds = remarkinfo[1]
+			try:
+				remarkinfo = vod['duration'].split(':')
+				minutes = int(remarkinfo[0])
+				seconds = remarkinfo[1]
+			except:
+				continue
 			if len(seconds) == 1:
 				seconds = '0' + seconds
 			if minutes >= 60:
@@ -490,7 +502,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			thread = '0'
 		result["parse"] = 0
 		result["playUrl"] = ''
-		result["url"] = f'http://127.0.0.1:UndCover/proxy?do=py&type=mpd&cookies={cookies}&url={quote(url)}&aid={aid}&cid={cid}&thread={thread}'
+		result["url"] = f'http://127.0.0.1:9978/proxy?do=py&type=mpd&cookies={cookies}&url={quote(url)}&aid={aid}&cid={cid}&thread={thread}'
 		result["header"] = self.header
 		result['danmaku'] = 'https://api.bilibili.com/x/v1/dm/list.so?oid={}'.format(cid)
 		result["format"] = 'application/dash+xml'
@@ -503,96 +515,50 @@ class Spider(Spider):  # 元类 默认的元类 type
 			return self.proxyMedia(params)
 		return None
 
+	def destroy(self):
+		pass
+
 	def proxyMpd(self, params):
 		content, durlinfos, mediaType = self.getDash(params)
 		if mediaType == 'mpd':
-			action = {'url': '', 'header': self.header, 'param': '', 'type': 'string'}
-			return [200, "application/dash+xml", action, content]
+			return [200, "application/dash+xml", content]
 		else:
-			url = content
-			durlinfo = durlinfos['durl'][0]['backup_url']
-			try:
-				r = self.fetch(url, headers=self.header, stream=True, timeout=1)
-				statusCode = r.status_code
-				try:
-					r.close()
-				except:
-					pass
-			except:
-				try:
-					r.close()
-				except:
-					pass
-				statusCode = 404
-				for url in durlinfo:
-					try:
-						r = self.fetch(url, headers=self.header, stream=True, timeout=1)
-						statusCode = r.status_code
-					except:
-						statusCode = 404
-					if statusCode == 200:
-						break
-					try:
-						r.close()
-					except:
-						pass
-			if statusCode != 200 and self.retry == 0:
-				self.retry += 1
-				self.proxyMedia(params, True)
+			url = ''
+			urlList = [content] + durlinfos['durl'][0]['backup_url'] if 'backup_url' in durlinfos['durl'][0] and durlinfos['durl'][0]['backup_url'] else [content]
+			for url in urlList:
+				if 'mcdn.bilivideo.cn' not in url:
+					break
 			header = self.header.copy()
 			if 'range' in params:
 				header['Range'] = params['range']
 			if '127.0.0.1:7777' in url:
-				action = {'url': url, 'header': header, 'param': '', 'type': 'redirect'}
-				return [302, "video/MP2T", action, url]
-			action = {'url': url, 'header': header, 'param': '', 'type': 'stream'}
-			return [206, "application/octet-stream", action, '']
+				header["Location"] = url
+				return [302, "video/MP2T", None, header]
+			r = requests.get(url, headers=header, stream=True)
+			return [206, "application/octet-stream", r.content]
 
 	def proxyMedia(self, params, forceRefresh=False):
 		_, dashinfos, _ = self.getDash(params)
 		if 'videoid' in params:
 			videoid = int(params['videoid'])
 			dashinfo = dashinfos['video'][videoid]
-			url = dashinfo['baseUrl']
 		elif 'audioid' in params:
 			audioid = int(params['audioid'])
 			dashinfo = dashinfos['audio'][audioid]
-			url = dashinfo['baseUrl']
 		else:
-			return [404, "text/plain", {}, ""]
-		try:
-			r = self.fetch(url, headers=self.header, stream=True, timeout=1)
-			statusCode = r.status_code
-			try:
-				r.close()
-			except:
-				pass
-		except:
-			try:
-				r.close()
-			except:
-				pass
-			statusCode = 404
-			for url in dashinfo['backupUrl']:
-				try:
-					r = self.fetch(url, headers=self.header, stream=True, timeout=1)
-					statusCode = r.status_code
-				except:
-					statusCode = 404
-				if statusCode == 200:
-					break
-				try:
-					r.close()
-				except:
-					pass
-		if statusCode != 200 and self.retry == 0:
-			self.retry += 1
-			self.proxyMedia(params, True)
+			return [404, "text/plain", ""]
+		url = ''
+		urlList = [dashinfo['baseUrl']] + dashinfo['backupUrl'] if 'backupUrl' in dashinfo and dashinfo['backupUrl'] else [dashinfo['baseUrl']]
+		for url in urlList:
+			if 'mcdn.bilivideo.cn' not in url:
+				break
+		if url == "":
+			return [404, "text/plain", ""]
 		header = self.header.copy()
 		if 'range' in params:
 			header['Range'] = params['range']
-		action = {'url': url, 'header': header, 'param': '', 'type': 'stream'}
-		return [206, "application/octet-stream", action, '']
+		r = requests.get(url, headers=header, stream=True)
+		return [206, "application/octet-stream", r.content]
 
 	def getDash(self, params, forceRefresh=False):
 		aid = params['aid']
@@ -620,7 +586,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		if not 'dash' in data['data']:
 			purl = data['data']['durl'][0]['url']
 			try:
-				expiresAt = int(self.regStr(reg='deadline=(\d+)', src=purl).group(1)) - 60
+				expiresAt = int(re.search(r'deadline=(\d+)', purl).group(1)) - 60
 			except:
 				expiresAt = int(time.time()) + 600
 			if int(thread) > 0:
@@ -638,10 +604,9 @@ class Spider(Spider):  # 元类 默认的元类 type
 		videoinfo = ''
 		videoid = 0
 		deadlineList = []
-		# videoList = sorted(dashinfos['video'], key=lambda x: x['bandwidth'], reverse=True)
 		for video in dashinfos['video']:
 			try:
-				deadline = int(self.regStr(reg='deadline=(\d+)', src=video['baseUrl']).group(1))
+				deadline = int(re.search(r'deadline=(\d+)', video['baseUrl']).group(1))
 			except:
 				deadline = int(time.time()) + 600
 			deadlineList.append(deadline)
@@ -653,7 +618,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			void = video['id']
 			vidparams = params.copy()
 			vidparams['videoid'] = videoid
-			baseUrl = f'http://127.0.0.1:UndCover/proxy?do=py&type=media&cookies={quote(json.dumps(cookies))}&url={quote(url)}&aid={aid}&cid={cid}&videoid={videoid}'
+			baseUrl = f'http://127.0.0.1:9978/proxy?do=py&type=media&cookies={quote(json.dumps(cookies))}&url={quote(url)}&aid={aid}&cid={cid}&videoid={videoid}'
 			videoinfo = videoinfo + f"""	      <Representation bandwidth="{bandwidth}" codecs="{codecs}" frameRate="{frameRate}" height="{height}" id="{void}" width="{width}">
 	        <BaseURL>{baseUrl}</BaseURL>
 	        <SegmentBase indexRange="{video['SegmentBase']['indexRange']}">
@@ -666,7 +631,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		# audioList = sorted(dashinfos['audio'], key=lambda x: x['bandwidth'], reverse=True)
 		for audio in dashinfos['audio']:
 			try:
-				deadline = int(self.regStr(reg='deadline=(\d+)', src=audio['baseUrl']).group(1))
+				deadline = int(re.search(r'deadline=(\d+)', audio['baseUrl']).group(1))
 			except:
 				deadline = int(time.time()) + 600
 			deadlineList.append(deadline)
@@ -675,7 +640,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 			aoid = audio['id']
 			aidparams = params.copy()
 			aidparams['audioid'] = audioid
-			baseUrl = f'http://127.0.0.1:UndCover/proxy?do=py&type=media&cookies={quote(json.dumps(cookies))}&url={quote(url)}&aid={aid}&cid={cid}&audioid={audioid}'
+			baseUrl = f'http://127.0.0.1:9978/proxy?do=py&type=media&cookies={quote(json.dumps(cookies))}&url={quote(url)}&aid={aid}&cid={cid}&audioid={audioid}'
 			audioinfo = audioinfo + f"""	      <Representation audioSamplingRate="44100" bandwidth="{bandwidth}" codecs="{codecs}" id="{aoid}">
 	        <BaseURL>{baseUrl}</BaseURL>
 	        <SegmentBase indexRange="{audio['SegmentBase']['indexRange']}">
@@ -712,7 +677,7 @@ class Spider(Spider):  # 元类 默认的元类 type
 		header = {
 			"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36"
 		}
-		r = self.fetch("http://api.bilibili.com/x/web-interface/nav", cookies=cookies, headers=header, timeout=10)
+		r = requests.get("http://api.bilibili.com/x/web-interface/nav", cookies=cookies, headers=header, timeout=10)
 		data = json.loads(r.text)
 		code = data["code"]
 		if code == 0:
@@ -739,30 +704,6 @@ class Spider(Spider):  # 元类 默认的元类 type
 		clean = compile('<.*?>')
 		return sub(clean, '', src)
 
-	def getCache(self, key):
-		value = self.fetch(f'http://127.0.0.1:9978/cache?do=get&key={key}', timeout=5).text
-		if len(value) > 0:
-			if value.startswith('{') and value.endswith('}') or value.startswith('[') and value.endswith(']'):
-				value = json.loads(value)
-				if type(value) == dict:
-					if not 'expiresAt' in value or value['expiresAt'] >= int(time.time()):
-						return value
-					else:
-						self.delCache(key)
-						return None
-			return value
-		else:
-			return None
-
-	def setCache(self, key, value):
-		if len(value) > 0:
-			if type(value) == dict or type(value) == list:
-				value = json.dumps(value, ensure_ascii=False)
-		self.post(f'http://127.0.0.1:9978/cache?do=set&key={key}', data={"value": value}, timeout=5)
-
-	def delCache(self, key):
-		self.fetch(f'http://127.0.0.1:9978/cache?do=del&key={key}', timeout=5)
-
 	def encWbi(self, params, imgKey, subKey):
 		from hashlib import md5
 		from functools import reduce
@@ -781,7 +722,6 @@ class Spider(Spider):  # 元类 默认的元类 type
 		query = urlencode(params)  # 序列化参数
 		params['w_rid'] = md5((query + mixinKey).encode()).hexdigest()  # 计算 w_rid
 		return params
-
 
 	retry = 0
 	header = {
