@@ -16,8 +16,9 @@
     {
       "name": "梓澪",
       "server": "https://zi0.cc"
-    }
-      "params": [
+    },
+      
+    "params": [
     {
       "path": "/OneDrive",
       "pass": "dooglu"
@@ -25,7 +26,7 @@
     {
       "path": "/115Cloud",
       "pass": "dooglu"
-      }
+      },
             ]
     }
   ]
